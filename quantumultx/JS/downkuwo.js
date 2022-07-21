@@ -4,7 +4,7 @@
 脚本作者：By King
 [rewrite_local]
 # 解锁酷我音乐会员下载
-^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ url script-request-body https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ url script-request-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/downkuwo.js
 [mitm] 
 hostname = *.kuwo.cn
 ********************************
