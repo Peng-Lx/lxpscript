@@ -6,7 +6,7 @@
         请勿转载与贩卖！
 [rewrite_local]
 # plane vpn恢复订阅@king
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/plane.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/King/plane.js
 hostname = buy.itunes.apple.com
 ********************************
 */
