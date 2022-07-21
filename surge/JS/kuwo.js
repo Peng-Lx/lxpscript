@@ -3,7 +3,7 @@
 脚本作者：king
 
 [Script]
-http-response ^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/PF2022/lxp/master/surge/JS/kuwo.js
+http-response ^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/lxp/master/surge/JS/kuwo.js
 
 [mitm] 
 hostname = *.kuwo.cn
