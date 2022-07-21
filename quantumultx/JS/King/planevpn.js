@@ -83,9 +83,3 @@ var objc = JSON.parse($response.body);
 };
 
 $done({body: JSON.stringify(objc)});
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
