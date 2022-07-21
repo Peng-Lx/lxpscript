@@ -3,7 +3,7 @@
 脚本作者：king
 [rewrite_local]
 # 解锁酷我音乐会员➕听书
-^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip) url script-response-body https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js
+^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip) url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/kuwo.js
 [mitm] 
 hostname = *.kuwo.cn
 ********************************
