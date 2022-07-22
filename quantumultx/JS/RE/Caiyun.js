@@ -3,7 +3,7 @@
 脚本作者： By R-E
 [rewrite_local]
 # > 彩云天气/彩云天气Pro(2022.01.30)
-^https?:\/\/biz\.caiyunapp\.com\/v\d\/user url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiYunWeather.js
+^https?:\/\/biz\.caiyunapp\.com\/v\d\/user url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/Caiyun.js
 [mitm] 
 hostname = biz.caiyunapp.com
 */
