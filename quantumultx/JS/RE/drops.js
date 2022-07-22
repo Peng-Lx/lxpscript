@@ -3,7 +3,7 @@
 脚本作者：By langkhach270389
 [rewrite_local]
 # > 解锁永久订阅
-^https\:\/\/api-prod\.languagedrops\.com\/syncPurchasesV\d url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/drops.js
+^https\:\/\/api-prod\.languagedrops\.com\/syncPurchasesV\d url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/drops.js
 [mitm] 
 hostname = api-prod.languagedrops.com
 */
