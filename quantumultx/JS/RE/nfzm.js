@@ -3,7 +3,7 @@
 脚本作者： By R-E
 [rewrite_local]
 # > 南方周末
-^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
+^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/nfzm.js
 [mitm] 
 hostname = api.infzm.com
 */
