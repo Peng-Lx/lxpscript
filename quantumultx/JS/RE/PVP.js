@@ -3,7 +3,7 @@
 下载地址：https://apps.apple.com/cn/app/PV私密相册管家-加密码照片保险箱/id867586326
 [rewrite_local]
 # > 解锁PV私密相册管家会员
-^https?:\/\/1959850262196600\.cn-hangzhou\.fc\.aliyuncs\.com\/2016-08-15\/proxy\/guide-hello_world\.current\/getUserInfov2\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/PVPhotoManager.js
+^https?:\/\/1959850262196600\.cn-hangzhou\.fc\.aliyuncs\.com\/2016-08-15\/proxy\/guide-hello_world\.current\/getUserInfov2\/ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/PVP.js
 [mitm] 
 hostname = 1959850262196600.cn-hangzhou.fc.aliyuncs.com
 */
