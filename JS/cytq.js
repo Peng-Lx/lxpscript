@@ -1,6 +1,6 @@
 /*
 脚本功能：解锁SVIP
-脚本整理：By Peng-Lx
+脚本整理：Peng-Lx
 [rewrite_local]
 # > 解锁 SVIP
 ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/QX/JS/CaiYun.js
