@@ -4,7 +4,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/wnsm.js
+ ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/wnsm.js
  
  **********************
  *hostname = snailsleep.net
@@ -12,7 +12,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/wnsm.js
+ http-response ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/wnsm.js
 */
  
  
