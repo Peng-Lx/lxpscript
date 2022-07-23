@@ -1,4 +1,5 @@
 /*
+脚本功能:彩云小译VIP
 脚本整理：Peng-Lx
 QX
 [rewrite_local]
