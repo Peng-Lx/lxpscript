@@ -3,13 +3,13 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/NoByDa/Js/luqi.js
+^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js
 [mitm]
 hostname = www.luqijianggushi.com
 ***************************
 Surge4 or Loon:
 [Script]
-http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/NoByDa/Js/luqi.js
+http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js
 [MITM]
 hostname = www.luqijianggushi.com
 **************************/
