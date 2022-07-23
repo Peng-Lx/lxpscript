@@ -4,7 +4,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/viva.js
+ ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/viva.js
  
  **********************
  *hostname = viva-asia1.vvbrd.com
@@ -12,7 +12,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/viva.js
+ http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/viva.js
 */
  
  
