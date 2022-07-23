@@ -7,9 +7,7 @@
 hostname = biz.caiyunapp.com
 *******************************
 surge&Loon
-http-response ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
-
-
+http-response ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
 */
 
 const SCRIPT_NAME = '彩云天气';	
