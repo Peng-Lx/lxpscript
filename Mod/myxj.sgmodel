@@ -1,0 +1,9 @@
+#!name=美颜相机
+#!desc=解锁紫钻
+
+
+[Script]
+美颜相机 = type=http-request,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/R-E/myxj.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api.meiyan.com
