@@ -4,18 +4,17 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body 
+ ^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/duolinggo.js
  **********************
  *hostname = duolingo-leaderboards-prod.duolingo.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts* requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/duolinggo.js
  */
  
- 
- 
+  
 vvar body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
