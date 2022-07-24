@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ url script-response-body 
+ ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/elsaresponse.js
  **********************
  *hostname =  pool.elsanow.io
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/elsaresponse.js
  */
  
  
