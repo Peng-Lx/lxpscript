@@ -3,7 +3,7 @@
 脚本作者： By R-E
 [rewrite_local]
 # > 流利说·阅读
-^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/llsyd.js
+^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/llsyd.js
 [mitm] 
 hostname = vira.llsapp.com
 */
