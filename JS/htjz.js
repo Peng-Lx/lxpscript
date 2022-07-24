@@ -4,15 +4,15 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body 
+ ^https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/htjz.js
  **********************
  *hostname = book.haitunwallet.com
  **********************
  
  *Surge&loon
  [Script]
- http-response https:\/\/book\.haitunwallet\.com\/app\/vip\/status requires-body=1,max-size=0,script-path=
- */
+ http-response https:\/\/book\.haitunwallet\.com\/app\/vip\/status requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/htjz.js
+*/
  
  var obj = JSON.parse($response.body);
  obj={
