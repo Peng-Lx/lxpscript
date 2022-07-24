@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body 
+ ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/vsco.js
  **********************
  *hostname = vsco.co
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/vsco.js
  */
  
  
