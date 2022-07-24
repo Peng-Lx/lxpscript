@@ -7,7 +7,7 @@
 ********************************
 [rewrite_local]
 #TATA直播解锁付费
-http://j7700.opscnc.com/api/public/(.+)service=Live.checkLive url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/King/TaTa.js
+http://j7700.opscnc.com/api/public/(.+)service=Live.checkLive url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Tata.js
 [mitm] 
 hostname = j7700.opscnc.com
 *
