@@ -5,14 +5,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body 
+ ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Ulysses.js
  **********************
  *hostname = sk.ulysses.app
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Ulysses.js
  */
  
  
