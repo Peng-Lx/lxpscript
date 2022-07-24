@@ -23,9 +23,9 @@ if (url.indexOf('itunes_receipt_verify')!=-1) {
   var receiptInapp = obj.receipt.in_app;
 //console.log(receiptInapp.length);
 for (var i = 0; i < receiptInapp.length; i++) {
- obj.receipt.in_app[i].expires_date="2029-09-18 14:31:56 Etc/GMT";
+ obj.receipt.in_app[i].expires_date="2030-09-18 14:31:56 Etc/GMT";
 obj.receipt.in_app[i].expires_date_ms="1884436316000";
-obj.receipt.in_app[i].expires_date_pst="2029-09-18 07:31:56 America/Los_Angeles";
+obj.receipt.in_app[i].expires_date_pst="2030-09-18 07:31:56 America/Los_Angeles";
 }
 for (var i = 0; i < obj.latest_receipt_info.length; i++) {
  obj.latest_receipt_info[i].expires_date="2030-09-18 14:31:56 Etc/GMT";
