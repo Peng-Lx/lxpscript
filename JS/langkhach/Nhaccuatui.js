@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* url script-response-body 
+ ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Nhaccuatui.js
  **********************
  *hostname = graph.nhaccuatui.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Nhaccuatui.js
  */
  
  
