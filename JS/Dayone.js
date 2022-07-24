@@ -13,14 +13,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ url script-response-body 
+ ^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Dayone.js
  **********************
  *hostname = dayone.me
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Dayone.js
  */
  
  
