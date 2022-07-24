@@ -3,7 +3,7 @@
 脚本作者： BY R-E
 [rewrite_local]
 # > 七猫小说
-^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/qmxs.js
+^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/qmxs.js
 [mitm] 
 hostname = *.wtzw.com
 */
