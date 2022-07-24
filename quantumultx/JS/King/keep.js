@@ -8,7 +8,7 @@
 //使用方法：不要点击课程预览，往下滑直接点击课程阶段
 [rewrite_local]
 # keep解锁会员
-^https://(.+).gotokeep.com(/athena/v5/people/my|/nuocha/plans) url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JShttps://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/King/downkuwo.js/keep.js
+^https://(.+).gotokeep.com(/athena/v5/people/my|/nuocha/plans) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/keep.js
 [mitm] 
 hostname = *.gotokeep.com
 ********************************
