@@ -8,8 +8,7 @@
            1. 启用本脚本与 pre 脚本
            2. 重启 Day One，稍等片刻等待高级版出现
            3. 禁用掉 pre 脚本，重启 Day One，确认高级版状况不变*如果后续误操作导致 Day One 恢复为 Free/Plus 则重复上述操作。
-              
-		   4.脚本由 @ImSingee 与 @Mornwind 共同完成，请勿在公开群组、频道或是论坛、博客发布
+           4.脚本由 @ImSingee 与 @Mornwind 共同完成，请勿在公开群组、频道或是论坛、博客发布
  **********************
  *QX
  [rewrite_local]
