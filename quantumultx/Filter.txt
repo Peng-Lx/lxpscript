@@ -1,0 +1,9 @@
+圈X分流  解除限制
+
+▎使用方法：在分流下加入以下规则(配置[filter_local]下面添加)
+
+host-suffix, safebrowsing.urlsec.qq.com, reject
+host-suffix, safebrowsing.googleapis.com, reject
+host-suffix, lookup.api.bsb.baidu.com, reject
+
+▎使用说明：拒绝了这三条网址的连接请求就可以用UC或者一些其他浏览器打开不正经网站了【可能需要重装APP】
