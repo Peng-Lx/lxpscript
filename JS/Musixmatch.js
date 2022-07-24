@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body 
+ ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Musixmatch.js
  **********************
  *hostname = apic.musixmatch.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Musixmatch.js
  */
  
  
