@@ -6,7 +6,7 @@
 ****************************
 [rewrite_local]
 #喜马拉雅
-^http[s]?:\/\/((.+ximalaya.+)|(.+xmcdn.+)) url script-request-header https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JSKing/downkuwo.js
+^http[s]?:\/\/((.+ximalaya.+)|(.+xmcdn.+)) url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/xmly.js
 [mitm] 
 hostname = *.*xima*.*, *.xmcdn.com,
 *
