@@ -3,7 +3,7 @@
 脚本作者：By R-E
 [rewrite_local]
 # > 识图百科解锁订阅
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/stbk.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/stbk.js
 [mitm] 
 hostname = buy.itunes.apple.com
 */
