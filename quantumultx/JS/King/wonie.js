@@ -10,7 +10,7 @@
 ********************************
 [rewrite_local]
 #蜗牛睡眠 解锁vip音频
-^https://(.+)/snail-music url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/King/woniu.js
+^https://(.+)/snail-music url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/wonie.js
 [mitm] 
 hostname = *.snailsleep.net
 *
