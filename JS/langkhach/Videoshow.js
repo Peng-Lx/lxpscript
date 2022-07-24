@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient url script-response-body 
+ ^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Videoshow.js
  **********************
  *hostname =  owa.videoshowiosglobalserver.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Videoshow.js
  */
  
  
