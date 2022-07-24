@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body 
+ ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Mimo.js
  **********************
  *hostname =  api.getmimo.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Mimo.js
  */
  
  
