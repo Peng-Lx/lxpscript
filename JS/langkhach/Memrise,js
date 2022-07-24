@@ -1,0 +1,36 @@
+/*
+ *脚本功能：Memrise VIP
+ *脚本整理：Peng-Lx
+ **********************
+ *QX
+ [rewrite_local]
+ ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body 
+ **********************
+ *hostname = api.memrise.com 
+ **********************
+ 
+ *Surge&loon
+ [Script]
+ http-response ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) requires-body=1,max-size=0,script-path=
+ */
+ 
+ 
+ 
+let obj = JSON.parse($response.body);
+let url = $request.url;
+const cons1 = "me/";
+const cons2 = "dashboard/";
+const cons3 = "following/";
+
+if(url.endsWith(cons1)) {
+obj["profile"]["is_pro"] = true;
+}
+
+if(url.endsWith(cons2)) {
+obj["user"]["is_premium"] = true;
+}
+
+if(url.indexOf(cons3) != -1 ) {
+obj["users"][0]["is_premium"] = true;
+}
+$done({body: JSON.stringify(obj)});
