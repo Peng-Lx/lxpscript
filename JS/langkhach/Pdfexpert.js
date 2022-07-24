@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body 
+ ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Pdfexpert.js
  **********************
  *hostname =  license.pdfexpert.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/langkhach/Pdfexpert.js
  */
  
  
