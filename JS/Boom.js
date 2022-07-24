@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body 
+ ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Boom.js
  **********************
  *hostname = apimboom2.globaldelight.net
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Boom.js
  */
  
  
