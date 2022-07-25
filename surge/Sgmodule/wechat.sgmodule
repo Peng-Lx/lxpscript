@@ -1,0 +1,8 @@
+#!name = WeChat
+#!desc = Remove WeChat Ads.
+
+[Script]
+http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=modules/scripts/wechat.js
+
+[MITM]
+hostname = %INSERT% mp.weixin.qq.com
