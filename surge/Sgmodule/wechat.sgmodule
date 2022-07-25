@@ -2,7 +2,7 @@
 #!desc = Remove WeChat Ads.
 
 [Script]
-http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=modules/scripts/wechat.js
+http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Script/wechat.js
 
 [MITM]
 hostname = %INSERT% mp.weixin.qq.com
