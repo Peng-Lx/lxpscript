@@ -7,7 +7,7 @@
  ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/viva.js
  
  **********************
- *hostname = viva-asia1.vvbrd.com
+ *hostname =  xy-viva.kakalili.com, api-chn.rthdo.com
  **********************
  
  *Surge&loon
