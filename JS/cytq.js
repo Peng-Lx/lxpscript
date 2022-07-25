@@ -1,5 +1,5 @@
 /*
-脚本功能：解锁SVIP
+脚本功能：彩云天气 Svip
 脚本整理：Peng-Lx
 [rewrite_local]
 ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
