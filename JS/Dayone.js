@@ -1,7 +1,6 @@
 /*
  *脚本功能：dayone
  *脚本整理：Peng-Lx
-      APP:  https://apps.apple.com/us/app/day-one-%E6%97%A5%E8%AE%B0-%E7%AC%94%E8%AE%B0/id1044867788?l=zh
       说明: Day One Premium
             Day One 脚本由本脚本与 dayone-pre.js （以下称 pre 脚本）两部分组成，主脚本用于修改响应内容、pre 脚本用于屏蔽缓存
            
