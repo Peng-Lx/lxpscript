@@ -1,7 +1,6 @@
 /*
  *脚本功能： 写作 ulysses VIP 
  *脚本整理：Peng-Lx
-  APP:https://apps.apple.com/us/app/ulysses-%E5%86%99%E4%BD%9C%E8%BD%AF%E4%BB%B6/id1225571038?l=zh
  **********************
  *QX
  [rewrite_local]
