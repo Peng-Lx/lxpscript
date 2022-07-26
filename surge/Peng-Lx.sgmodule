@@ -7,4 +7,4 @@ VSCO滤镜VIP = type=http-response,pattern="^https:\/\/(api\.revenuecat\.com\/v\
 陆琪讲故事 = type=http-response,pattern="^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% vsco.co,www.luqijianggushi.com
+hostname = %APPEND% vsco.co, www.luqijianggushi.com
