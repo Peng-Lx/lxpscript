@@ -1,0 +1,11 @@
+/*
+要学参考毒奶博主：https://github.com/limbopro/Adblock4limbo/tree/main/CSS
+*/
+
+.hidden-log {display: none! important;}
+a[target="_blank"] > .img-responsive {display: none! important;}
+.advertise {display: none! important;}
+#adsbox {display: none! important;}
+.t-img-box {display: none! important;}
+.inner-advertise {display: none! important;}
+.advertise  {display: none! important;}
