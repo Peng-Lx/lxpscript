@@ -1,0 +1,11 @@
+/*
+要学参考毒奶博主：https://github.com/limbopro/Adblock4limbo/tree/main/CSS
+*/
+
+center > div[style^="width:100%; height: 100px"],
+center > div,
+[href*=".zlinkm.com/"],
+#poster,
+#preroll,
+.ui-sortable.col-md-4 > .panel-inverse.panel > .panel-heading,
+.adsbyexoclick {display:none !important}
