@@ -1,0 +1,4 @@
+/*
+要学参考毒奶博主：https://github.com/limbopro/Adblock4limbo/tree/main/CSS
+*/
+a[href*="/kst6632.com/"]{pointer-events:none!important}a[href*="/kst6632.com/"]>img{display:none!important}a[onclick^="ClickobayST();"]{display:none!important}a[href="###"] img:not(#trk_hcaptcha):not([src^="https://captcha.su.baidu.com"]){display:none!important}a[href^=javascript] img:not(#trk_hcaptcha):not([src^="https://captcha.su.baidu.com"]){display:none!important}[rel*='noopener nofollow'],a[href^="http: //ads.trafficjunky.net/"],.topAdContainter,.adsbytrafficjunky,.ad-link{display:none!important}
