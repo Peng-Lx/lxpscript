@@ -5,7 +5,7 @@ MIX 解锁特权 (需恢复购买)
 QuantumultX:
 
 [rewrite_local]
-https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
+https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/Mix.js
 
 [mitm]
 hostname = bmall.camera360.com
@@ -14,7 +14,7 @@ hostname = bmall.camera360.com
 Surge4 or Loon:
 
 [Script]
-http-response https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
+http-response https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/Mix.js
 
 [MITM]
 hostname = bmall.camera360.com
@@ -90,3 +90,4 @@ if ($response.body) {
 } else {
     $done({})
 }
+//By nobyda
