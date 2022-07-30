@@ -1,12 +1,12 @@
 /*
- *脚本功能：Bear熊掌记 解锁内购
+ *脚本功能：TIDAL解锁HiFi Plus for US
  *脚本整理：Peng-Lx
  **********************
  *QX
  [rewrite_local]
  ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
  **********************
- *hostname = buy.itunes.apple.com
+ *hostname = api.tidal.com
  **********************
  
  *Surge&loon
