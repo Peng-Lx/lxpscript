@@ -1,23 +1,18 @@
-/******************************
-
-脚本功能：TIDAL解锁HiFi Plus
-软件版本：2.48.0【美区下载】
-下载地址：http://t.cn/A662gqIO
-脚本作者：Hausd0rff
-更新时间：2022-07-22
-脚本发布：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
-*******************************
-[rewrite_local]
-# > TIDAL解锁HiFi Plus
-^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)) url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
-
-[mitm] 
-hostname = api.tidal.com
-
-*******************************/
+/*
+ *脚本功能：Bear熊掌记 解锁内购
+ *脚本整理：Peng-Lx
+ **********************
+ *QX
+ [rewrite_local]
+ ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ **********************
+ *hostname = buy.itunes.apple.com
+ **********************
+ 
+ *Surge&loon
+ [Script]
+ http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ */
 
 var encode_version = 'hausd0rff',
     dyuti = '__0xe6639',
