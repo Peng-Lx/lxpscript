@@ -9,7 +9,7 @@
  
  *Surge
  [Script]
- http-response ^https:\/\/education\.github\.com\/api\/user$\/accounts* requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/education\.github\.com\/api\/user$\/accounts* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/Copy.js
  */
  
  
