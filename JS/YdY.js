@@ -1,17 +1,17 @@
 /*
- *脚本功能：Bear熊掌记 解锁内购
+ *脚本功能：有道云笔记 解锁VIP功能
  *脚本整理：Peng-Lx
  **********************
  *QX
  [rewrite_local]
- ^https://note.youdao.com/yws/(mapi/payment|api/self) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ ^https://note.youdao.com/yws/(mapi/payment|api/self) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/YdY.js
  **********************
  *hostname = note.youdao.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ http-response ^https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/YdY.js
  */
 
 
