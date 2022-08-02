@@ -1,6 +1,7 @@
+/*
 [rewrite_local]
 # 解锁酷我音乐会员下载
-^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$ url script-request-header https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwoxz.js
 [mitm] 
 hostname = *.kuwo.cn
 ********************************
