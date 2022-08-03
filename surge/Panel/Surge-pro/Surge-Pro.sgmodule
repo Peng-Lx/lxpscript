@@ -1,0 +1,6 @@
+#!name=Surge-Pro
+#!desc=Surge 訂閱自嗨面板 @Nebulosa-Cat
+#!system=ios
+
+[Panel]
+SurgePro=title="Surge Pro® Licenses Status",content="授權有效期 : 2023-07-16",icon="checkmark.icloud",icon-color="#1B813E",update-interval=1
