@@ -3,7 +3,7 @@
  
 /*
 [Script]
-网络信息 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/jnlaoshu/MySelf/master/Surge/NetworkInfo.js
+网络信息 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/networkCheck.js
 	
 [Panel]
 网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=1
