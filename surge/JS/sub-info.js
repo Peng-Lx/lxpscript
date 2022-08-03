@@ -1,6 +1,6 @@
  // 𝐒𝐮𝐫𝐠𝐞𝐏𝐫𝐨 机场信息
- // 𝐅𝐫𝐨𝐦：By MeiQQ
- // 𝐔𝐩𝐝𝐚𝐭𝐞：2022.08.02
+ // By GitHub MeiQQ
+ 
  
 /*
 Surge配置参考注释,感谢@congcong.
