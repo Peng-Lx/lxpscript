@@ -1,3 +1,5 @@
+//by @zZPiglet
+
 /*
 [Script]
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js
