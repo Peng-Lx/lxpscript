@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$ url script-response-body 
+ ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hpxw.js
  **********************
  *hostname = apiios_dq.xiangha.com
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$ url requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$ url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hpxw.js
  
  */
  
