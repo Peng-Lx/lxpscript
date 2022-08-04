@@ -7,7 +7,7 @@
  [rewrite_local]
  ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Rrtv.js
  **********************
- *hostname = scibug.com
+ *hostname = api.rr.tv
 
  **********************
  
