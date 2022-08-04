@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body 
+ ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bdwp.js
  **********************
  *hostname = pan.baidu.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bdwp.js
  
  */
  
