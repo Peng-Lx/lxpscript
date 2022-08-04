@@ -1,10 +1,11 @@
 /*
- *脚本功能：peak解锁pro
+ *脚本功能：驾校一点通
  *脚本整理：Peng-Lx
+      FROM: superuv
  **********************
  *QX
  [rewrite_local]
-^https:\/\/vipapi\.jxedt\.com\/vip\/check url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/jxydt.js
+^https:\/\/vipapi\.jxedt\.com\/vip\/check url script-response-body https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/Jxydt.js
  
  **********************
  *hostname = vipapi.jxedt.com
@@ -12,7 +13,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/jxydt.js
+ http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/PF2022/Peng-Lx/master/Script/Surge/Lxp/Jxydt.js
 */
  
  
@@ -24,7 +25,7 @@ var obj = JSON.parse($response.body);
  "result": {
   "vipstatus": 1,
   "isexpert": true,
-  "endtime": "2028-11-02",
+  "endtime": "2030-11-02",
   "vipType": 0,
   "begintime": "2019-11-03",
   "isRenewals": 1,
@@ -38,3 +39,4 @@ var obj = JSON.parse($response.body);
  }
 };
 $done({body: JSON.stringify(obj)});
+//
