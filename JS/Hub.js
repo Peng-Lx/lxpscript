@@ -1,5 +1,5 @@
 /*
- *脚本功能：EMBY
+ *脚本功能：PornHub Unlock Premium
  *脚本整理：Peng-Lx
       FROM：By Hausd0rff
  **********************
