@@ -1,5 +1,5 @@
 /*
- *脚本功能：Picsew解锁专业版
+ *脚本功能：Picsew 解锁专业版
  *脚本整理：Peng-Lx
       FROM：By Hausd0rff
  **********************
