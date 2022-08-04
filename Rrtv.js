@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url script-response-body 
+ ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Rrtv.js
  **********************
  *hostname = scibug.com
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
-  http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url requires-body=1,max-size=0,script-path=
+  http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Rrtv.js
  
  */
  
