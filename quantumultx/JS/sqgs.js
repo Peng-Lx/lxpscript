@@ -3,7 +3,7 @@
  app:https://apps.apple.com/cn/app/%E6%B1%89%E5%A0%A1%E5%84%BF%E7%AB%A5%E6%95%85%E4%BA%8B-%E5%84%BF%E7%AB%A5%E6%97%A9%E6%95%99%E5%90%AF%E8%92%99%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B%E5%A4%A7%E5%85%A8/id1458435477
 
 [rewrite_local]
-^https:\/\/www\.babybooks\.top\/v0\/profile url script-response-body https://gjds.vip/QX/pojie/sqgs.js
+^https:\/\/www\.babybooks\.top\/v0\/profile url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/sqgs.js
 
 hostname= www.babybooks.top
 
