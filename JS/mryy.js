@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body 
+ ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
  **********************
  *hostname = dict.eudic.net
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
  
  */
  
