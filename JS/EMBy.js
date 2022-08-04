@@ -5,14 +5,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice url script-response-body 
+ ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/EMBy.js
  **********************
  *hostname = mb3admin.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/EMBy.js
  
  */
  
