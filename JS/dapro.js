@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https?:\/\/123\.57\.195\.48\/api\/(Usercent|teach)er\/get(User|TeacherDetail)Info\?token=.+$ url script-response-body 
+ ^https?:\/\/123\.57\.195\.48\/api\/(Usercent|teach)er\/get(User|TeacherDetail)Info\?token=.+$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/dapro.js
  **********************
  *hostname = 123.57.195.48
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https?:\/\/123\.57\.195\.48\/api\/(Usercent|teach)er\/get(User|TeacherDetail)Info\?token=.+$ url requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/123\.57\.195\.48\/api\/(Usercent|teach)er\/get(User|TeacherDetail)Info\?token=.+$ url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/dapro.js
  
  */
  
