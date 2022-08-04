@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
-^https?:\/\/cn\.pornhubpremium\.com\/ url url script-response-body 
+^https?:\/\/cn\.pornhubpremium\.com\/ url url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js
  **********************
  *hostname = cn.pornhubpremium.com
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
- http-response ^https?:\/\/cn\.pornhubpremium\.com\/ url requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/cn\.pornhubpremium\.com\/ url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js
  
  */
  
