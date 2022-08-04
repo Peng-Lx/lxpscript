@@ -1,7 +1,7 @@
 /*
  *脚本功能：FIMO解锁终身会员
  *脚本整理：Peng-Lx
-      FROM：By Chamberlen
+      FROM：By Hausd0rff
  **********************
  *QX
  [rewrite_local]
