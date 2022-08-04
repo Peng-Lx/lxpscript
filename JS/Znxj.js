@@ -5,14 +5,14 @@
  **********************
  *QX
  [rewrite_local]
-^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body 
+^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Znxj.js
  **********************
  *hostname = app.xunjiepdf.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Znxj.js
  
  */
  
