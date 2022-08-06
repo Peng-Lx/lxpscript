@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body 
+ ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bilibili.js
  **********************
  *hostname = api.polarisoffice.com
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
-  http-response  ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url requires-body=1,max-size=0,script-path=
+  http-response  ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bilibili.js
  
  */
  
