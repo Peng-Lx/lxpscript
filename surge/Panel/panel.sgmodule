@@ -21,7 +21,8 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 net-info-panel-test-cn.js=script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/test/Panel/Network-Info/cn/networkCheck_CN.js,type=generic,timeout=30
 
 # 刷新DNS
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b&server=false
+
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
 
 # Netflix解锁检测
 nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1632728073, timeout=30
