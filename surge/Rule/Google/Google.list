@@ -1,14 +1,4 @@
-# NAME: Google
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-08-05 22:36:19
-# DOMAIN-KEYWORD: 6
-# DOMAIN-SUFFIX: 662
-# IP-CIDR: 4
-# IP-CIDR6: 1
-# PROCESS-NAME: 5
-# USER-AGENT: 3
-# TOTAL: 681
+#  > Google
 DOMAIN-SUFFIX,0emm.com
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,1ucrs.com
@@ -690,3 +680,75 @@ PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,backupandsync
+
+# > GoogleDrive 
+DOMAIN,www.googleapis.com
+DOMAIN-SUFFIX,docs.google.com
+DOMAIN-SUFFIX,drive.google.com
+DOMAIN-SUFFIX,googledrive.com
+DOMAIN-SUFFIX,googleusercontent.com
+USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+USER-AGENT,*com.google.Drive*
+USER-AGENT,Google.Drive*
+PROCESS-NAME,backupandsync
+
+# > GoogleEarth
+DOMAIN-SUFFIX,earth-pa.clients6.google.com
+DOMAIN-SUFFIX,earth.google.com
+DOMAIN-SUFFIX,kh.google.com
+DOMAIN-SUFFIX,khm.google.com
+DOMAIN-SUFFIX,khm.googleapis.com
+DOMAIN-SUFFIX,khm0.google.com
+DOMAIN-SUFFIX,khm0.googleapis.com
+DOMAIN-SUFFIX,khm1.google.com
+DOMAIN-SUFFIX,khm1.googleapis.com
+DOMAIN-SUFFIX,khm2.google.com
+DOMAIN-SUFFIX,khm2.googleapis.com
+DOMAIN-SUFFIX,khm3.google.com
+DOMAIN-SUFFIX,khm3.googleapis.com
+DOMAIN-SUFFIX,khmdb.google.com
+DOMAIN-SUFFIX,khmdb.googleapis.com
+DOMAIN-SUFFIX,mw1.google.com
+
+# > GoogleFCM
+DOMAIN,alt1-mtalk.google.com
+DOMAIN,alt2-mtalk.google.com
+DOMAIN,alt3-mtalk.google.com
+DOMAIN,alt4-mtalk.google.com
+DOMAIN,alt5-mtalk.google.com
+DOMAIN,alt6-mtalk.google.com
+DOMAIN,alt7-mtalk.google.com
+DOMAIN,alt8-mtalk.google.com
+DOMAIN,mtalk.google.com
+IP-CIDR,108.177.125.188/32,no-resolve
+IP-CIDR,142.250.10.188/32,no-resolve
+IP-CIDR,142.250.31.188/32,no-resolve
+IP-CIDR,142.250.4.188/32,no-resolve
+IP-CIDR,142.250.96.188/32,no-resolve
+IP-CIDR,172.217.194.188/32,no-resolve
+IP-CIDR,172.217.218.188/32,no-resolve
+IP-CIDR,172.217.219.188/32,no-resolve
+IP-CIDR,172.253.122.188/32,no-resolve
+IP-CIDR,172.253.63.188/32,no-resolve
+IP-CIDR,173.194.175.188/32,no-resolve
+IP-CIDR,173.194.218.188/32,no-resolve
+IP-CIDR,209.85.233.188/32,no-resolve
+IP-CIDR,64.233.177.188/32,no-resolve
+IP-CIDR,64.233.186.188/32,no-resolve
+IP-CIDR,64.233.187.188/32,no-resolve
+IP-CIDR,64.233.188.188/32,no-resolve
+IP-CIDR,64.233.189.188/32,no-resolve
+IP-CIDR,74.125.127.188/32,no-resolve
+IP-CIDR,74.125.137.188/32,no-resolve
+IP-CIDR,74.125.203.188/32,no-resolve
+IP-CIDR,74.125.204.188/32,no-resolve
+IP-CIDR,74.125.206.188/32,no-resolve
+IP-CIDR,74.125.23.188/32,no-resolve
+IP-CIDR,74.125.24.188/32,no-resolve
+IP-CIDR,74.125.28.188/32,no-resolve
+
+# > GoogleVoice
+DOMAIN,lens.l.google.com
+
+# > GoogleSearch
+DOMAIN-KEYWORD,www.google.
