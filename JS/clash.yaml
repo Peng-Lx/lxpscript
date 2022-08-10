@@ -63,8 +63,8 @@ proxies:
 proxy-groups:
   - name: 🚀 手动切换
     type: select
-    use: 
-      - 
+    use:
+      - All
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
