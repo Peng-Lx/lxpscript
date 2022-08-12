@@ -2,7 +2,7 @@
 #!desc=Peng-Lx
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me
+hostname = %APPEND% *.kuwo.cn, *.lrts.me, buy.itunes.apple.com
 
 [Script]
 
