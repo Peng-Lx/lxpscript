@@ -2,7 +2,8 @@
 #!desc=Peng-Lx
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, buy.itunes.apple.com
+hostname = %APPEND% *.kuwo.cn, *.lrts.me,
+buy.itunes.apple.com, biz.caiyunapp.com
 
 [Script]
 
@@ -16,3 +17,7 @@ Down3 = type=http-response,pattern=^ http://vip1.kuwo.cn/vip/enc/user/vip.+$, re
 
 # > ProKnockOut 解锁 Premium
 Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Proknockout.js,script-update-interval=0,max-size=0
+
+#> 彩云天气vip
+
+彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
