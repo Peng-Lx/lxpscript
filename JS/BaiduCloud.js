@@ -1,13 +1,18 @@
 /*
-电报频道：https://t.me/qixinscience
-百度网盘解锁vip，视频倍速播放
-Surge4.0:
-http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/BaiduCloud.js
-QX1.0.0:
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/BaiduCloud.js
-MITM = pan.baidu.com
-*/
-
+ *脚本功能：百度网盘解锁vip，视频倍速播放
+ *脚本整理：Peng-Lx
+ **********************
+ *QX
+ [rewrite_local]
+ ^ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ **********************
+ *hostname =pan.baidu.com
+ **********************
+ 
+ *Surge&loon
+ [Script]
+ http-re https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ */
 let obj = JSON.parse($response.body);
 obj = {
   "product_infos": [{
