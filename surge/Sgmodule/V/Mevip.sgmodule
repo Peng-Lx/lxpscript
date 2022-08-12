@@ -2,7 +2,7 @@
 #!desc=VIP
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn
+hostname = %APPEND% *.kuwo.cn, *.lrts.me
 
 [Script]
 
