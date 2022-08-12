@@ -5,7 +5,7 @@
  **********************
  *QX
  [rewrite_local]
- ^http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ script-response-body 
+ ^http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Xunlei.js
  **********************
  *hostname = xluser-ssl.xunlei.com
 
@@ -13,7 +13,7 @@
  
  *Surge&loon
  [Script]
-  http-response ^http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ url requires-body=1,max-size=0,script-path=
+  http-response ^http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ url requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Xunlei.js
  
  */
  
