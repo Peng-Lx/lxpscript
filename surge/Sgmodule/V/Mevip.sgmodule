@@ -1,0 +1,12 @@
+#!name=VIP
+#!desc=VIP
+
+[MITM]
+hostname = %APPEND% 
+
+[Script]
+
+# > 酷我音乐
+酷我1 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,script-update-interval=0
+酷我2 = type=http-request,pattern=^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui|vip\/enc\/user),requires-body=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js,script-update-interval=0
+酷我3 = type=http-response,pattern=^https?:\/\/.*(kuwo|lrts).*(a\.p|v2\/api\/(user\/info|pay\/vip)|vip\/v2\/user\/vip|vip\/spi\/mservice|vip\/v2\/theme),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js,script-update-interval=0
