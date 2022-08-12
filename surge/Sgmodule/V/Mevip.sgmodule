@@ -19,4 +19,4 @@ Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,
 
 #> 彩云天气vip
 
-彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
+彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
