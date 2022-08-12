@@ -1,5 +1,5 @@
-#!name=VIP
-#!desc=VIP
+#!name=VIP自用合集
+#!desc=Peng-Lx
 
 [MITM]
 hostname = %APPEND% *.kuwo.cn, *.lrts.me
@@ -7,9 +7,9 @@ hostname = %APPEND% *.kuwo.cn, *.lrts.me
 [Script]
 
 # > 解锁酷我音乐会员➕听书
-酷我VIP = type=http-response,pattern= ^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
+酷我VIP = type=http-response,pattern=^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
 
 # > 解锁酷我音乐会员下载
 Down1 = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwoxz.js,script-update-interval=0
 Down2 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwoszzj.js,script-update-interval=0
-Down3 = type=http-response,pattern=^ http://vip1.kuwo.cn/vip/enc/user/vip.+$, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js, script-update-interval=0
+Down3 = type=http-response,pattern=^ http://vip1.kuwo.cn/vip/enc/user/vip.+$, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
