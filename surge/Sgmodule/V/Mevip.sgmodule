@@ -2,9 +2,11 @@
 #!desc=Peng-Lx
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com
 
 [Script]
+# > Spotify部分解锁premium 
+Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0,max-size=0
 
 # > 解锁酷我音乐会员➕听书
 酷我VIP = type=http-response,pattern=^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
