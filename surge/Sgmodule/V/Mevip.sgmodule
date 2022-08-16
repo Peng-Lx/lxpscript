@@ -1,8 +1,9 @@
 #!name=MEVIP自用合集添加计划✅
 #!desc=Peng-Lx
+#!author=感谢作者的辛苦付出
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com
 
 [Script]
 # ✅ Spotify-部分解锁-premium 
@@ -43,3 +44,6 @@ http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/
 
 # ✅ 财新会员解锁财新文章阅读与音频限制
 财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js,script-update-interval=0
+
+# ✅ WPS会员
+WPS会员 = type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js,script-update-interval=0
