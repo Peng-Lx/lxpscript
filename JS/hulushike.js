@@ -1,6 +1,6 @@
-/*
-Unlocks by Cuttlefish 
-*/
+
+//Unlocks by Cuttlefish 
+
 
 var body = $response.body.replace(/"IsVip":0/g, "IsVip":0);
 $done({ body });
