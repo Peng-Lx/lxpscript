@@ -1,5 +1,5 @@
 
-//Unlocks by Cuttlefish 
+// 葫芦时刻 Unlocks by Cuttlefish 
 
 
 var body = $response.body.replace(/"IsVip":0/g, "IsVip":0);
