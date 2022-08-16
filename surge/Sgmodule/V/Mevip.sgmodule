@@ -2,19 +2,17 @@
 #!desc=Peng-Lx
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，
 
 [Script]
 # ✅ Spotify-部分解锁-premium 
 Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0,max-size=0
 
-# ✅ 解锁酷我音乐会员➕听书
-酷我VIP = type=http-response,pattern=^http://(.+).kuwo.cn(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
-
-# ✅ 解锁酷我音乐-会员下载
-Down1 = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwoxz.js,script-update-interval=0
-Down2 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwoszzj.js,script-update-interval=0
-Down3 = type=http-response,pattern=^ http://vip1.kuwo.cn/vip/enc/user/vip.+$, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js,script-update-interval=0
+# ✅ 酷我音乐
+酷我音乐1=type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js,script-update-interval=0
+酷我音乐2=type=http-response,pattern=^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,script-update-interval=0
+酷我音乐3=type=http-response,pattern=^http://vip1.kuwo.cn/vip/enc/user/vip.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,script-update-interval=0
+酷我音乐4=type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,script-update-interval=00
 
 # ✅ 酷我皮肤 
 酷我皮肤 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme) ,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/mekuwo.js,script-update-interval=0,max-size=0
@@ -22,7 +20,7 @@ Down3 = type=http-response,pattern=^ http://vip1.kuwo.cn/vip/enc/user/vip.+$, re
 # ✅ ProKnockOut 解锁 Premium
 Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Proknockout.js,script-update-interval=0,max-size=0
 
-# ✅ 彩云天气vip
+# ✅ 彩云天气VIP
 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
 
 # ✅ VSCO 解锁高级特权
@@ -31,5 +29,17 @@ http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/
 # ✅ 七猫小说VIP
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/qmxs.js,script-update-interval=0,max-size=0
 
-# ✅ 美图秀秀解锁高级V
+# ✅ 美图秀秀高级V
 美图秀秀 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js,script-update-interval=0,max-size=0
+
+# ✅ 可可英语VIP
+可可英语 = type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js,script-update-interval=0,max-size=
+
+# ✅ 每日英语阅读/每日外刊解锁课程
+每日英语阅读/每日外刊解锁课程 = type=http-response,pattern=^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus?,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js,script-update-interval=0,max-size=0
+
+# ✅ 流利说·阅读
+流利说·阅读=type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js,script-update-interval=0
+
+# ✅ 财新会员解锁财新文章阅读与音频限制
+财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js,script-update-interval=0
