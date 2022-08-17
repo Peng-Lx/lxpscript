@@ -6,7 +6,7 @@
 hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com
 
 [Script]
-# ✅ Spotify-部分解锁-premium 
+# ✅ Spotify-部分解锁-premium By Rules
 Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0,max-size=0
 
 # ✅ 酷我音乐VIP➕听书 By King
@@ -32,7 +32,7 @@ VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsc
 # ✅ 七猫小说VIP By R-E
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/qmxs.js,script-update-interval=0,max-size=0
 
-# ✅ 美图秀秀高级V 
+# ✅ 美图秀秀
 美图秀秀 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js,script-update-interval=0,max-size=0
 
 # ✅ 可可英语VIP
@@ -41,7 +41,7 @@ VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsc
 # ✅ 每日英语阅读/每日外刊解锁课程
 每日英语阅读/每日外刊解锁课程 = type=http-response,pattern=^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus?,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js,script-update-interval=0,max-size=0
 
-# ✅ 流利说·阅读
+# ✅ 流利说·阅读 By R-E
 流利说·阅读=type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js,script-update-interval=0
 
 # ✅ 财新会员解锁财新文章阅读与音频限制 By R-E
