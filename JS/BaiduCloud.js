@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ ^ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/BaiduCloud.js
  **********************
  *hostname =pan.baidu.com
  **********************
  
  *Surge&loon
  [Script]
- http-re https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ http-re https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/BaiduCloud.js
  */
 let obj = JSON.parse($response.body);
 obj = {
