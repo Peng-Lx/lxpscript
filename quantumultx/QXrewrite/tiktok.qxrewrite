@@ -1,4 +1,4 @@
-#!name=unlock tiktok
+#!name=🇺🇸 unlock tiktok
 #!desc=tiktok Mod
 
 (?<=_region=)CN(?=&) url 307 US
