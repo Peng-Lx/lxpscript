@@ -2,10 +2,9 @@
 #!desc=Peng-Lx
 #!author=感谢作者的辛苦付出
 
-[MITM]
-hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com, api.meiyan.com
 
 [Script]
+
 #01 ✅ Spotify-部分解锁-premium By Rules
 Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0,max-size=0
 
@@ -85,3 +84,8 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 #25 ✅ 美颜相机解锁紫钻V By R-E
 美颜相机紫钻V1 = type=http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.js,script-update-interval=0,max-size=0on),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0,max-size=0
 美颜相机紫钻V2 = type=http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.js,script-update-interval=0,max-size=0on|user_info\.js,script-update-interval=0,max-size=0on),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0,max-size=0
+
+
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com, api.meiyan.com
