@@ -86,7 +86,7 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 美颜相机紫钻V2 = type=http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.js,script-update-interval=0,max-size=0on|user_info\.js,script-update-interval=0,max-size=0on),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0,max-size=0
 
 #26 ✅ 陆琪讲故事 解锁电台
-陆琪讲故事 = type=http-response,pattern=http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0,max-size=0
+陆琪讲故事 = type=http-response,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com, api.meiyan.com,www.luqijianggushi.com
