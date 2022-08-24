@@ -13,9 +13,9 @@ Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 酷我VIP = type=http-response,pattern=^http://vip1.kuwo.cn/vip/enc/user/vip.+$,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwo/Kuwo.js,script-update-interval=0
 
 # ✅ 酷我Down By King
-酷我Down = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js,script-update-interval=0
-酷我Down = type=http-response,pattern=^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,script-update-interval=0
-酷我Down = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,script-update-interval=00
+酷我Down1 = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js,script-update-interval=0
+酷我Down2 = type=http-response,pattern=^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,script-update-interval=0
+酷我Down3 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,script-update-interval=00
 
 # ✅ 酷我皮肤 
 酷我皮肤 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme) ,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/mekuwo.js,script-update-interval=0,max-size=0
