@@ -35,7 +35,7 @@ VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsc
 美图秀秀 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js,script-update-interval=0,max-size=0
 
 #10 ✅ 可可英语VIP
-可可英语 = type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js,script-update-interval=0,max-size=0
+可可英语 = type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js,script-update-interval=0,max-size=0
 
 #11 ✅ 每日英语阅读/每日外刊解锁课程
 每日英语阅读 = type=http-response,pattern=^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus?,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js,script-update-interval=0,max-size=0
