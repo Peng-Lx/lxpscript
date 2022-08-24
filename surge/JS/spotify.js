@@ -5,14 +5,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bdwp.js
+ ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
  **********************
  *hostname = pan.baidu.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bdwp.js
+ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
  
  */
 
