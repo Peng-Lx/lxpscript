@@ -1,9 +1,0 @@
-#!name=Peng-Lx
-#!desc=Script
-
-[Script]
-TidalPlus=type=http-request,pattern=^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)),requires-body=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
-彩云天气=type=http-request,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
-陆琪讲故事=type=http-request,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js
-[MITM]
-hostname = %APPEND% api.tidal.com, biz.caiyunapp.com, www.luqijianggushi.com
