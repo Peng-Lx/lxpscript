@@ -3,49 +3,77 @@
 #!author=感谢作者的辛苦付出
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,
 
 [Script]
-# ✅ Spotify-部分解锁-premium By Rules
+#01 ✅ Spotify-部分解锁-premium By Rules
 Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0,max-size=0
 
-# ✅ 酷我音乐VIP➕听书 By King
+#02 ✅ 酷我音乐VIP➕听书 By King
 酷我VIP = type=http-response,pattern=^http://vip1.kuwo.cn/vip/enc/user/vip.+$,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwo/Kuwo.js,script-update-interval=0
 
-# ✅ 酷我Down By King
+#03 ✅ 酷我Down By King
 酷我Down1 = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js,script-update-interval=0
 酷我Down2 = type=http-response,pattern=^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,script-update-interval=0
 酷我Down3 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,script-update-interval=00
 
-# ✅ 酷我皮肤 
+#04 ✅ 酷我皮肤 
 酷我皮肤 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme) ,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/mekuwo.js,script-update-interval=0,max-size=0
 
-# ✅ ProKnockOut 解锁 Premium
+#05 ✅ ProKnockOut 解锁 Premium
 Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Proknockout.js,script-update-interval=0,max-size=0
 
-# ✅ 彩云天气VIP
+#06 ✅ 彩云天气VIP
 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
 
-# ✅ VSCO 解锁高级特权 By Nobyda 
+#07 ✅ VSCO 解锁高级特权 By Nobyda 
 VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 
-# ✅ 七猫小说VIP By R-E
+#08 ✅ 七猫小说VIP By R-E
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/qmxs.js,script-update-interval=0,max-size=0
 
-# ✅ 美图秀秀
+#09 ✅ 美图秀秀
 美图秀秀 = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js,script-update-interval=0,max-size=0
 
-# ✅ 可可英语VIP
+#10 ✅ 可可英语VIP
 可可英语 = type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js,script-update-interval=0,max-size=
 
-# ✅ 每日英语阅读/每日外刊解锁课程
+#11 ✅ 每日英语阅读/每日外刊解锁课程
 每日英语阅读/每日外刊解锁课程 = type=http-response,pattern=^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus?,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js,script-update-interval=0,max-size=0
 
-# ✅ 流利说·阅读 By R-E
+#12 ✅ 流利说·阅读 By R-E
 流利说·阅读=type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js,script-update-interval=0
 
-# ✅ 财新会员解锁财新文章阅读与音频限制 By R-E
+#13 ✅ 财新会员解锁财新文章阅读与音频限制 By R-E
 财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js,script-update-interval=0
 
-# ✅ WPS会员 By R-E
+#14 ✅ WPS会员 By R-E
 WPS会员 = type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js,script-update-interval=0
+
+#15 ✅ 解锁菜谱大全V By R-E 
+解锁菜谱大全V1 = type=http-response,pattern=^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/Cpdq.js,script-update-interval=0,max-size=0
+解锁菜谱大全V2 = type=http-response,pattern=^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/Cpdq.js,script-update-interval=0,max-size=0
+
+#16 ✅ MIX by Nobyda
+Mix = type=http-response,pattern=^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$),requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js,script-update-interval=0,max-size=0
+
+#17 ✅ 大象冥想 
+大象冥想 = type=http-response,pattern=^https?:\/\/nmeditation\.snailsleep\.net\/meditation-(audio|user|order|audio)\/(api|user)\/(audio\/master\/detail|get\/info|order/user\/vip\/info|ad\/get),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/dxmx.js,script-update-interval=0,max-size=0
+
+#18 ✅ 美易 Picsart by Nobyda
+美易解锁 = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,script-update-interval=0,max-size=0
+
+#19 ✅ 醒图，Ulike，轻颜相机，vaporcam（四合一）解鎖解锁V權限 
+四合一 = type=http-response,pattern=https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Commerce.js,script-update-interval=0,max-size=0
+
+#20 ✅ 泼辣修图  BY nobyda
+Polarr泼辣 = type=http-response,pattern=https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js,script-update-interval=0,max-size=0
+
+#21 ✅  迅雷SVIP
+迅雷 = type=http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://github.com/Peng-Lx/lxpscript/blob/master/JS/Xunlei.js,script-update-interval=0,max-size=0
+
+#22 ✅  Emby
+Emby = type=http-response,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Emby.js,script-update-interval=0,max-size=0
+
+#23 ✅ NiChi 解锁素材 By nobyda
+NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\/(official-templates|privileges),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/NiChi.js,script-update-interval=0,max-size=0
