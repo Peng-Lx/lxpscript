@@ -19,13 +19,13 @@ Spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 酷我皮肤 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme) ,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/mekuwo.js,script-update-interval=0,max-size=0
 
 #05 ✅ ProKnockOut 解锁 Premium
-Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Proknockout.js,script-update-interval=0,max-size=0
+Premium = type=http-response,pattern=^https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Proknockout.js,script-update-interval=0,max-size=0
 
 #06 ✅ 彩云天气VIP
-彩云天气_SVIP = type=http-response,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,max-size=0,script-path=script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js,script-update-interval=0
+彩云天气_SVIP = type=http-response,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,max-size=0,script-path=script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js,script-update-interval=0
 
 #07 ✅ VSCO 解锁高级特权 By Nobyda 
-VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,script-update-interval=0,max-size=0
+VSCO = type=http-response,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,script-update-interval=0,max-size=0
 
 #08 ✅ 七猫小说VIP By R-E
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/qmxs.js,script-update-interval=0,max-size=0
@@ -63,10 +63,10 @@ Mix = type=http-response,pattern=^https:\/\/bmall\.camera360\.com\/api\/(iap\/ch
 美易解锁 = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,script-update-interval=0,max-size=0
 
 #19 ✅ 醒图，Ulike，轻颜相机，vaporcam（四合一）解鎖解锁V權限 
-四合一 = type=http-response,pattern=https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Commerce.js,script-update-interval=0,max-size=0
+四合一 = type=http-response,pattern=^https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Commerce.js,script-update-interval=0,max-size=0
 
 #20 ✅ 泼辣修图  BY nobyda
-Polarr泼辣 = type=http-response,pattern=https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js,script-update-interval=0,max-size=0
+Polarr泼辣 = type=http-response,pattern=^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js,script-update-interval=0,max-size=0
 
 #21 ✅  迅雷SVIP
 迅雷 = type=http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://github.com/Peng-Lx/lxpscript/blob/master/JS/Xunlei.js,script-update-interval=0,max-size=0
@@ -81,14 +81,14 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 网易蜗牛 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.js,script-update-interval=0,max-size=0on,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Wnds.js,script-update-interval=0,max-size=0
 
 #25 ✅ 美颜相机解锁紫钻V By R-E
-美颜相机紫钻V1 = type=http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
-美颜相机紫钻V2 = type=http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
+美颜相机紫钻V1 = type=^http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
+美颜相机紫钻V2 = type=^http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
 
 #26 ✅ 陆琪讲故事 解锁电台
 陆琪讲故事 = type=http-response,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
 
 #27 ✅ 彩云小译VIP
-彩云小译VIP = type=http-response,pattern=http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js,script-update-interval=0
+彩云小译VIP = type=http-response,pattern=^http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js,script-update-interval=0
 
 
 [MITM]
