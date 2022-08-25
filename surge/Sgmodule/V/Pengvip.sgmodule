@@ -65,7 +65,7 @@ Mix = type=http-response,pattern=^https:\/\/bmall\.camera360\.com\/api\/(iap\/ch
 #19 ✅ 醒图，Ulike，轻颜相机，vaporcam（四合一）解鎖解锁V權限 
 四合一 = type=http-response,pattern=^https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info),requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Commerce.js,script-update-interval=0,max-size=0
 
-#20 ✅ 泼辣修图  BY nobyda
+#20 ✅ 泼辣修图  BY Nobyda
 Polarr泼辣 = type=http-response,pattern=^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js,script-update-interval=0,max-size=0
 
 #21 ✅  迅雷SVIP
@@ -84,7 +84,7 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 美颜相机紫钻V1 = type=http-response,pattern=^http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
 美颜相机紫钻V2 = type=http-response,pattern=^http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
 
-#26 ✅ 陆琪讲故事 解锁电台
+#26 ✅ 陆琪讲故事 解锁电台 By Nobyda
 陆琪讲故事 = type=http-response,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
 
 #27 ✅ 彩云小译VIP
@@ -96,6 +96,9 @@ PornHub = type=http-response,pattern=^https?:\/\/cn\.pornhubpremium\.com\/,requi
 #27 ✅ 小影 Unlock Premium  By Nobyda
 小影 =  type=http-response,pattern=^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,script-update-interval=0
 
+#28 ✅ JibJab Unlock Premium By Nobyda
+JibJab = type=http-response,pattern=https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js,script-update-interval=0
+
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com, api.meiyan.com,www.luqijianggushi.com,api.interpreter.caiyunai.com,cn.pornhubpremium.com,xy-viva.kakalili.com, api-chn.rthdo.com
+hostname = %APPEND% spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me, biz.caiyunapp.com, buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net，vira.llsapp.com，gateway.caixin.com，account.wps.cn,*account.wps.com，api.meiease.cn，commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com，nmeditation.snailsleep.net，bmall.camera360.com，apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,api.polaxiong.com,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com, api.meiyan.com,www.luqijianggushi.com,api.interpreter.caiyunai.com,cn.pornhubpremium.com,xy-viva.kakalili.com, api-chn.rthdo.com,origin-prod-phoenix.jibjab.com
