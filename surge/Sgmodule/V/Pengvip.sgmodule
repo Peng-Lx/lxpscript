@@ -81,8 +81,8 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 网易蜗牛 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.js,script-update-interval=0,max-size=0on,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Wnds.js,script-update-interval=0,max-size=0
 
 #25 ✅ 美颜相机解锁紫钻V By R-E
-美颜相机紫钻V1 = type=http-response,pattern=^http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
-美颜相机紫钻V2 = type=http-response,pattern=^http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
+美颜相机紫钻V1 = type=http-response,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
+美颜相机紫钻V2 = type=http-response,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js,script-update-interval=0
 
 #26 ✅ 陆琪讲故事 解锁电台 By Nobyda
 陆琪讲故事 = type=http-response,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
@@ -91,7 +91,7 @@ NiChi = type=http-response,pattern=^https?:\/\/m(p|ini-hk)\.bybutter\.com\/mood\
 彩云小译 = type=http-response,pattern=^http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js,script-update-interval=0
 
 #28 ✅ PornHub Unlock Premium By Hausd0rff
-PornHub = type=http-response,pattern=^https?:\/\/cn\.pornhubpremium\.com\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js,script-update-interval=0
+PornHub = type=http-response,pattern=^https?:\/\/cn\.pornhubpremium\.com\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/pornhubUP.js,script-update-interval=0
 
 #27 ✅ 小影 Unlock Premium  By Nobyda
 小影 =  type=http-response,pattern=^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,script-update-interval=0
