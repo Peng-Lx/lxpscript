@@ -1,5 +1,5 @@
 /*
-美篇VIP
+美篇VIP=^https:\//poster.meipian.cn\/5.3\/user\/info
 */
 
 
