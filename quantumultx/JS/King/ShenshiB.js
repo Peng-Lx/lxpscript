@@ -1,4 +1,19 @@
-
+/*
+ *脚本功能：绅士摄影 VIP
+ *脚本整理：Peng-Lx
+ **********************
+ *QX
+ [rewrite_local]
+ ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body 
+ **********************
+ *hostname = appa.lingdu2019.cn
+ **********************
+ 
+ *Surge&loon
+ [Script]
+ http-response ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ requires-body=1,max-size=0,script-path=
+ 
+ */
 
 
 
