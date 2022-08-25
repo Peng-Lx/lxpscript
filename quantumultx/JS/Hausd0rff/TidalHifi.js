@@ -1,22 +1,21 @@
-/*
- *脚本功能：TIDAL解锁HiFi Plus for US
- *脚本整理：Peng-Lx
- **********************
- *QX
- [rewrite_local]
- ^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
+/******************************
+脚本功能：TIDAL解锁HiFi Plus
+软件版本：2.48.0【美区下载】
+下载地址：http://t.cn/A662gqIO
+脚本作者：Hausd0rff
+更新时间：2022-08-05
+脚本发布：https://t.me/yqc_123
+问题反馈：https://t.me/yqc_777
+使用声明：⚠️此脚本仅供学习与交流，
+        请勿转载与贩卖！⚠️⚠️⚠️
+*******************************
+[rewrite_local]
+# > TIDAL解锁HiFi Plus
+^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
 ^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfopostpaywall.+ url script-analyze-echo-response https://raw.githubusercontent.com/yqc007/QuantumultX/master/TidalHiFiPlusCrack.js
- **********************
- *hostname = api.tidal.com, auth.tidal.com
- ***********************
-
- 
- *Surge&loon
- [Script]
- http-response ^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)) requires-body=1,max-size=0,script-path= 
-
-*/
-
+[mitm] 
+hostname = api.tidal.com
+*******************************/
 
 $done({
     body: JSON.stringify({
