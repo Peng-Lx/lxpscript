@@ -1,10 +1,6 @@
 /*
 脚本功能：解锁Aphrodite会员
-脚本作者：R·E
 下载地址：https://apps.apple.com/app/1568289454
-支持版本：商店最新 1.2.2
-更新时间：2022.1.30
-问题反馈：https://t.me/yqc_777
 hostname = api.revenuecat.com
 
 # > 解锁Aphrodite会员(2022.01.30)
