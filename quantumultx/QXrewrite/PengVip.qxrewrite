@@ -38,39 +38,41 @@
 
 
 # 🍥🍥🍥🍥🍥🍥By🌈I-am-R-E🍥🍥🍥🍥🍥🍥
-#01 ✅ 美图秀秀
+#01 ✅ 美图秀秀 Unlock VIP
 ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
 
-#02 ✅ 南方周末
+#02 ✅ 南方周末 Unlock 南方周末高级年费会员 + 年费会员课程 + 所有付费课程
 ^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
 
-#03 ✅ 美颜相机
+#03 ✅ 美颜相机 Unlock 紫钻V
 ^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js
 ^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js
 
-#04 ✅ 菜谱大全
+#04 ✅ 菜谱大全 Unlock VIP
 ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
 ^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
 
-#05 ✅ 香哈菜谱    
+#05 ✅ 香哈菜谱  Unlock VIP
 ^https?:\/\/apiios\.xiangha\.com\/main\d+\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
 
-#06 ✅ 流利说·阅读  
+#06 ✅ 流利说·阅读  Unlock VIP
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
+#07 ✅ Lvv2Porn页面添加下载按钮，精简页面元素
+^https?:\/\/lvv2\.com\/tag\/porn url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/Lvv2Porn.js
+
+#08 ✅ 识图百科 Unlock 订阅
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/stbk.js
 
 
-#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
-#01 ✅ 绅士摄影 
-^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/ShenshiB.js
-
-#02 ✅ PornHub Unlock Premium 
+#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥nameking7🍥🍥🍥🍥🍥
+#01 ✅ PornHub Unlock Premium 
 ^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/pornhubUP.js
 
+#02 ✅ 烘焙小屋  Unlock VIP
+^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/XiangHaBakeProCrack.js
 
-
-# 🍥🍥🍥🍥🍥🍥By🌈nameking77🍥🍥🍥🍥🍥🍥
-#01 ✅ 酷我VIP
+#03 ✅ 酷我VIP
 ^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwo/Kuwo.js
 ### ✅ Kuwo Down
 #Kuwo Down1
@@ -82,8 +84,23 @@
 ### ✅#酷我换肤(已经有的皮肤需要先从本地皮肤删除再换)
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)  url script-response-body https://github.com/Peng-Lx/lxpscript/blob/master/quantumultx/JS/King/mekuwo.js
 
+#04 ✅ 绅士摄影 Unlock 批量下载
+^https://(.+).lingdu2019.cn/ios_api/portrait/goods_(detail|detail_comment_list|down_detail) url script-response-body https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/shenshi.js
 
-# 🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥
+#05 ✅ VLLO Unlock 解锁订阅
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ThorJsbox/yqc007-QuanX/master/VimoSoftVLLOProCrack.js
+
+#06 ✅ TIDAL Unlock HiFi Plus
+^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/TidalHifi.js
+^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfopostpaywall.+ url script-analyze-echo-response https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/TidalHifi.js
+
+# ✅ Qobu Unlock  Hi-Res订阅
+^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/QobuzHiResProCrack.js
+
+
+
+
+# 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
 #01 ✅ 可可英语 VIP
 ^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js
@@ -109,5 +126,7 @@
 #08 ✅ 每日英语阅读/每日外刊
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
+# 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
-hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me
+
+hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,
