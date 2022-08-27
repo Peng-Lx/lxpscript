@@ -14,6 +14,22 @@
 #04 ✅ 陆琪讲故事 
 ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
 
+#05 ✅ 彩云天气vip
+^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
+
+#06 ✅ 美颜相机
+^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json) url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/myxj.js
+^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json) url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/myxj.js
+
+#07 ✅ 彩云小译  
+^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js
+
+#08 ✅ 菜谱大全
+^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+
+#09 ✅ 香哈菜谱    
+^https?:\/\/apiios\.xiangha\.com\/main\d+\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
 
 
 
@@ -22,4 +38,4 @@
 
 
 
-hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com
+hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com,api.account.meitu.com,api.meiyan.com,biz.caiyunapp.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com
