@@ -36,6 +36,7 @@
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 
 
+
 # 🍥🍥🍥🍥🍥🍥By🌈I-am-R-E🍥🍥🍥🍥🍥🍥
 #01 ✅ 美图秀秀
 ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
@@ -57,13 +58,29 @@
 #06 ✅ 流利说·阅读  
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
-#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
 
+
+#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
 #01 ✅ 绅士摄影 
 ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/ShenshiB.js
 
 #02 ✅ PornHub Unlock Premium 
 ^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/pornhubUP.js
+
+
+
+# 🍥🍥🍥🍥🍥🍥By🌈nameking77🍥🍥🍥🍥🍥🍥
+#01 ✅ 酷我VIP
+^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwo/Kuwo.js
+### ✅ Kuwo Down
+#Kuwo Down1
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwoxz.js
+#Kuwo Down2
+^http://vip1.kuwo.cn/vip/enc/user/vip.+$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/kuwo.js
+#Kuwo Down3
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwoszzj.js
+### ✅#酷我换肤(已经有的皮肤需要先从本地皮肤删除再换)
+^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)  url script-response-body https://github.com/Peng-Lx/lxpscript/blob/master/quantumultx/JS/King/mekuwo.js
 
 
 # 🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥
@@ -93,4 +110,4 @@
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net
+hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me
