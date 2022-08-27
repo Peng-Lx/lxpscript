@@ -57,7 +57,7 @@
 #06 ✅ 流利说·阅读  
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
-🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
+#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
 
 #01 ✅ 绅士摄影 
 ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body 
