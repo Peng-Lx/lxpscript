@@ -2,58 +2,68 @@
 #!desc=🍥🍥🍥🍥🍥🍥
 #!author=@Thanks to the script authors
 
-#01 ✅ 可可英语
-^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js
 
-#02 ✅ 美图秀秀
-^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
+# 	🍥🍥🍥🍥🍥🍥By🌈Nobyda🍥🍥🍥🍥🍥🍥
 
-#03 ✅ 南方周末
-^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
-
-#04 ✅ 陆琪讲故事 
+#01 ✅ 陆琪讲故事 
 ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
 
-#05 ✅ 彩云天气vip
-^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
+#02 ✅ 网易蜗牛读书 
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
 
-#06 ✅ 美颜相机
+#03 ✅ PicsArt美易   pro
+^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
+
+#04 ✅ 扫描全能王  pro
+^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+
+#05 ✅ Splice 视频编辑器 pro
+^https:\/\/splice\.oracle\.\w+\.com\/devices\/me url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Splice.js
+
+
+# 🍥🍥🍥🍥🍥🍥By🌈I-am-R-E🍥🍥🍥🍥🍥🍥
+#01 ✅ 美图秀秀
+^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
+
+#02 ✅ 南方周末
+^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
+
+#03 ✅ 美颜相机
 ^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js
 ^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/myxj.js
 
-#07 ✅ 彩云小译  
-^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js
-
-#08 ✅ 菜谱大全
+#04 ✅ 菜谱大全
 ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
 ^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
 
-#09 ✅ 香哈菜谱    
+#05 ✅ 香哈菜谱    
 ^https?:\/\/apiios\.xiangha\.com\/main\d+\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
 
-#10 ✅ spotify 音质不能设置为超高
-^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
-
-#11 ✅ 流利说·阅读  
+#16 ✅ 流利说·阅读  
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
-#12 ✅ 绅士摄影 
+#17 ✅ 绅士摄影 
 ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/LingDuPortraitProCrack.js
 
-#13 ✅ 大象冥想 
-^https?:\/\/nmeditation\.snailsleep\.net\/meditation-(audio|user|order|audio)\/(api|user)\/(audio\/master\/detail|get\/info|order/user\/vip\/info|ad\/get) url script-response-body https://raw.githubusercontent.com/photonmang/quantumultX/master/dxmx.js
 
-#14 ✅ 网易蜗牛读书 
-^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
 
-#15 ✅ 扫描全能王  pro
-^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+#01 ✅ 可可英语 VIP
+^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js
 
-#16 ✅ PicsArt美易   pro
-^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
+#02 ✅ 彩云天气 VIP
+^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cytq.js
 
-#17 ✅ 蜗牛睡眠  
-^https:\/\/(snailsleep\.net\/|(music|community)\.snailsleep\.net\/)(snail\/v1\/profile\/get|snail-music\/music\/(sleeping|meditation)\/single\/list) url script-response-body https://github.com/photonmang/quantumultX/raw/master/wnsm.js
+#03 ✅ 彩云小译 VIP  
+^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/cyxy.js
+
+#04 ✅ spotify 音质不能设置为超高
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+#05 ✅ 大象冥想 解锁VIP&付费音乐
+^https?:\/\/nmeditation\.snailsleep\.net\/meditation-(audio|user|order|audio)\/(api|user)\/(audio\/master\/detail|get\/info|order/user\/vip\/info|ad\/get) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/dxmx.js
+
+#06 ✅ 蜗牛睡眠  
+^https:\/\/(snailsleep\.net\/|(music|community)\.snailsleep\.net\/)(snail\/v1\/profile\/get|snail-music\/music\/(sleeping|meditation)\/single\/list) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/wnsm.js
 
 #18 ✅ 智能证件照相机 
 ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Znxj.js
@@ -61,16 +71,7 @@
 #19 ✅ PornHub Unlock Premium 
 ^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js
 
-#20 ✅ Splice 视频编辑器 pro
-^https:\/\/splice\.oracle\.\w+\.com\/devices\/me url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Splice.js
-
 #21 ✅ 每日英语阅读/每日外刊
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
-
-
-
-
-
-hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com,api.account.meitu.com,api.meiyan.com,biz.caiyunapp.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,spclient.wg.spotify.com,vira.llsapp.com,appa.lingdu2019.cn,nmeditation.snailsleep.net,p.du.163.com,ap*.intsig.net,api.picsart.c*, api.meiease.c*,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,,cn.pornhubpremium.com,splice.oracle.*.com,dict.eudic.net
 
