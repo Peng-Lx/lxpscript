@@ -31,11 +31,12 @@
 #09 ✅ 香哈菜谱    
 ^https?:\/\/apiios\.xiangha\.com\/main\d+\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
 
+#10 ✅ spotify 音质不能设置为超高
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 
 
 
 
 
-
-hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com,api.account.meitu.com,api.meiyan.com,biz.caiyunapp.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com
+hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com,api.account.meitu.com,api.meiyan.com,biz.caiyunapp.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,spclient.wg.spotify.com
