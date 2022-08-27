@@ -57,11 +57,10 @@
 #06 ✅ 流利说·阅读  
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
-#🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
+🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥🍥🍥🍥🍥🍥
 
 #01 ✅ 绅士摄影 
-^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body 
-
+ ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/ShenshiB.js
 
 
 #01 ✅ 可可英语 VIP
@@ -92,4 +91,4 @@
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,app.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net
+hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net
