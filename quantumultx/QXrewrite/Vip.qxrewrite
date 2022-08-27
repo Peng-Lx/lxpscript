@@ -3,7 +3,7 @@
 #!author=@Thanks to the script authors
 
 
-#🍥🍥🍥🍥🍥🍥By🌈Nobyda🍥🍥🍥🍥🍥🍥
+#🍥🍥🍥🍥🍥🍥By🌈Peng-Lx🍥🍥🍥🍥🍥🍥
 
 #01 ✅ 陆琪讲故事 Unlock 
 ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js
@@ -17,6 +17,6 @@
 #04 ✅ 扫描全能王 Unlock 部分高级特权
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/CamScanner.js
 
-
+##🥶🥶🥶 Coming soon...
 
 hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*
