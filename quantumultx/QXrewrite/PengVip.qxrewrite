@@ -39,10 +39,10 @@
 #05 ✅ 香哈菜谱    
 ^https?:\/\/apiios\.xiangha\.com\/main\d+\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
 
-#16 ✅ 流利说·阅读  
+#06 ✅ 流利说·阅读  
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
-#17 ✅ 绅士摄影 
+#07 ✅ 绅士摄影 
 ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/LingDuPortraitProCrack.js
 
 
@@ -65,10 +65,10 @@
 #06 ✅ 蜗牛睡眠  
 ^https:\/\/(snailsleep\.net\/|(music|community)\.snailsleep\.net\/)(snail\/v1\/profile\/get|snail-music\/music\/(sleeping|meditation)\/single\/list) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/wnsm.js
 
-#18 ✅ 智能证件照相机 
+#07 ✅ 智能证件照相机 
 ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Znxj.js
 
-#19 ✅ PornHub Unlock Premium 
+#08 ✅ PornHub Unlock Premium 
 ^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js
 
 #21 ✅ 每日英语阅读/每日外刊
