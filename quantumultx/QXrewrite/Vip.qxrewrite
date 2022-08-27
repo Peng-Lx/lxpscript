@@ -2,13 +2,24 @@
 #!desc=解锁
 #!author=@
 
-# > 可可英语
+#01 ✅ 可可英语
 ^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/kkyy.js
 
-# > 美图秀秀
+#02 ✅ 美图秀秀
 ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/PF2022/lxp/master/quantumultx/JS/RE/mtxx.js
 
-# > 南方周末
+#03 ✅ 南方周末
 ^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
 
-hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com
+#04 ✅ 陆琪讲故事 
+^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
+
+
+
+
+
+
+
+
+
+hostname = mob2015.kekenet.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,www.luqijianggushi.com
