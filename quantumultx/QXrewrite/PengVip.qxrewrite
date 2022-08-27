@@ -63,7 +63,7 @@
 ^https?:\/\/appa\.lingdu2019\.cn\/api\/(my_home\/\w{9}|portrait\/\w{15,23}|iport/luffy/api/\w{7}/\w{9}|send\/\w{18})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/ShenshiB.js
 
 #02 ✅ PornHub Unlock Premium 
-^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Hub.js
+^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/pornhubUP.js
 
 
 # 🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥
