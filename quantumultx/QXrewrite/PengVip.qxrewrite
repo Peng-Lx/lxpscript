@@ -1,5 +1,5 @@
-#!name=🌈Peng-LX🍥APPVIP🌈ADD Plan✅❎
-#!desc=🍥🍥🍥🍥🍥🍥
+#!name=🌈Peng-LX🍥APPVIP🌈ADD Plan🍥
+#!desc=🍥🍥🍥🍥🍥🍥✅❎
 #!author=@Thanks to the script authors
 
 
@@ -41,7 +41,7 @@
 #01 ✅ 美图秀秀 Unlock VIP
 ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
 
-#02 ✅ 南方周末 Unlock 南方周末高级年费会员 + 年费会员课程 + 所有付费课程
+#02 ❎ 南方周末 Unlock 南方周末高级年费会员 + 年费会员课程 + 所有付费课程
 ^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
 
 #03 ✅ 美颜相机 Unlock 紫钻V
