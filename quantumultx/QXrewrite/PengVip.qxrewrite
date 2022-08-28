@@ -11,8 +11,8 @@
 #02 ✅ 网易蜗牛读书 Unlock
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/Wnds.js
 
-#03 ✅ PicsArt美易  Unlock pro
-^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/PicsArt.js
+#03 ✅ 香蕉视频 解锁部分观看限制 官网: https://www.aa2.app
+^https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
 
 #04 ✅ 扫描全能王 Unlock 部分高级特权
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/CamScanner.js
@@ -67,6 +67,23 @@
 #09 ✅ 七猫小说
 ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
 
+#09 ✅ 壁纸-Cutisan7-UnlockVIP&Unlock所有限制 
+^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
+
+#10 ✅ 健康记录-Grow-Unlock订阅
+^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$ url script-echo-response https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
+^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$ url script-echo-response https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
+
+#11 ✅ InShot Unlock 订阅
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/InShot.js
+
+#12 ✅ Drops Unlock 永久订阅
+^https\:\/\/api-prod\.languagedrops\.com\/syncPurchasesV\d url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/drops.js
+
+#13 ✅ Picsart Unlock 订阅
+^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Picsart.js
+
+
 #🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥nameking7🍥🍥🍥🍥🍥
 #01 ✅ PornHub Unlock Premium 
 ^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/pornhubUP.js
@@ -96,7 +113,7 @@
 ^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/TidalHifi.js
 ^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfopostpaywall.+ url script-analyze-echo-response https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/TidalHifi.js
 
-# ✅ Qobu Unlock  Hi-Res订阅
+#07 ✅ Qobu Unlock  Hi-Res订阅
 ^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/QobuzHiResProCrack.js
 
 
@@ -131,4 +148,4 @@
 # 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,api.revenuecat.com,api.picsart.c*, api.meiease.c*,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com
+hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com，api.revenuecat.com，api-prod.languagedrops.com，api.meiease.cn
