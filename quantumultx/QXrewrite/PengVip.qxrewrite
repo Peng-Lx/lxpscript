@@ -70,7 +70,7 @@
 #09 ✅ 壁纸-Cutisan7-UnlockVIP&Unlock所有限制 
 ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
 
-#10 ✅ 健康记录-Grow-Unlock订阅
+#10 ✅ 健康记录-Grow-Unlock VIP
 ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$ url script-echo-response https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
 ^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$ url script-echo-response https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
 
