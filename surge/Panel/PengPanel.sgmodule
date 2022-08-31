@@ -3,46 +3,53 @@
 
 [Panel]
 
-# 网路详情
+# 🧬 网路详情
 NetInfoPanelTest=title="",content="",style=info,script-name=net-info-panel-test-cn.js,update-interval=1
 
-# 刷新DNS
+# 🧬  刷新DNS
 flushDNS = script-name=flushDNS,update-interval=600
 
-# Netflix解锁检测
+# 🧬 Netflix解锁检测
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
 
 #流量统计
 TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 
-# IP流量
+# 🧬 IP流量
 ☁ WARP Panel = title="☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤", icon="lock.icloud.fill", script-name=☁ WARP Panel
+
+# 🧬 策略面板
+策略面板 = script-name=代理链路检测,update-interval=21600
 
 
 [Script]
 
-# 网路详情
+# 🧬 网路详情
 net-info-panel-test-cn.js=script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/test/Panel/Network-Info/cn/networkCheck_CN.js,type=generic,timeout=30
 
-# 刷新DNS
+# 🧬 刷新DNS
 
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
 
-# Netflix解锁检测
+# 🧬 Netflix解锁检测
 nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1632728073, timeout=30
 
-#流量统计
+# 🧬 流量统计
 #应当修改的字段：network : en0→WiFi pdp_ip0→卡1 pdp_ip1→卡2
 TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8&network=pdp_ip0
 
-# WARP Panel
+# 🧬 WARP Panel
 #!PROFILE-VERSION-REQUIRED 10 ☁ WARP Panel = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.panel.js
-# WARP Personal
+# 🧬 WARP Personal
 ☁ WARP Personal Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
 ☁ WARP Personal Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.response.js
-# Cloudflare for Teams
+# 🧬 Cloudflare for Teams
 ☁ WARP Teams Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
 ☁ WARP Teams Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.response.js
+
+# 🧬代理链路检测
+
+代理链路检测 = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NodeLinkCheck/Script/NodeLinkCheck.js, argument=title=代理链路检测&icon=network&color=#86abee
 
 [MITM]
 hostname = %APPEND% api.cloudflareclient.com,zero-trust-client.cloudflareclient.com
