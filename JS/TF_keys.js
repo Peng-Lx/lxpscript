@@ -1,6 +1,6 @@
 /*
-
-
+QX:^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://github.com/DecoAri/JavaScript/blob/main/Surge/TF_keys.js
+testflight.apple.com
 
 
 
