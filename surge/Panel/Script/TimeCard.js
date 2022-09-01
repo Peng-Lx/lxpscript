@@ -1,3 +1,11 @@
+
+/*
+配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/TimeCard.js
+*/
+
+
+
+
 var tlist = {
   1: ["生日", "2023-05-12"],
   2: ["劳动", "2022-05-01"],
