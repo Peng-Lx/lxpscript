@@ -58,7 +58,7 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 代理链路检测 = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NodeLinkCheck/Script/NodeLinkCheck.js, argument=title=代理链路检测&icon=network&color=#86abee
 
 #07 🧬 节假日倒计时
-节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Timecard.js
+节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/TimeCard.js
 
 #08 🧬 疫情统计
 疫情统计 = type=generic, https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/Covid19.js
