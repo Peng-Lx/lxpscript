@@ -1,3 +1,6 @@
+/*
+配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/Covid19.js
+*/
 var list = ["中国","广东","深圳","广州"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 var ala="";
