@@ -57,7 +57,7 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/TimeCard.js
 
 #08 🧬 covid19
-covid19 = type=generic, script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Covid19.js
+covid19 = type=generic, script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/Covid19.js
 
 [MITM]
 hostname = %APPEND% api.cloudflareclient.com,zero-trust-client.cloudflareclient.com
