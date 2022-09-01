@@ -24,10 +24,6 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 07# 🧬 节假日倒计时
 节假日倒计时 = script-name=节假日倒计时,update-interval=600
 
-#08 🧬 疫情统计
-疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=600
-
-
 [Script]
 
 #01 🧬 网路详情
