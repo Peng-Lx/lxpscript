@@ -1,13 +1,9 @@
-
 /*
 配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/TimeCard.js
 */
 
-
-
-
 var tlist = {
-  1: ["生日", "2023-05-12"],
+  1: ["Peng-Lx生日", "2023-05-12"],
   2: ["劳动", "2022-05-01"],
   3: ["520", "2022-05-20"],
   4: ["521", "2022-05-21"],
