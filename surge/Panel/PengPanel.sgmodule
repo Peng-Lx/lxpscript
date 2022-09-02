@@ -21,7 +21,7 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 策略面板 = script-name=代理链路检测,update-interval=21600
 
 07# 🧬 节假日倒计时
-节假日倒计时 = script-name=节假日倒计时,update-interval=600
+节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=600
 
 #08 🧬 covid19
 covid19 = script-name=covid19, title=新冠疫情查询, content=请刷新, update-interval=600
