@@ -119,7 +119,7 @@
 # 🍥🍥🍥🍥🍥🍥By🌈@ddgksf2013🍥🍥🍥🍥🍥🍥
 
 #01 ✅ Vista看天下 Unlock vip 权限
-^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/ktx.js
+^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/ktx%2Cjs
 
 
 
