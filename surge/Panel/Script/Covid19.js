@@ -1,5 +1,7 @@
 /*
 配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/Covid19.js
+【panel】
+covid19 = script-name=covid19, title=新冠疫情查询, content=请刷新, update-interval=600
 */
 var list = ["中国","广东","深圳","广州"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
