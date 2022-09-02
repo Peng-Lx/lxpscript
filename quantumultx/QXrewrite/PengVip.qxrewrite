@@ -116,6 +116,10 @@
 #07 ✅ Qobu Unlock  Hi-Res订阅
 ^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/QobuzHiResProCrack.js
 
+# 🍥🍥🍥🍥🍥🍥By🌈@ddgksf2013🍥🍥🍥🍥🍥🍥
+
+#01 ✅ Vista看天下 Unlock vip 权限
+^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/ktx.js
 
 
 
@@ -151,4 +155,4 @@
 # 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com，api.revenuecat.com，api-prod.languagedrops.com，api.meiease.cn,testflight.apple.com
+hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com，api.revenuecat.com，api-prod.languagedrops.com，api.meiease.cn,testflight.apple.com,open3.vistastory.com
