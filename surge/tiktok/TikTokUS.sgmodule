@@ -1,5 +1,5 @@
 #!name=🎊TikTok🎉US🎉
-#!desc=💥TikTok💥Unlock💥
+#!desc=💥Unlock💥
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) US 307
