@@ -21,7 +21,7 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 策略面板 = script-name=代理链路检测,update-interval=21600
 
 07# 🧬 节假日倒计时
-节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=
+节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=0
 
 [Script]
 #01 🧬 网路详情
