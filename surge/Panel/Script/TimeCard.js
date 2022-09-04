@@ -1,5 +1,11 @@
 /*
 配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/TimeCard.js
+
+节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=0
+
+
+
+
 */
 
 var tlist = {
