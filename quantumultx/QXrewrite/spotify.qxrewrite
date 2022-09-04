@@ -2,8 +2,8 @@
 #!desc=✅部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
 #!author=@Thanks
 
-[rewrite_local]
+#01 🌈spotify
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
 
-[MITM]
+
 hostname = spclient.wg.spotify.com
