@@ -20,8 +20,6 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #06 🧬 策略面板
 策略面板 = script-name=代理链路检测,update-interval=21600
 
-07# 🧬 节假日倒计时
-节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=0
 
 [Script]
 #01 🧬 网路详情
@@ -49,9 +47,6 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 
 #06 🧬代理链路检测
 代理链路检测 = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NodeLinkCheck/Script/NodeLinkCheck.js, argument=title=代理链路检测&icon=network&color=#86abee
-
-#07 🧬 节假日倒计时
-节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/TimeCard.js
 
 
 [MITM]
