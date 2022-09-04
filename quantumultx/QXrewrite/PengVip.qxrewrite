@@ -157,7 +157,7 @@
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
 #09 ✅ TF信息获取 
-^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys
+^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys.js
 
 #10 ✅ 海豚记账 解锁内购 by superuv
 
