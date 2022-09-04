@@ -39,7 +39,7 @@
 
 # 🍥🍥🍥🍥🍥🍥By🌈I-am-R-E🍥🍥🍥🍥🍥🍥
 #01 ✅ 美图秀秀 Unlock VIP
-^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
+^https? :\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/mtxx.js
 
 #02 ❎ 南方周末 Unlock 南方周末高级年费会员 + 年费会员课程 + 所有付费课程
 ^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items) url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js
@@ -82,6 +82,11 @@
 
 #13 ✅ Picsart Unlock 订阅
 ^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Picsart.js
+
+#14 ✅ 随手记 VIP 去除部分广告, 可下载付费主题
+^https?:\/\/((user)?api|community)\.feidee\.(net|com)\/(v\d\/(pay/vip|profile/basic_info|app_themes/types)|transfer\/gapi\/accurat\/v\d\/tasks) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/SuiShouJi.js
+^https?:\/\/api\.feidee\.net\/v\d\/app_themes\/\d+\/download url script-echo-response https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/RE/SuiShouJi.js
+^https?:\/\/tg\.feidee\.com\/online_ad\/ url reject
 
 
 #🍥🍥🍥🍥🍥🍥By🌈Hausd0rff🍥nameking7🍥🍥🍥🍥🍥
@@ -149,10 +154,18 @@
 #08 ✅ 每日英语阅读/每日外刊
 ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js
 
-#09 ✅TF信息获取 
-^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://github.com/DecoAri/JavaScript/blob/main/Surge/TF_keys.js
+#09 ✅ TF信息获取 
+^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys
+
+#10 ✅ 海豚记账 解锁内购 by superuv
+
+ ^https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/htjz.js
+
+#11 ✅
+
+
 
 # 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com，api.revenuecat.com，api-prod.languagedrops.com，api.meiease.cn,testflight.apple.com,open3.vistastory.com
+hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com, api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com，api.revenuecat.com，api-prod.languagedrops.com，api.meiease.cn,testflight.apple.com,open3.vistastory.com,book.haitunwallet.com，api.feidee.net, userapi.feidee.net, tg.feidee.com, community.feidee.com
