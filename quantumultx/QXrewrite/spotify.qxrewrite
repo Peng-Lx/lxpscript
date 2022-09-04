@@ -15,5 +15,13 @@
 #✅Kuwo Down3
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/King/Kuwoszzj.js
 
+#03 🌈 Unlock TikTok
+(?<=_region=)CN(?=&) US 307
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
-hostname = spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me
+
+
+
+hostname = spclient.wg.spotify.com,*.kuwo.cn, *.lrts.me,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
