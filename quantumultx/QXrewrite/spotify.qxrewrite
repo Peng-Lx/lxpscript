@@ -1,8 +1,8 @@
-#!name=🌈spotify
-#!desc=✅部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
-#!author=@Thanks
+#!name=🌈APP🍥Vip🍥
+#!desc=✅❎
+#!author=@Thanks to the script authors
 
-#01 🌈spotify
+#01 🌈spotify 部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
 
 #02 🌈 酷我VIP
