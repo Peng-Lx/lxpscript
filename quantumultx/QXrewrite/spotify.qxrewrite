@@ -2,7 +2,7 @@
 #!desc=✅❎
 #!author=@Thanks to the script authors
 
-[rewrite_local]
+
 #01 ✅ spotify 部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
 
@@ -18,13 +18,7 @@
 ### ✅#酷我换肤(已经有的皮肤需要先从本地皮肤删除再换)
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)  url script-response-body https://github.com/Peng-Lx/lxpscript/blob/master/quantumultx/JS/King/mekuwo.js
 
-#0 ✅ YOUTUBE 去广告
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
+
 
 [MITM]
-hostname = spclient.wg.spotify.com,*.kuwo.cn,*.lrts.me，-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
+hostname = spclient.wg.spotify.com,*.kuwo.cn,*.lrts.me
