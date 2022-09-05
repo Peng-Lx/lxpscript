@@ -1,5 +1,4 @@
-const url = "https://e.189.cn/store/user/package_detail.do";
-const url2 = "https://e.189.cn/store/user/balance_new.do";
+const url = "https://touch.10086.cn/i/mobile/flowquery.html";
 
 (async () => {
   if (typeof $request != "undefined") {
