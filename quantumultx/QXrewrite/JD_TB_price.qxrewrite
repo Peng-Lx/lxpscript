@@ -1,0 +1,8 @@
+hostname = api.m.jd.com, trade-acs.m.taobao.com
+
+#京东历史比价 (by Orz-3)
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+#淘宝历史比价 (by yichahucha)
+^http://.+/amdc/mobileDispatch url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/script/6e15bb0cadb8e75062bf44df91e4814a.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/script/6e15bb0cadb8e75062bf44df91e4814a.js
