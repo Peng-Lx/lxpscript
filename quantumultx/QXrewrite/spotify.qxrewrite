@@ -18,14 +18,6 @@
 ### ✅#酷我换肤(已经有的皮肤需要先从本地皮肤删除再换)
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/theme)  url script-response-body https://github.com/Peng-Lx/lxpscript/blob/master/quantumultx/JS/King/mekuwo.js
 
-04 ✅ 仅用于视频广告，不适用允许 UDP 转发的节点及 Premium
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
 
 
-
-hostname = spclient.wg.spotify.com,*.kuwo.cn,*.lrts.me，-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
+hostname = spclient.wg.spotify.com,*.kuwo.cn,*.lrts.me
