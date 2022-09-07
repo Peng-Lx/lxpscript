@@ -48,7 +48,7 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 
 # 06 🛍 节日倒计时
 
-节日倒计时 = type=generic,timeout=10,script-path=
+节日倒计时 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/TimeCard.js
 
 
 [MITM]
