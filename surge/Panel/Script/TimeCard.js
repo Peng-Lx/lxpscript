@@ -1,11 +1,9 @@
 /*
 配置参考：https://github.com/TributePaulWalker/Profiles/blob/main/JavaScript/Surge/TimeCard.js
-
 节假日倒计时 = script-name=节假日倒计时,update-interval=0
-
 */
 var tlist = {
-  1: ["生日", "2022-04-20"],
+  1: ["生日", "2023-05-20"],
   2: ["劳动", "2022-05-01"],
   3: ["奶奶生日", "2022-05-04"],
   4: ["楠楠生日", "2022-05-14"],
