@@ -18,7 +18,8 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 ☁ WARP Panel = title="☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤", icon="lock.icloud.fill", script-name=☁ WARP Panel
 
 #06 🛍 节日倒计时
-节假日倒计时 = script-name=节假日倒计时,content=请刷新，update-interval=0
+
+节假日倒计时 = script-name=节假日倒计时,update-interval=600
 
 
 
