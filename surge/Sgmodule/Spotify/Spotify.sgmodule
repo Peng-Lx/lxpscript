@@ -1,5 +1,5 @@
 #!name=🌍Peng-Lx🌍Spotify🌍
-#!desc=🥶🥶🥶🥶🥶🥶
+#!desc=🥶
 #!http= https://github.com/app2smile/rules)
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com
