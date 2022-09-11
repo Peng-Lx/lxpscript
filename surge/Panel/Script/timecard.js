@@ -2,8 +2,7 @@
  * 由@smartmimi编写
  * 原脚本地址：https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
  * 由@Rabbit-Spec修改
- * 更新日期：2022.06.22
- * 版本：1.0
+ * 节日倒计时 = script-name=节日倒计时,update-interval=0
 */
 
 var tlist = {
