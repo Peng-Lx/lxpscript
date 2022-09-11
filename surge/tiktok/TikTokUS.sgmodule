@@ -1,5 +1,5 @@
-#!name=🎊TikTok🎉US🎉
-#!desc=💥Unlock💥
+#!name=🎊TikTok🎉FR
+#!desc=💥Unlock
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) FR 307
