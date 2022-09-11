@@ -17,7 +17,8 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #05 🧬 IP流量
 ☁ WARP Panel = title="☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤", icon="lock.icloud.fill", script-name=☁ WARP Panel
 
-
+#06 🧬 节日倒计时
+节日倒计时 = script-name=节日倒计时,update-interval=0
 
 [Script]
 #01 🧬 网路详情
@@ -43,6 +44,8 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 ☁ WARP Teams Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
 ☁ WARP Teams Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.
 
+#06 🧬 节假日倒计时
+节假日倒计时 = type=generic,timeout=10,script-path=
 
 [MITM]
 hostname = %APPEND% api.cloudflareclient.com,zero-trust-client.cloudflareclient.com
