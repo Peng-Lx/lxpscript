@@ -2,7 +2,7 @@
 Unlocks by Cuttlefish https://t.me/ddgksf2021 update on 2022-05-30
  *Surge&loon
  *[Script]
- *http-response ^https://notability.com/subscriptions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Bear.js
+ *http-response ^https://notability.com/subscriptions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Notability.js
  *hostname = notability.com
 */
  
