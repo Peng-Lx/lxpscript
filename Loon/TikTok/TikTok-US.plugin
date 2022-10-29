@@ -1,5 +1,5 @@
-#!name= TikTokUS
-#!icon= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok.png
+#!name=TikTokUS
+#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok.png
 
 [Rule]
 DOMAIN-SUFFIX,byteoversea.com
