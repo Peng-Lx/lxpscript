@@ -8,7 +8,7 @@
 
 [rewrite_local]
 # > Anki Note解锁永久订阅
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/AnkiNoteProCrack.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/AnkiNote.js
 
 [mitm] 
 hostname = buy.itunes.apple.com
