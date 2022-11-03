@@ -125,6 +125,11 @@
 #07 ✅ Qobu Unlock  Hi-Res订阅
 ^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/QobuzHiResProCrack.js
 
+#08 ✅ Anki Note解锁永久订阅
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Hausd0rff/AnkiNote.js
+
+
+
 # 🍥🍥🍥🍥🍥🍥By🌈@ddgksf2013🍥🍥🍥🍥🍥🍥
 
 #01 ✅ Vista看天下 Unlock vip 权限
