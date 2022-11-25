@@ -1,0 +1,333 @@
+#!name=⛔️ APPAdBlock Plus
+#!desc=APPAdBlock Plus Mod
+
+
+# >🎃🎃🎃喜马拉雅去广告
+# ～ XiMaLaYa_喜马拉雅_播放页_Live@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/ url reject
+# ～ XiMaLaYa_喜马拉雅_MyInfo红点提醒@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽大红包Tips@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/social-web\/bottomTabs\/dynamicEntrance\/status url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽gif弹窗Ad@ddgksf2013
+^https?:\/\/.*\.xmcdn\.com\/\w{8}\/\w{4}-\w{16}\/.+gif$ url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽Aged请求@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query) url reject
+# ～ XiMaLaYa_喜马拉雅_部分Tab弹窗@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽红点提示@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽minor请求@ddgksf2013
+^https?:\/\/.*\.xima.*\.com/mobile-user/minorProtection/pop url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽隐私搜集@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/collector\/xl\/v\d url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽版本更新@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽开屏广告@ddgksf2013
+^https?:\/\/(adse\.wsa|adse|adbehavior|xdcs-collector)\.xima.*\.com\/.* url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽位置请求@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/mobile\/discovery\/v\d\/location url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽热搜词@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/hotWord url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽搜索框定时_Ad@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/guideWord url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽实时Ad请求@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽ting_Ad@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? url reject
+# ～ XiMaLaYa_喜马拉雅_屏蔽首页滚动_Ad@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/xmly_json.js
+# ～ XiMaLaYa_喜马拉雅_屏蔽Tab页滚动_Ad@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/xmly_json.js
+# ～ XiMaLaYa_喜马拉雅_去除我的页面Ad_Tag@ddgksf2013
+^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/xmly_json.js
+
+
+
+# >🎃🎃🎃微博去广告以及去除各部分推广模块 - cherish
+^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|messageflow|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+
+# >🎃🎃🎃 删除微博开屏广告 - cherish
+^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
+
+# >🎃🎃🎃自定义tab皮肤
+^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+
+# >>>>>>>> 非会员设置tab皮肤 - cherish
+^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+
+# >🎃🎃🎃油管去广告
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
+
+
+# >🎃🎃🎃 什么值得买去广告
+
+# 好价详情页去广告
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul url reject
+# 好价详情页红包小助手
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul url reject
+# Wiki(618晒物活动推广，将来可能不是广告)
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/wiki_related_modul url reject
+
+# 开屏去广告
+^https?:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 首页去广告
+^https?:\/\/homepage-api\.smzdm\.com\/v3\/home url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 好价去广告
+^https?:\/\/haojia-api\.smzdm\.com\/home\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 好价详情页去广告
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 百科去广告
+^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 搜索结果去广告
+^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10 url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 搜索标签去广告
+^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+# 值会员权益中心banner广告
+^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
+
+
+
+# >🎃🎃🎃 微信小程序去除廣告直接查看隱藏內容或彈窗顯示內容
+
+# > 039 科技窝（2022-03-20）@ddgksf2013
+https://www.bbkj.work/wp-json/watch-life-net/v1/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 038 APP基地（2022-03-20）@ddgksf2013
+https://wx.wxqqurl.cn/wp-json/watch-life-net/v1/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 037 搜罗好货（2022-03-12）@ddgksf2013
+^https?:\/\/wp3\.lobdol\.cn\/wp-json\/wp\/v2\/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 036 小打卡（2022-03-12）@ddgksf2013
+^https?:\/\/uranus\.sharedaka\.com\/api\/v3\/user\/info\/get url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xiaodaka.js
+
+# > 035 漫画台Lite（2022-03-12）@ddgksf2013
+^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/manhuatailite.js
+
+# > 034 怪兽充电（2022-03-10）@ddgksf2013
+https?:\/\/awg\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert\/skin) url reject-dict
+
+# > 033 公眾號文章去廣告（2022-03-01）@ddgksf2013
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+
+# > 032 掌上公交（2022-03-01）@ddgksf2013
+https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/zhangshanggongjiao.js
+
+# > 031 AShare（2022-01-01）@ddgksf2013
+https://tan.ipnas.ltd//wp-json/wp/v2 url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 030 柠檬图库（2021-12-24）@ddgksf2013
+https://api.bspapp.com/client url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/nmtk.js
+
+# > 029 不完全指北（2021-12-15）@ddgksf2013
+https://4thdimension.top/wp-json/watch-life-net/v1/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 026 科技窝（2020-12-28）@ddgksf2013
+https://www.benbenfx.xyz/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 025 森茂小苑 （2020-12-19）@ddgksf2013
+https://[a-z]+.smkj33.top/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 024 电视盒子君（2020-12-18）@ddgksf2013
+https://tvapp.guilaile.cn/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 023 公子黑科技（2020-12-18）@ddgksf2013
+https://gz.gongzijx.com/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 022 世颜说 （2020-12-17）@ddgksf2013
+https://d.syshhc.top/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 021 搞机师兄（2020-12-16）@ddgksf2013
+https://gjsx.vip/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 020 火箭软件库（2020-12-16）@ddgksf2013
+https://jt.jxjt888.top/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 019 天书乱谈（2020-12-15）@ddgksf2013
+https://[a-z]+.tslt.xyz/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 018 老胡群英会（2020-12-15）@ddgksf2013
+https://g.syshhc.top/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 017 天泽百宝箱（2020-12-15）@ddgksf2013
+https://c.jxjt888.top/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 016 老鬼黑科技（2020-12-15）@ddgksf2013
+https://www.laoguikeji.cn/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 015 黑科技软件源（2020-12-15）@ddgksf2013
+https://qj.bpojie.com/wp-json/wp/v2/posts url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/xcx.js
+
+# > 014 天书X乱谈（2020-12-15）@ddgksf2013
+https://b.tslt.xyz/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 013 图层黑科技（2020-12-15）@ddgksf2013
+https://m.xgjyouhui.com/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 012 free 黑科技（2020-12-15）@ddgksf2013
+https://www.freeheikeji.cn/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 011 小纸箱助手（2020-12-15）@ddgksf2013
+https://xcx.xianbaow.com/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 010 扎比科技资源箱 弹框显示内容（2020-12-14）@ddgksf2013
+https://jabi.coding.net/p/xcx/d/xcx/git/raw/master/jabikj.json url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/jabi.js
+
+# > 009 AppleAndroid 弹框显示内容（2020-12-14）@ddgksf2013
+https://iosoi.cn/wp-json/wp/v2/posts/\d+ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+# > 辅助去除页面嵌入式式卡片广告（2020-12-14）
+https://iosoi.cn/wp-content/plugins url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 008 森茂雅苑 （2020-10-27）@ddgksf2013
+https://d.smkj33.top/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 005-007 酸鸡汤,老爷花苑,御花园（2020-12-14）@ddgksf2013
+https://[a-z]+.ddly666.top/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 004 黑科技软件（2020-09-01）@ddgksf2013
+^https:\/\/hkj178.com/wp-json/mp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+# > 辅助去除页面嵌入式式卡片广告（20201214）
+https://hkj178.com/wp-json/mp/v2/advert/wechat url reject-200
+
+# > 003 天泽后花园（2020-09-01）@ddgksf2013
+^https:\/\/a.jxjt888.top/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 002 小野分享（2020-12-15）@ddgksf2013
+^https:\/\/lysl2020.com/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+# > 001 搜罗好货（2020-09-24）@ddgksf2013
+^https:\/\/www.i3zh.com/wp-json/wp/v2/posts url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js
+
+
+
+# >🎃🎃🎃 贴吧去广告-qx(>=iOS15)
+# qx加载本重写前,须同时加载对应的贴吧分流,否则不能完全去广告
+# 仓库地址 https://github.com/app2smile/rules
+# 开屏广告;推荐和吧内帖子列表的直播及广告;详情页直播/关联商品/广告;看图模式广告;首页和帖子详情页右下角悬浮广告;部分吧内的置顶/最新中间的广告/head图片广告/head直播
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
+
+
+# >🎃🎃🎃  知乎去广告
+# 知乎处理用户信息
+^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎信息流去广告
+^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎回答列表去广告
+^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+ url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎获取黑名单
+^https?:\/\/api\.zhihu\.com\/settings\/blocked_users url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎官方消息去广告
+^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message) url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎预置关键词去广告
+^https?:\/\/api\.zhihu\.com\/search\/preset_words\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 优化软件配置
+^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎热搜去广告
+^https?:\/\/api\.zhihu\.com\/search\/top_search\/tabs\/hot\/items url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎热榜去广告
+^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/) url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎评论去广告
+^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎回答列表去广告
+^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎屏蔽关键词解锁
+^https?:\/\/api\.zhihu\.com\/feed-root\/block url script-analyze-echo-response https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 知乎8.3.0移除推荐页顶部项
+^https?:\/\/api\.zhihu\.com\/feed-root\/sections\/query\/v2 url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.js
+# 拦截知乎开屏广告
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-dict
+# 知乎去除最常访问
+^https?:\/\/api\.zhihu\.com\/moments\/recent url reject-dict
+# 知乎去除回答下的广告
+^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations url reject-dict
+# 知乎其他广告拦截
+^https?:\/\/api\.zhihu\.com\/(notifications\/v\d\/count|v\d\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad|ad-style-service) url reject-dict
+# 知乎拦截部分预加载
+# ^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription) url reject-dict
+# 知乎网页版去广告
+^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings url reject-dict
+^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject-dict
+^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner url reject-dict
+^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation url reject-dict
+# 知乎品牌提问广告
+^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? url reject-dict
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? url reject-dict
+# 屏蔽消息页面上拉的用户精选
+^https?:\/\/api\.zhihu\.com/moments/hybrid\? url reject-dict
+# 知乎下发的配置，如皮肤等
+^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
+# 屏蔽知乎“我的”页面推荐开通会员的卡片
+^https?:\/\/api\.zhihu\.com\/people\/self\/new_user_card url reject-200
+# 知乎去除Tab页关注人头像
+^https?:\/\/api\.zhihu\.com\/moments\/tab_v2 url reject-dict
+# 屏蔽知乎8.3.0版本首页顶部的视频角标
+^https?:\/\/api\.zhihu\.com\/explore\/entry\/tips url reject
+
+
+# >🎃🎃🎃 哔哩哔哩去广告
+# 去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
+# 去除动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist url reject-dict
+# 可能的一些推广(beta)
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? url reject-dict
+# 推荐去广告
+^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 追番去广告
+^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 直播去广告
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 动态去广告
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 开屏去广告
+^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 标签页处理
+^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 我的页面处理
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 漫画去广告
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
+
+
+# >🎃🎃🎃 哔哩自动换区
+#番剧地区自动切换
+^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+#可选, 适用于搜索指定地区的番剧
+^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+# 哔哩哔哩番剧开启1080P+ （by NobyDa）
+^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js
+# 去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
+# 去除动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist url reject-dict
+# 可能的一些推广(beta)
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? url reject-dict
+# 推荐去广告
+^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 追番去广告
+^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 直播去广告
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 动态去广告
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 开屏去广告
+^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 标签页处理
+^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 我的页面处理
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+# 漫画去广告
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
+
+hostname = ap?.bilibili.com, ap?.biliapi.net,manga.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com，*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com，www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226,*.xima*.*, *.xmcdn.*，api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, new.vip.weibo.cn,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com，app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com，tiebac.baidu.com，www.bbkj.work, wx.wxqqurl.cn, wp3.lobdol.cn, uranus.sharedaka.com, comic.321mh.com, awg.enmonster.com, mp.weixin.qq.com, wx.mygolbs.com, jabi.coding.net, api.bspapp.com, 3dd0be8a-54fe-43ff-a0e7-f670c4f20432.bspapp.com, *.tslt.xyz, g.syshhc.top, c.jxjt888.top, www.laoguikeji.cn, qj.bpojie.com, b.tslt.xyz, m.xgjyouhui.com, www.freeheikeji.cn, xcx.xianbaow.com, *.smkj33.top, *.ddly666.top, hkj178.com, a.jxjt888.top, lysl2020.com, www.i3zh.com, iosoi.cn, jabi.coding.net, jt.jxjt888.top, gjsx.vip, d.syshhc.top, gz.gongzijx.com, tvapp.guilaile.cn, www.benbenfx.xyz, 4thdimension.top, api.bspapp.com, tan.ipnas.ltd
+
