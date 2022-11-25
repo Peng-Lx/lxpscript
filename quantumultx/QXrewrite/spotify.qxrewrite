@@ -6,10 +6,7 @@
 #01 ✅ spotify 部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/spotify.js
 
-#02 ✅  酷我音乐 Vip Crack 
-^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js
-^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) url script-request-header https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js
 
 
-hostname = spclient.wg.spotify.com,*kuwo*,*lrts*
+hostname = spclient.wg.spotify.com
 
