@@ -165,9 +165,13 @@
 #09 ✅ TF信息获取 
 ^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys.js
 
+#10 ✅ Grow解锁永久会员
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Grow.js
+
+
 
 
 # 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
 
 
-hostname = www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com,api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com,api.revenuecat.com,api-prod.languagedrops.com,api.meiease.cn,testflight.apple.com,open3.vistastory.com,api.feidee.net,userapi.feidee.net,tg.feidee.com,community.feidee.com,yimuapp.com,account.wps.cn,*account.wps.com
+hostname = api.revenuecat.com,www.luqijianggushi.com,p.du.163.com,ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com，api.revenuecat.com,ap*.intsig.net,splice.oracle.*.com xy-viva.kakalili.com,api-chn.rthdo.com,bmall.camera360.com,api.polaxiong.com,pan.baidu.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,api.infzm.com,api.account.meitu.com, api.meiyan.com,apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157,apiios.xiangha.com, 39.97.157.167,vira.llsapp.com,appa.lingdu2019.cn,mob2015.kekenet.com,biz.caiyunapp.com,api.interpreter.caiyunai.com,spclient.wg.spotify.com,nmeditation.snailsleep.net,snailsleep.net,music.snailsleep.net,app.xunjiepdf.com,cn.pornhubpremium.com,dict.eudic.net,*.kuwo.cn, *.lrts.me,*.lingdu2019.cn,apiios_dq.xiangha.com,buy.itunes.apple.com,api.tidal.com,www.qobuz.com,lvv2.com,*.wtzw.com,cutisanapi.imuuzi.com,api.revenuecat.com,api-prod.languagedrops.com,api.meiease.cn,testflight.apple.com,open3.vistastory.com,api.feidee.net,userapi.feidee.net,tg.feidee.com,community.feidee.com,yimuapp.com,account.wps.cn,*account.wps.com
