@@ -2,6 +2,12 @@
 #!desc=APPAdBlock Plus Mod
 
 
+# >🎃🎃🎃 HDOBOX去广告
+host-suffix, applovin.com, reject
+host-suffix, applvn.com, reject
+host-suffix, doubleclick.net, reject
+
+
 # >🎃🎃🎃微博去广告以及去除各部分推广模块 - cherish
 ^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|messageflow|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 
