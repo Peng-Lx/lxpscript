@@ -1,5 +1,4 @@
-/***********************************
-
+/***
 > 应用名称：酷我音乐
 > 软件版本：10.3.7
 > 下载地址：https://apps.apple.com/cn/app/id588673713
@@ -17,8 +16,8 @@
 QX
 [rewrite_local]
 # ～ KuWoMusicProCrack解锁会员权限（2022-12-03）
-^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) url script-response-body KuWoMusicProCrack.js
-^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) url script-request-header KuWoMusicProCrack.js
+^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/kwyy.js
+^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/kwyy.js
 
 ***********************************
 [mitm] 
@@ -26,8 +25,8 @@ hostname=*kuwo*,*lrts*
 ***********************************
 Surge&loon
  [Script]
- http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) requires-body=1,max-size=0,script-path=
- http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/kwyy.js
+ http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/kwyy.js
 
 ***/
 
