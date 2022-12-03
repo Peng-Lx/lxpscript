@@ -17,7 +17,7 @@
 [rewrite_local]
   
 # ～ 简讯解锁会员权限（2022-12-03）
-^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info url script-response-body 
+^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/JianXun.js
 
 ***********************************
 [mitm] 
@@ -25,7 +25,7 @@ hostname=api.tipsoon.com
 ***********************************
 Surge&loon
  [Script]
- http-response ^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/JianXun.js
 
 ***/
 
