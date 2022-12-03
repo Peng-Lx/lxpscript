@@ -4,12 +4,18 @@
 下载地址：http://t.cn/A6KZMlGb
 脚本作者：Passer_by_yun
 *
+QX
 [rewrite_local]
 # > NotePlan3解锁永久订阅
 ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body 
 
+*************************
 [mitm] 
 hostname = api.revenuecat.com
+*************************
+Surge&loon
+ [Script]
+ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=
 
 */
 
