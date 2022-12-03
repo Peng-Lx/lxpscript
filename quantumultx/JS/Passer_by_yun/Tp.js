@@ -10,13 +10,17 @@
 使用声明：⚠️仅供学习交流，🈲️商业用途
 
 ***
-
+QX
 [rewrite_local]
 # > 爱提词解锁永久订阅
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/TeleprompterProCrack.js
-
+*************************
 [mitm] 
 hostname = buy.itunes.apple.com
+*************************
+Surge&loon
+ [Script]
+ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=
 
 ***/
 
