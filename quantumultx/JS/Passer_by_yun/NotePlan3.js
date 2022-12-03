@@ -7,7 +7,7 @@
 QX
 [rewrite_local]
 # > NotePlan3解锁永久订阅
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body 
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/NotePlan3.js
 
 *************************
 [mitm] 
@@ -15,7 +15,7 @@ hostname = api.revenuecat.com
 *************************
 Surge&loon
  [Script]
- http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/NotePlan3.js
 
 */
 
