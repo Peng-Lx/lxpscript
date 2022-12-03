@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > VN视频剪辑解锁订阅
-^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/VlogNowProCrack.js
+^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Vn.js
 
 [mitm] 
 hostname = api2.vlognow.me
