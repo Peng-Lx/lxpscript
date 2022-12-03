@@ -13,14 +13,14 @@
 QX
 [rewrite_local]
 # > 爱提词解锁永久订阅
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/TeleprompterProCrack.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Tp.js
 *************************
 [mitm] 
 hostname = buy.itunes.apple.com
 *************************
 Surge&loon
  [Script]
- http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Tp.js
 
 ***/
 
