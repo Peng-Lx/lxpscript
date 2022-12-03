@@ -131,13 +131,13 @@
 
 # 🍥🍥🍥🍥🍥🍥By🌈Passer_by_yun🍥🍥🍥🍥🍥🍥
 #01 ✅ Grow解锁永久会员
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Grow.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Grow.js
 
 #02 ✅ AnyBox 解锁Pro永久版
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/AnyBox.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/AnyBox.js
 
 #03 ✅ VN视频剪辑解锁订阅
-^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Vn.js
+^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Vn.js
 
 # 🍥🍥🍥🍥🍥🍥By🌈@ddgksf2013🍥🍥🍥🍥🍥🍥
 
@@ -145,7 +145,7 @@
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center) url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/ktx%2Cjs
 
 # 02  ✅ 简讯解锁会员权限
-^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/JianXun.js
+^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/JianXun.js
 
 
 # 🍥🍥🍥🍥🍥🍥other🍥🍥🍥🍥🍥🍥
