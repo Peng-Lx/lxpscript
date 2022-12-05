@@ -5,16 +5,13 @@
 软件版本：v10.6.2
 脚本作者：彭于晏
 更新时间：2022-9-8
-问题反馈：QQ+89996462
 TG反馈群：https://t.me/plus8889
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 
-*******************************
-
+************************
 [rewrite_local]
 
-^https:\/\/vipapi\.jxedt\.com\/store\/vip\/check url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/jxydt.js
+^https:\/\/vipapi\.jxedt\.com\/store\/vip\/check url script-response-body 
 
 [mitm] 
 hostname = vipapi.jxedt.com
