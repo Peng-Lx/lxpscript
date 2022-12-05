@@ -12,14 +12,14 @@
 
 [rewrite_local]
 # > 可拍解锁永久会员
-^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ url script-response-body 
+^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/WeShot.js
 *******************************
 [mitm] 
 hostname = fxshot-api.afunapp.com
 *******************************
 Surge&loon
  [Script]
- http-response ^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/WeShot.js
 
 
 ***/
