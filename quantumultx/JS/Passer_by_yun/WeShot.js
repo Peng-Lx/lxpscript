@@ -8,14 +8,19 @@
 问题反馈：https://t.me/yqc_777
 使用声明：⚠️仅供学习交流，🈲️商业用途
 
-*******************************
+***
 
 [rewrite_local]
 # > 可拍解锁永久会员
 ^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ url script-response-body 
-
+*******************************
 [mitm] 
 hostname = fxshot-api.afunapp.com
+*******************************
+Surge&loon
+ [Script]
+ http-response ^https?:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query$ requires-body=1,max-size=0,script-path=
+
 
 ***/
 
