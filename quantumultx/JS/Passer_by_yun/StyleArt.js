@@ -1,5 +1,5 @@
 /***
-脚本功能：Style Art解锁永久会员
+脚本功能：Style Art 绘画神奇器 解锁永久会员
 软件版本：1.1.0
 下载地址：http://t.cn/A6KJ3Fhs
 脚本作者：Passer_by_yun
