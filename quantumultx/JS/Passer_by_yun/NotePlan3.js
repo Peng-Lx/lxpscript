@@ -3,6 +3,7 @@
 软件版本：3.7.1
 下载地址：http://t.cn/A6KZMlGb
 脚本作者：Passer_by_yun
+使用声明：⚠️仅供学习交流，🈲️商业用途
 *
 QX
 [rewrite_local]
