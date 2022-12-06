@@ -1,21 +1,15 @@
-
-
 /*
-
 脚本功能：gear浏览器插件 解锁订阅
 下载地址：http://mtw.so/64tULY
 软件版本：5.8.5
 脚本作者：Pyy
-
-
+使用声明：⚠️⚠️⚠️此脚本仅供学习与交流，禁止转载与贩卖！⚠️⚠️⚠️
 *******************************
-
 [rewrite_local]
 
 ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Gear.js
 
 [mitm] 
-
 hostname = api.revenuecat.com
 
 */
