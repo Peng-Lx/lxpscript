@@ -4,14 +4,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https://mobile.flightradar24.com/mobile/(user-session|subscribe url script-response-body 
+ ^https://mobile.flightradar24.com/mobile/(user-session|subscribe url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Eric/Flightradar24.js
  **********************
  *hostname = mobile.flightradar24.com
  **********************
  
  *Surge&loon
  [Script]
- http-response ^https://mobile.flightradar24.com/mobile/(user-session|subscribe requires-body=1,max-size=0,script-path=
+ http-response ^https://mobile.flightradar24.com/mobile/(user-session|subscribe requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Eric/Flightradar24.js
  */
 
 
