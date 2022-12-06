@@ -1,6 +1,8 @@
 /*
  *脚本功能：calm VIP
  *脚本整理：Peng-Lx
+ *脚本作者：langkhach
+ *使用声明：⚠️仅供学习交流，🈲️商业用途
  **********************
  *QX
  [rewrite_local]
