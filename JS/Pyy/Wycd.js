@@ -6,13 +6,13 @@
 *******************************
 QX
 [rewrite_local]
-^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js
+^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js
 *******************************
 hostname = dict.youdao.com
 *******************************
 Surge&loon
 [Script]
-http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status requires-body=1,max-size=0,script-path=
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js
  
 ***/
 
