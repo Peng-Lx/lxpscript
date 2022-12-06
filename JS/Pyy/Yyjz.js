@@ -3,6 +3,7 @@
 下载地址：https://is.gd/8aDLVe
 软件版本：1.1.34
 脚本作者：Pyy
+使用声明：⚠️仅供学习交流，🈲️商业用途
 *******************************
 QX
 [rewrite_local]
@@ -14,6 +15,7 @@ hostname = buy.itunes.apple.com
 Surge&loon
 [Script]
 http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=
+
 ***/
 
 
