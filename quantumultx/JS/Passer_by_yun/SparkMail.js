@@ -3,9 +3,6 @@
 软件版本：3.0.6
 下载地址：http://t.cn/A6Kc7abd
 脚本作者：Passer_by_yun
-更新时间：2022-11-18
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
 使用声明：⚠️仅供学习交流，🈲️商业用途
 
 ***
@@ -18,8 +15,8 @@ QX
 hostname = api.revenuecat.com
 *************************
 Surge&loon
- [Script]
- http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/SparkMail.js
+[Script]
+http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/SparkMail.js
 
 ***/
 
