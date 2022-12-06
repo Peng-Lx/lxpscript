@@ -3,10 +3,11 @@
 下载地址：http://u6v.cn/5XtW8F
 软件版本：2.4.4
 脚本作者：Pyy
+使用声明：⚠️仅供学习交流，🈲️商业用途
 *******************************
 QX
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ttjz.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body 
 *******************************
 hostname = api.revenuecat.com
 *******************************
