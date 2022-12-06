@@ -1,11 +1,9 @@
 /***
-
 脚本功能：Mondly: 33种语言轻松学——解锁VIP
 下载地址：https://is.gd/9a3WSk
 软件版本：9.34.0
 脚本作者：Pyy
-
-
+使用声明：⚠️⚠️⚠️此脚本仅供学习与交流，禁止转载与贩卖！⚠️⚠️⚠️
 *******************************
 
 [rewrite_local]
@@ -13,9 +11,7 @@
 ^https:\/\/api\.mondlylanguages\.com\/v3\/ios\/user\/sync url script-response-body 
 
 [mitm] 
-
 hostname = api.mondlylanguages.com
-
 
 ***/
 
