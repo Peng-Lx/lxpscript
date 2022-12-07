@@ -6,7 +6,7 @@
 [rewrite_local]
 
 #  百度文库☆解锁VIP文档阅读权限（2022-10-17）@ddgksf2013
-^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/Baidulibrary.js
+^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/Baidulibrary.js
 
 hostname=appwk.baidu.com
 
