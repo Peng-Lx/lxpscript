@@ -7,15 +7,14 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/game\.17tcw\.com\/default\/login\/reqLogin url script-response-body
- 
+ ^https:\/\/game\.17tcw\.com\/default\/login\/reqLogin url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/Qnjj.js
  **********************
  hostname = game.17tcw.com
  **********************
  
  Surge&loon
  [Scrip]
- http-response ^https:\/\/game\.17tcw\.com\/default\/login\/reqLogin requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/game\.17tcw\.com\/default\/login\/reqLogin requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/Qnjj.js
  
  ***/
  
