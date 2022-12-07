@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/music\.snailsleep\.net url script-response-body
+ ^https:\/\/music\.snailsleep\.net url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Wnsm.js
  
  **********************
  hostname = music.snailsleep.net
@@ -15,7 +15,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https:\/\/music\.snailsleep\.net requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/music\.snailsleep\.net requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Wnsm.js
  
  ***/
 
