@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy) url script-response-body
+ ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/Appraven.js
  
  **********************
  hostname = appraven.net
@@ -16,7 +16,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy) requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/Appraven.js
  
  ***/
 
