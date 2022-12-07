@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/app\.yiyan\.art\/yiyan\/ url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/YiYan.js
+ ^https:\/\/app\.yiyan\.art\/yiyan\/ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/YiYan.js
  
  **********************
  hostname = app.yiyan.art
