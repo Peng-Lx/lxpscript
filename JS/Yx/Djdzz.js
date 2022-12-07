@@ -1,6 +1,6 @@
 /***
  脚本功能：刀剑大作战 无限钻石金币
- 下载地址：下载地址：https://is.gd/RSGWg0 V1.40
+下载地址：https://is.gd/RSGWg0 V1.40
  脚本作者：Pyy
  更新时间：22.09.25
  TG反馈群：https://t.me/plus8889
