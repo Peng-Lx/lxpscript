@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^http[s]:\/\/(.*.kuwo.cn) url script-response-body
+ ^http[s]:\/\/(.*.kuwo.cn) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Bdyy.js
  
  **********************
  hostname = bd-api.kuwo.cn
@@ -15,7 +15,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^http[s]:\/\/(.*.kuwo.cn) requires-body=1,max-size=0,script-path=
+ http-response ^http[s]:\/\/(.*.kuwo.cn) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Bdyy.js
  
  ***/
  
