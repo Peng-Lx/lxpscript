@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\//app.58.com\/api\/ucenter\/v2\/index url script-response-body
+ ^https:\//app.58.com\/api\/ucenter\/v2\/index url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/58index.js
  
  **********************
  hostname = app.58.com
@@ -16,7 +16,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https:\//app.58.com\/api\/ucenter\/v2\/index requires-body=1,max-size=0,script-path=
+ http-response ^https:\//app.58.com\/api\/ucenter\/v2\/index requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/JS/58index.js
  
  ***/
  
