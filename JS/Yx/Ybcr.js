@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/api\.xgamevip\.com\/api\/v1\/getUserData url script-response-body url script-response-body
+ ^https:\/\/api\.xgamevip\.com\/api\/v1\/getUserData url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/Ybcr.js
  
  **********************
  hostname = api.xgamevip.com
@@ -15,7 +15,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https:\/\/api\.xgamevip\.com\/api\/v1\/getUserData requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/api\.xgamevip\.com\/api\/v1\/getUserData requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/Ybcr.js
  
  ***/
 
