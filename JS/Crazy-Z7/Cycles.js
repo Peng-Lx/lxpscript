@@ -8,7 +8,7 @@
  QX
  [rewrite_local]
  ^https?:\/\/pcbe\.perigee\.se\/api\/v1\/buyers\/*\/subscription* url reject
- ^https?:\/\/pcbe\.perigee\.se\/api\/v1\/verify-purchases url script-response-body
+ ^https?:\/\/pcbe\.perigee\.se\/api\/v1\/verify-purchases url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Cycles.js
  
  **********************
  hostname =  pcbe.perigee.se
