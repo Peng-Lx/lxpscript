@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/api\.verv\.com\/v4\/pup url script-response-body
+ ^https?:\/\/api\.verv\.com\/v4\/pup url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Smcmq.js
  
  **********************
  hostname = api.verv.com
@@ -15,7 +15,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https?:\/\/api\.verv\.com\/v4\/pup requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.verv\.com\/v4\/pup requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Smcmq.js
  
  ***/
 
