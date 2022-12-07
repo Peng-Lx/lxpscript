@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/app\.yiyan\.art\/yiyan\/ url script-response-body url script-response-body
+ ^https:\/\/app\.yiyan\.art\/yiyan\/ url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/YiYan.js
  
  **********************
  hostname = app.yiyan.art
@@ -16,7 +16,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https:\/\/app\.yiyan\.art\/yiyan\/ requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/app\.yiyan\.art\/yiyan\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/ddgksf2013/YiYan.js
  
  ***/
 
