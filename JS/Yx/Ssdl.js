@@ -8,7 +8,7 @@
  **********************
  QX
  [rewrite_local]
- ^^https?:\/\/bowland\.bytedance\.com\/ohayoo\/lightboat\/bowland\/Equip\/GetAllEquips*? url script-response-body url script-response-body
+ ^https?:\/\/bowland\.bytedance\.com\/ohayoo\/lightboat\/bowland\/Equip\/GetAllEquips*? url script-response-body url script-response-body
  
  **********************
  hostname = bowland.bytedance.com
