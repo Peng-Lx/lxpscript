@@ -6,14 +6,14 @@
  **********************
  *QX
  [rewrite_local]
- ^https:\/\/cat-match\.easygame2021\.com\/sheep\/v1\/game\/map_info_ex url script-response-body
+ ^https:\/\/cat-match\.easygame2021\.com\/sheep\/v1\/game\/map_info_ex url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/KSylgy.js
  **********************
  *hostname =  cat-match.easygame2021.com
  **********************
  
  Surge&loon
  [Scrip]
- http-response  ^https:\/\/cat-match\.easygame2021\.com\/sheep\/v1\/game\/map_info_ex requires-body=1,max-size=0,script-path=
+ http-response  ^https:\/\/cat-match\.easygame2021\.com\/sheep\/v1\/game\/map_info_ex requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yx/KSylgy.js
  
  ***/
 
