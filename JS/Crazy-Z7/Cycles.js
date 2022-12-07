@@ -5,12 +5,13 @@
  更新时间：22.12.04
  使用声明：⚠️仅供学习交流，🈲️商业用途
  **********************
- *QX
+ QX
  [rewrite_local]
  ^https?:\/\/pcbe\.perigee\.se\/api\/v1\/buyers\/*\/subscription* url reject
  ^https?:\/\/pcbe\.perigee\.se\/api\/v1\/verify-purchases url script-response-body
+ 
  **********************
- *hostname =  pcbe.perigee.se
+ hostname =  pcbe.perigee.se
  **********************
  ***/
  
