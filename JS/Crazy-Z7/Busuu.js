@@ -4,11 +4,12 @@
  更新时间：22.09.10
  使用声明：⚠️仅供学习交流，🈲️商业用途
  **********************
- *QX
+ QX
  [rewrite_local]
  ^https?:\/\/(.*.*.)\/users\/me url script-response-body 
+ 
  **********************
- *hostname = *.boshu.*,*.bosuu.com,*.busuu.com
+ hostname = *.boshu.*,*.bosuu.com,*.busuu.com
  **********************
  
  Surge&loon
