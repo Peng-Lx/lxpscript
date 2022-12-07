@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\//app.58.com\/api\/ucenter\/v2\/index url script-response-body url script-response-body
+ ^https:\//app.58.com\/api\/ucenter\/v2\/index url script-response-body
  
  **********************
  hostname = app.58.com
