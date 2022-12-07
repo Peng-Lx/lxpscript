@@ -7,7 +7,7 @@
  QX
  [rewrite_local]
  ^https?:\/\/.*.dushu365.com* url request-body "token":".*?" request-body "token":"202211261ex1LAhKKo7diZHjsF2"
- ^http[s]?:\/\/.*dushu.*(v100|v101|program/v100)\/(content|play/duration|index|userInfo|vipInfo|info) url script-response-body
+ ^http[s]?:\/\/.*dushu.*(v100|v101|program/v100)\/(content|play/duration|index|userInfo|vipInfo|info) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Fdds.js
  
  **********************
  hostname = *.dushu365.com*
