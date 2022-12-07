@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) url script-response-body
+ ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Ajj.js
  
  **********************
  hostname =  api.open.loveclip.site
@@ -15,7 +15,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Ajj.js
  
  ***/
  
