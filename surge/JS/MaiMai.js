@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\//open.taou.com\/maimai\/member\/uh\/get_member_info_ios_v3 url script-response-body  script-response-body
+ ^https:\//open.taou.com\/maimai\/member\/uh\/get_member_info_ios_v3 url script-response-body  
  
  **********************
  hostname = open.taou.com
