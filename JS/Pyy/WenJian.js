@@ -9,7 +9,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/WenJian.js
+ ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/WenJian.js
  
  **********************
  hostname = buy.itunes.apple.com
