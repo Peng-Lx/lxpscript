@@ -11,7 +11,7 @@
  ^https:\/\/api\.sortedapp\.com\/receipts\/verify url script-response-body  
  
  **********************
- hostname = api.revenuecat.com
+ hostname = api.sortedapp.com
  
  **********************
  
