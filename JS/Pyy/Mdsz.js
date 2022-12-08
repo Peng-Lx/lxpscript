@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body  
+ ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Mdsz.js 
  
  **********************
  hostname = api.revenuecat.com
@@ -16,7 +16,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Mdsz.js
  
  ***/
  
