@@ -8,7 +8,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig url script-response-body  
+ ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Widgets.js
  
  **********************
  hostname = top-widgets-api.xiaozujian.com
@@ -17,7 +17,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig requires-body=1,max-size=0,script-path=
+ http-response ^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Widgets.js
  
  ***/
 
