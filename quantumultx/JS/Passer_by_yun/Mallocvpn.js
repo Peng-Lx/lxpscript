@@ -9,7 +9,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ url script-response-body 
+ ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Mallocvpn.js
 
  **********************
  hostname = api.revenuecat.com
@@ -17,7 +17,7 @@
  
  Surge&loon
  [Scrip]
- http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ requires-body=1,max-size=0,script-path=
+ http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Passer_by_yun/Mallocvpn.js
  
  ***/
 
