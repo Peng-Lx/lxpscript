@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https:\//passport.58.com\/58\/user/\info url script-response-body  script-response-body
+ ^https:\//passport.58.com\/58\/user/\info url script-response-body  
  
  **********************
  hostname = passport.58.com
