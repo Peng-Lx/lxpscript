@@ -1,4 +1,5 @@
 /*
+# 百度输入法 Vip
 
 [rewrite_local]
 
