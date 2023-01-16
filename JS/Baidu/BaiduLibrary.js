@@ -1,5 +1,6 @@
 /*
 
+# 百度文库+解锁VIP文档查看权限
 [rewrite_local]
 
 ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body 
