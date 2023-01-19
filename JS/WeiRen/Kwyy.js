@@ -3,8 +3,6 @@
 下载地址：appstore
 软件版本：所有
 脚本作者：伟人
-TG反馈群：https://t.me/WeiRenQAQ
-TG频道群：https://t.me/WeiRenOvO
 使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 [rewrite_local]
