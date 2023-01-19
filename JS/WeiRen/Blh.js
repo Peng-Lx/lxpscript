@@ -8,13 +8,7 @@ APP下载地址：https://apps.apple.com/cn/app/%E8%B4%9D%E4%B9%90%E8%99%8E%E5%9
 
 软件版本：所有
 脚本作者：伟人
-作者QQ:55749353
 更新时间：2022-12-12
-问题反馈：QQ+55749353
-QQ会员群：添加作者
-TG反馈群：https://t.me/WeiRenOvO
-TG频道群：https://t.me/WeiRenQAQ
-如果出现: 无法播放，等等问题请添加Tg频道反馈
 使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 [rewrite_local]
