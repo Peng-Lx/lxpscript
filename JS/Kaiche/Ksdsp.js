@@ -21,8 +21,16 @@
 
 ^http[s]?:\/\/long.fuhuida.*\/(videos1|watch|static|upload|watch[0-9]+)\/.*\/.*\.m3u8\?auth_key.*$ url script-request-header https://raw.githubusercontent.com/WeiRen0/Scripts/main/kuaishou.js
 
+**********************
 [mitm]
 hostname = *fuhuida*
+**********************
+
+*Surge&loon
+ [Script]
+ http-response ^http[s]?:\/\/long.fuhuida.*\/(videos1|watch|static|upload|watch[0-9]+)\/.*\/.*\.m3u8\?auth_key.*$ requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/WeiRen0/Scripts/main/kuaishou.js
+
+
 */
 
 
