@@ -127,7 +127,7 @@ Drops = type=http-response,pattern=^https\:\/\/api-prod\.languagedrops\.com\/syn
 TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys.js,script-update-interval=0
 
 #37 ✅
-爱剪辑 = type=http-request,pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail),requires-body=0,script-path=script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Ajj.js,script-update-interval=0
+云听 = type=http-request,pattern=^http[s]?:\/\/(getway|ytapi).radio.(cn|com)(/app[a-z0-9/]+|/ytsrv/srv/appUser/getUserInfoH5).*$,requires-body=0,script-path=script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiRen0/Scripts/main/yunt.js,script-update-interval=0
 
 #38 ✅
 
@@ -138,4 +138,4 @@ TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3
 
 
 [MITM]
-hostname = %APPEND% api.open.loveclip.site,*.kuwo.cn, *.lrts.me, api.xiaolanben.com,biz.caiyunapp.com,buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,gateway.caixin.com,account.wps.cn,*account.wps.com,api.meiease.cn,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,pay.wecut.com,nmeditation.snailsleep.net,bmall.camera360.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,appweb_dq.xiangha.com,101.200.225.157,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com,api.meiyan.com,www.luqijianggushi.com,api.interpreter.caiyunai.com,cn.pornhubpremium.com,xy-viva.kakalili.com,api-chn.rthdo.com,origin-prod-phoenix.jibjab.com,api.tidal.com,www.qobuz.com,lvv2.com,knotesapp.cn,api-prod.languagedrops.com，api.infzm.com,testflight.apple.com
+hostname = %APPEND% *.radio.*,*.kuwo.cn, *.lrts.me, api.xiaolanben.com,biz.caiyunapp.com,buy.itunes.apple.com,vsco.co,*.wtzw.com,api.xiuxiu.meitu.com,h5.xiuxiu.meitu.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,gateway.caixin.com,account.wps.cn,*account.wps.com,api.meiease.cn,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,pay.wecut.com,nmeditation.snailsleep.net,bmall.camera360.com,apiios.xiangha.com,billing.peakcloud.org,apiios_dq.xiangha.com,appweb_dq.xiangha.com,101.200.225.157,xluser-ssl.xunlei.com,mb3admin.com,m*.bybutter.com,p.du.163.com,api.account.meitu.com,api.meiyan.com,www.luqijianggushi.com,api.interpreter.caiyunai.com,cn.pornhubpremium.com,xy-viva.kakalili.com,api-chn.rthdo.com,origin-prod-phoenix.jibjab.com,api.tidal.com,www.qobuz.com,lvv2.com,knotesapp.cn,api-prod.languagedrops.com，api.infzm.com,testflight.apple.com
