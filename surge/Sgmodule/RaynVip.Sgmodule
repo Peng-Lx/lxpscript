@@ -127,7 +127,7 @@ Drops = type=http-response,pattern=^https\:\/\/api-prod\.languagedrops\.com\/syn
 TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/TF_keys.js,script-update-interval=0
 
 #37 ✅
-云听 = type=http-request,pattern=^http[s]?:\/\/(getway|ytapi).radio.(cn|com)(/app[a-z0-9/]+|/ytsrv/srv/appUser/getUserInfoH5).*$,requires-body=0,script-path=script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiRen0/Scripts/main/yunt.js,script-update-interval=0
+克拉壁纸 = type=http-request,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll|picture\/search|catalog\/listAll|top\/list|picture\/date\?date),requires-body=0,script-path=script-path=https://ghproxy.com/https://github.com/ddgksf2013/dev/raw/main/ClarityProCrack.js,script-update-interval=0
 
 #38 ✅
 
