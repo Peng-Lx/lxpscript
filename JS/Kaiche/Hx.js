@@ -24,7 +24,7 @@ TG频道群：https://t.me/WeiRenQAQ
 
 [rewrite_local]
 
-^http[s]?:\/\/api\.hx.*\.com\/api\/app\/vid\/h5\/m3u8.*\/.*m3u8\? url script-request-header https://raw.githubusercontent.com/WeiRen0/Scripts/main/hxsp.js
+^http[s]?:\/\/api\.hx.*\.com\/api\/app\/vid\/h5\/m3u8.*\/.*m3u8\? url script-request-header https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Kaiche/Hx.js
 
 [mitm]
 hostname = api.hx*.com
