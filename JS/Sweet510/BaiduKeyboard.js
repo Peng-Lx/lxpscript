@@ -1,4 +1,5 @@
-*
+/*
+百度文库
 
 [rewrite_local]
 
