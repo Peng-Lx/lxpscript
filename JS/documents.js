@@ -1,22 +1,6 @@
 
 /******************************
 
-脚本功能：documents文件管理器+解锁订阅
-
-下载地址：https://is.gd/DLjoIn
-
-软件版本：v8.2.3
-
-我是一只小菜鸡
-
-进内部联系下方
-
-WX: L-190705
-
-提示:如果不能解锁卸载软件重新下载测试
-
-*******************************
-
 [rewrite_local]
 
 ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body documents.js
