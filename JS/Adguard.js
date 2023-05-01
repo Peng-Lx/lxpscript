@@ -8,7 +8,7 @@
 
 [rewrite_local]
 # > AdGuard 解锁永久高级版
-^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body 
+^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Adguard.js
 
 [mitm] 
 hostname = *.adguard.org
