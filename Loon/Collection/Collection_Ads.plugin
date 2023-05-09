@@ -1,6 +1,6 @@
-#!name = LOON ADS Collection
-#!desc = Filter Advertising
-#!author = Thanks To The Authors
+#!name = ♻LOON ADS Collection
+#!desc = ♻Filter Advertising
+#!author = ♻Thanks To The Authors
 #!icon = https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/loon.png
 
 [Rewrite]
@@ -98,16 +98,41 @@
 ^https:\/\/weibo\.com\/ttarticle\/x\/m\/aj\/(reward|uvead)\? reject-dict
 
 
-# 小红书
+# 🆖小红书
 # 惊喜弹窗
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style\?|open\?|submit_action$) reject-dict
 ^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? url reject-dict
 # 信息流
 ^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? reject-dict
 
-# YOUTUBE
+# 🆖YOUTUBE
 # 使用reject-img减少开销
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-img
+
+# 🆖TubeMax
+^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg reject
+
+
+# 🆖百度网盘
+^https?:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad) reject
+
+
+# 🆖Bilibili
+# 屏蔽默认搜索框关键词
+^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords reject
+# 直播间商品广告浮窗 //api.live.bilibili.com
+^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? reject-dict
+# IP请求、地理位置请求 //api.bilibili.com
+^https:\/\/app\.bilibili\.com\/x\/resource\/ip reject
+^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp=jsonp$ reject-200
+# 将香港CDN切换至腾讯CDN以提高视频加载速度
+# ^https?:\/\/upos-hz-mirrorakam\.akamaized\.net 302 https://upos-sz-mirrorcos.bilivideo.com
+# 🆖
+# 🆖
+
+
+
+
 
 
 [Rule]
@@ -133,6 +158,29 @@ DOMAIN, kadmimage.biz.weibo.com, REJECT
 DOMAIN, sdkaction.biz.weibo.com, REJECT
 DOMAIN, sdkclick.biz.weibo.com, REJECT
 DOMAIN, sdkmonitor.biz.weibo.com, REJECT
+
+# 🆎TubeMax
+DOMAIN, app.tubemaxapp.com, PROXY
+DOMAIN-SUFFIX, adjust.com, REJECT
+DOMAIN-SUFFIX, applvn.com, REJECT
+DOMAIN-SUFFIX, app-measurement.com, REJECT
+DOMAIN-SUFFIX, pangle.io, REJECT
+DOMAIN-SUFFIX, applovin.com, REJECT
+DOMAIN-SUFFIX, appier.net, REJECT
+DOMAIN-SUFFIX, adsmoloco.com, REJECT
+DOMAIN-SUFFIX, adcanvas.com, REJECT
+
+# 🆎
+# 🆎
+# 🆎
+# 🆎
+
+
+
+
+
+
+
 
 
 
@@ -232,5 +280,53 @@ http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|p
 
 
 
+
+#>07 🆗Bilibili by>>> RuCu6 app2smile kokoryh ddgksf2013
+# Proto 动态去广告
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_proto.js, requires-body = true, binary-body-mode = true, tag = 动态去广告
+# Proto 播放页去广告 //app.bilibili.com, grpc.biliapi.net
+# http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playurl\.v1\.PlayURL\/PlayView$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_proto.js, requires-body = true, binary-body-mode = true, tag = 播放页去广告
+# Proto 去除后台播放限制 //app.bilibili.com
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/View$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_proto.js, requires-body = true, binary-body-mode = true, tag = 去除后台播放限制
+
+# 首页 推荐、热搜发现、右上角活动、标签页、观影页、直播
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/(feed\/index(\/story)?|search\/square)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除首页推荐及广告
+http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/(top\/activity|show\/tab\/v2)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除首页推荐及广告
+http-response ^https:\/\/api\.bilibili\.com\/pgc\/page\/(bangumi|cinema\/tab\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除首页推荐及广告
+http-response ^https:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除首页推荐及广告
+
+# 开屏广告 //app.bilibili.com
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(brand\/list|event\/list2|list|show)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除开屏广告
+
+# 去除皮肤推送 //app.bilibili.com
+http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 去除皮肤推送
+
+# 我的页面处理 //app.bilibili.com
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/mine\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 我的页面处理
+
+# 解锁4K画质及1080P高码率 //app.bilibili.com
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 画质解锁
+
+#>01 🆗
+#>01 🆗
+#>01 🆗
+#>01 🆗
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [MITM]
-hostname = *.xima*.*, *.xmcdn.*,tiebac.baidu.com,api.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com,api.weibo.cn, *.uve.weibo.com, card.weibo.com, weibo.com, weibo.cn, shop.sc.weibo.com, t.cn, sinaurl.cn,edith.xiaohongshu.com,www.xiaohongshu.com,*.googlevideo.com, youtubei.googleapis.com
+hostname = *.xima*.*, *.xmcdn.*,tiebac.baidu.com,api.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com,api.weibo.cn, *.uve.weibo.com, card.weibo.com, weibo.com, weibo.cn, shop.sc.weibo.com, t.cn, sinaurl.cn,edith.xiaohongshu.com,www.xiaohongshu.com,*.googlevideo.com, youtubei.googleapis.com,*.i18n-pglstatp.com,pan.baidu.com
