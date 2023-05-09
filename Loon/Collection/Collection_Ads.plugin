@@ -5,7 +5,7 @@
 
 [Rewrite]
 
-# 喜马拉雅
+# 🆖喜马拉雅
 # 喜马拉雅_修复轮播广告失效Bug
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF reject
 # 喜马拉雅_播放页_Live
@@ -44,7 +44,7 @@
 ^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? reject
 
 
-#知乎
+# 🆖知乎
 # 首页 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
 ^https:\/\/api\.zhihu\.com\/commercial_api\/(banners_v3\/app_topstory_banner$|launch_v2\?|real_time_launch_v2\?) reject-dict
 ^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings$ reject-dict
@@ -72,76 +72,7 @@
 ^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner reject
 ^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation reject
 
-
-
-[Rule]
-# 贴吧去广告
-DOMAIN,180.76.76.200,REJECT
-IP-CIDR,180.76.76.200/32,REJECT,no-resolve
-
-# 知乎
-DOMAIN, appcloud.zhihu.com, REJECT
-DOMAIN, appcloud2.in.zhihu.com, REJECT
-DOMAIN, crash2.zhihu.com, REJECT
-DOMAIN, mqtt.zhihu.com, REJECT
-DOMAIN, sugar.zhihu.com, REJECT
-IP-CIDR, 118.89.204.198/32, REJECT
-IP-CIDR, 103.41.167.237/32, REJECT
-IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT
-
-# 微博
-DOMAIN, dns.weibo.cn, REJECT
-DOMAIN, adstrategy.biz.weibo.com, REJECT
-;DOMAIN, REJECT
-DOMAIN, kadmimage.biz.weibo.com, REJECT
-DOMAIN, sdkaction.biz.weibo.com, REJECT
-DOMAIN, sdkclick.biz.weibo.com, REJECT
-DOMAIN, sdkmonitor.biz.weibo.com, REJECT
-
-
-
-[Script]
-
-#>01 喜马拉雅 BY ddgksf2013
-
-# 喜马拉雅_屏蔽首页横幅广告
-http-response ^https?:\/\/.*\.xima.*\.com\/focus-mobile\/focusPic script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤首页横幅广告
-# 喜马拉雅_屏蔽首页动态广告
-http-response ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤首页动态广告
-# 喜马拉雅_屏蔽标签页滚动广告
-http-response ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤标签页滚动广告
-# 喜马拉雅_去除我的页面广告标签
-http-response ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤我的页面广告标签
-
-#>02 贴吧去广告 BY app2smile
-http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-json.js, requires-body = true, timeout = 10, tag = 贴吧json
-http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-proto.js, requires-body=true, binary-body-mode = true, timeout = 10, tag = 贴吧proto
-
-
-#>03 知乎去广告 BY  RuCu6 blackmatrix7
-# 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
-http-response ^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
-http-response ^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/recommend(_v2)?)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
-http-response ^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
-
-# 我的页面 - 项目列表、会员卡片、更多卡片
-http-response ^https:\/\/api\.zhihu\.com\/people\/homepage_entry$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除我的页面推广
-http-response ^https:\/\/www\.zhihu\.com\/appview\/v3\/zhmore\?? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除我的页面推广
-
-# 搜索页 - 关键词、猜你想搜
-http-response ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, argument=""recommend_queries":\{.+\}->"recommend_queries":{}", tag = 移除搜索页关键词
-
-# 回答详情页、下一个回答
-http-response ^https:\/\/api\.zhihu\.com\/next-(bff|data)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
-http-response ^https:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+\/(feeds|answers)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
-http-response ^https:\/\/www\.zhihu\.com\/api\/v4\/(answers|articles)\/\d+\/recommendations?\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
-
-# 其他、服务器推送配置
-http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 拦截服务器推送配置
-http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 拦截服务器推送配置
-
-
-#>04 微博
+# 🆖微博
 # 首页 签到、发布按钮、侧边栏、右上角红包、侧边栏提醒、超话tab悬浮、顶部直播
 ^https:\/\/api\.weibo\.cn\/2\/(ug\/checkin\/list|push\/daily)\? reject-dict
 ^https:\/\/api\.weibo\.cn\/2\/!\/live\/media_homelist\? reject-dict
@@ -166,7 +97,88 @@ http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-p
 ^https:\/\/card\.weibo\.com\/article\/m\/aj\/(reward|uvead)\? reject-dict
 ^https:\/\/weibo\.com\/ttarticle\/x\/m\/aj\/(reward|uvead)\? reject-dict
 
+
+# 小红书
+# 惊喜弹窗
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style\?|open\?|submit_action$) reject-dict
+^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? url reject-dict
+# 信息流
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? reject-dict
+
+# YOUTUBE
+# 使用reject-img减少开销
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-img
+
+
+[Rule]
+# 🆎贴吧去广告
+DOMAIN,180.76.76.200,REJECT
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+# 🆎知乎
+DOMAIN, appcloud.zhihu.com, REJECT
+DOMAIN, appcloud2.in.zhihu.com, REJECT
+DOMAIN, crash2.zhihu.com, REJECT
+DOMAIN, mqtt.zhihu.com, REJECT
+DOMAIN, sugar.zhihu.com, REJECT
+IP-CIDR, 118.89.204.198/32, REJECT
+IP-CIDR, 103.41.167.237/32, REJECT
+IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT
+
+# 🆎微博
+DOMAIN, dns.weibo.cn, REJECT
+DOMAIN, adstrategy.biz.weibo.com, REJECT
+;DOMAIN, REJECT
+DOMAIN, kadmimage.biz.weibo.com, REJECT
+DOMAIN, sdkaction.biz.weibo.com, REJECT
+DOMAIN, sdkclick.biz.weibo.com, REJECT
+DOMAIN, sdkmonitor.biz.weibo.com, REJECT
+
+
+
 [Script]
+
+#>01 🆗喜马拉雅 BY ddgksf2013
+
+# 喜马拉雅_屏蔽首页横幅广告
+http-response ^https?:\/\/.*\.xima.*\.com\/focus-mobile\/focusPic script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤首页横幅广告
+# 喜马拉雅_屏蔽首页动态广告
+http-response ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤首页动态广告
+# 喜马拉雅_屏蔽标签页滚动广告
+http-response ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤标签页滚动广告
+# 喜马拉雅_去除我的页面广告标签
+http-response ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Himalaya/Himalaya_remove_ads.js, requires-body = true, tag=喜马拉雅过滤我的页面广告标签
+
+#>02 🆗贴吧去广告 BY app2smile
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-json.js, requires-body = true, timeout = 10, tag = 贴吧json
+http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Tieba/tieba-proto.js, requires-body=true, binary-body-mode = true, timeout = 10, tag = 贴吧proto
+
+
+#>03 🆗知乎去广告 BY  RuCu6 blackmatrix7
+# 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
+http-response ^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
+http-response ^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/recommend(_v2)?)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
+http-response ^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除首页推广
+
+# 我的页面 - 项目列表、会员卡片、更多卡片
+http-response ^https:\/\/api\.zhihu\.com\/people\/homepage_entry$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除我的页面推广
+http-response ^https:\/\/www\.zhihu\.com\/appview\/v3\/zhmore\?? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除我的页面推广
+
+# 搜索页 - 关键词、猜你想搜
+http-response ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, argument=""recommend_queries":\{.+\}->"recommend_queries":{}", tag = 移除搜索页关键词
+
+# 回答详情页、下一个回答
+http-response ^https:\/\/api\.zhihu\.com\/next-(bff|data)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
+http-response ^https:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+\/(feeds|answers)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
+http-response ^https:\/\/www\.zhihu\.com\/api\/v4\/(answers|articles)\/\d+\/recommendations?\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 移除回答页推广
+
+# 其他、服务器推送配置
+http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 拦截服务器推送配置
+http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Zhihu/Zhihu_remove_ads.js, requires-body = true, tag = 拦截服务器推送配置
+
+
+
+#>04 🆗微博
 # 首页 签到、发布按钮、侧边栏、右上角红包、侧边栏提醒、超话tab悬浮、顶部直播
 http-response ^https:\/\/api\.weibo\.cn\/2\/(checkin\/show|client\/publisher_list|push\/active)\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/main/Resource/Script/Weibo/Weibo_remove_ads.js, requires-body = true, tag = 移除首页推广
 
@@ -198,7 +210,27 @@ http-request ^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url= script
 http-response ^https:\/\/(sinaurl|t)\.cn\/ script-path = https://gitlab.com/lodepuly/vpn_tool/raw/main/Resource/Script/Weibo/Weibo_remove_redirect.js, tag = 跳过重定向
 
 
+#>05 🆗小红书
+# 搜索页
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/(banner|hot)_list\?? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除搜索页广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/(hint|trending)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除搜索页广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除搜索页广告
+
+# 开屏广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除开屏广告
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除开屏广告
+
+# 信息流
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除信息流广告
+
+# 移除图片视频水印
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v[23]\/note\/(feed|redtube|videofeed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body = true, argument=""disable_watermark":false,->"disable_watermark":true,", tag = 移除图片视频水印
+
+#>06 🆗YOUTUBE
+# 该插件已足够全面，无需其他规则混用，防止复写规则被破坏。
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/YouTube/YouTube_remove_ads.js, requires-body = true, binary-body-mode = true, tag = YouTube去视频贴片广告
+
 
 
 [MITM]
-hostname = *.xima*.*, *.xmcdn.*,tiebac.baidu.com,api.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com,api.weibo.cn, *.uve.weibo.com, card.weibo.com, weibo.com, weibo.cn, shop.sc.weibo.com, t.cn, sinaurl.cn
+hostname = *.xima*.*, *.xmcdn.*,tiebac.baidu.com,api.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, www.zhihu.com, zhuanlan.zhihu.com,api.weibo.cn, *.uve.weibo.com, card.weibo.com, weibo.com, weibo.cn, shop.sc.weibo.com, t.cn, sinaurl.cn,edith.xiaohongshu.com,www.xiaohongshu.com,*.googlevideo.com, youtubei.googleapis.com
