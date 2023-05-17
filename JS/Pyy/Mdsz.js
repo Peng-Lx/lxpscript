@@ -14,7 +14,7 @@ TG频道群：https://t.me/py
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body 
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Mdsz.js
 [mitm] 
 
 hostname = buy.itunes.apple.com
