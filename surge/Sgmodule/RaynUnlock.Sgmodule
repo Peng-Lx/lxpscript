@@ -285,7 +285,7 @@ FacePlay = type=http-response,pattern=^https:\/\/aico-api.aiglobalniu.com\/users
 wps = type=http-response,pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js,script-update-interval=0
 
 #84 > 🟢网易有道词典 解锁VIP
-网易有道词典 = type=http-response,pattern=^https:\/\/dict\.youdao\.com\/vip\/user\/status,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js,script-update-interval=0
+网易有道词典 = type=http-response,pattern=^https:\/\/dict\.youdao\.com\/vip\/user\/status,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js
 
 #85 > 🟢百度文库
 百度文库 = type=http-response,pattern=^https:\/\/mime\.baidu\.com\/sapi\/v\d\/vip\/mywvip,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduKeyboard.js
