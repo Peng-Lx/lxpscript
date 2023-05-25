@@ -17,6 +17,11 @@ https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
 https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 # 酷我音乐_添加已购音乐
 ^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
+# 蓝基因
+^https:\/\/tk\.lanjiyin\.com\.cn\/img - reject
+# 靓机汇顶部滚屏
+^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+
 
 [Script]
 # 🟣Revenuecat🟣 > 解锁系列
@@ -55,29 +60,231 @@ boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itun
 #08 > 🟢傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
 傲软全家桶 = type=http-response,pattern= ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js,,script-update-interval=0
 
-#09 ✅ 七猫小说VIP      
+#09 > 🟢七猫小说VIP      
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js,script-update-interval=0
 
-#10 ✅ 陆琪讲故事  >  解锁电台 By Nobyda
+#10 > 🟢陆琪讲故事  >  解锁电台 By Nobyda
 陆琪讲故事 = type=http-response,pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/quantumultx/JS/Nobyda/luqi.js,script-update-interval=0
 
-#11 ✅  迅雷SVIP
+#11 > 🟢迅雷SVIP
 迅雷 = type=http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://ghproxy.com/https://github.com/Peng-Lx/lxpscript/blob/master/JS/Xunlei.js,script-update-interval=0,max-size=0
 
-#12 ✅ 可可英语VIP
+#12 > 🟢可可英语VIP
 可可英语 = type=http-response,pattern=^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js,script-update-interval=0,max-size=0
 
-#13 ✅ 每日英语阅读/每日外刊解锁课程
+#13 > 🟢每日英语阅读/每日外刊解锁课程
 每日英语阅读 = type=http-response,pattern=^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus?,requires-body=1,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/mryy.js,script-update-interval=0,max-size=0
 
-#14 ✅ 流利说·阅读 
+#14 > 🟢流利说·阅读 
 流利说·阅读 = type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js,script-update-interval=0
 
-#015 ✅  南方周末 >  解锁高级年费会员 + 年费会员课程 + 所有付费课程
+#015 > 🟢南方周末>解锁高级年费会员+年费会员课程+所有付费课程
 南方周末 = type=http-response,pattern=^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js,script-update-interval=0
+
+#16  > 🟢绘影字幕
+绘影字幕 = type=http-response,pattern=^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
+
+#17  > 🟢搜图神器
+搜图神器 = type=http-response,pattern=^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
+
+#18  > 🟢PS-图片编辑
+Ps = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
+
+#19  > 🟢一言
+一言 = type=http-response,pattern=^https:\/\/app\.yiyan\.art\/yiyan,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
+
+#20  > 🟢网速管家
+网速管家 = type=http-response,pattern=^https:\/\/api.*\.speedtest\.cn\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
+
+#21  > 🟢悟饭掌悦
+悟饭掌悦 = type=http-response,pattern=http:\/\/iosv2\.cjapi\.5fun\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js
+
+#22  > 🟢Emby(解锁播放权限)
+Emby解锁播放权限 = type=http-request,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
+
+#23  > 🟢扫描全能王
+扫描全能王 = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+
+#24  > 🟢百度网盘_在线视频倍率/清晰度
+百度网盘 = type=http-response,pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
+
+#25  > 🟢阿里云盘 净化/解锁SVIP
+阿里云盘 = type=http-response,pattern=^https?:\/\/(api|member)\.aliyundrive\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+
+#26  > 🟢Picsart美易_图片视频编辑器
+Picsart美易 = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
+
+#27  > 🟢起伏
+起伏 = type=http-response,pattern=https?:\/\/api\.risingfalling\.com\/api\/vip\/detail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js
+
+#28  > 🟢布丁锁屏
+布丁锁屏 = type=http-request,pattern=^https?:\/\/screen-lock\.(sm-check|51wnl-cq)\.com\/userApi\/saveUser.+,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js
+
+#29  > 🟢Wallcraft-动态壁纸
+Wallcraft壁纸 = type=http-response,pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js
+
+#30  > 🟢Symbolab(需要登录)
+Symbolab = type=http-response,pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js
+
+#31  > 🟢堆糖
+推糖 = type=http-response,pattern=^https:\/\/api\.duitang\.com\/napi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuitang.js
+
+#32  > 🟢Agenda
+Agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
+
+#33  > 🟢云听
+云听 = type=http-response,pattern=^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js
+
+#34  > 🟢Cubox-收藏阅读
+Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+
+#35 > 🟢小组件盒子
+小组件盒子 = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
+
+#36  > 🟢格式转换 
+格式转换 = type=http-response,pattern=http:\/\/format-api\.netpock\.com\/api\/user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js
+
+#37  > 🟢手机扫描，图片编辑，九宫格切图，头像制作，早安打卡，配音
+zhfqjt = type=http-response,pattern=http:\/\/.*\.dicallapp\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+
+#38  > 🟢如期
+如期 = type=http-response,pattern=^https:\/\/www\.freshhome\.top,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
+
+#39  > 🟢iLove PDF
+iLove PDF = type=http-response,pattern=^https:\/\/service\.ilovepdf\.com\/.+\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
+
+#40  > 🟢VN-视频剪辑
+VN-视频剪辑 = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
+
+#41  > 🟢日杂相机，fomz相机
+两个相机解锁 = type=http-response,pattern=^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
+
+#42 > 🟢大神水印
+大神水印 = type=http-response,pattern=^https:\/\/dashen-api\.shuiyinyu\.com\/.+\/user\/get_user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
+
+#43  > 🟢电视家
+电视家 = type=http-response,pattern=http:\/\/123\.56\.125\.184\/api\/v\d\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js
+
+#44  > 🟢极简扫描
+极简扫描 = type=http-response,pattern=^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
+
+#45 > 🟢PhotoSlip-照片清理大师
+PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
+
+#46  > 🟢猫头鹰文件管理
+猫头鹰文件管理 = type=http-response,pattern=^https:\/\/www\.skyjos\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+
+#47  > 🟢爱剪辑
+爱剪辑 = type=http-response,pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js
+
+#48  > 🟢六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
+Collart = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+
+#49  > 🟢万能小组件
+万能小组件 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+
+#50  > 🟢极简汇率
+极简汇率 = type=http-response,pattern=^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
+#51  > 🟢AdGuard
+AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+
+#52 > 🟢番薯小说
+番薯小说 = type=http-response,pattern=^https:\/\/ggs\.manmeng168\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
+
+#53 > 🟢阅读记录
+阅读记录 = type=http-response,pattern=^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
+
+#54 > 🟢Wink，蛋啵，潮自拍，海报工厂，Chic
+美图系列 = type=http-response,pattern=^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+
+#55 > 🟢美颜相机
+美颜相机 = type=http-response,pattern=^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+
+#56 > 🟢美图秀秀
+美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+
+#57 > 🟢Fimo_复古胶片相机
+Fimo复古相机 = type=http-response,pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+
+#58 > 🟢小习惯-打卡App
+小习惯 = type=http-response,pattern=^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
+
+#59 > 🟢Mate-翻译神器
+Mate-翻译 = type=http-response,pattern=^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
+
+#60 > 🟢得间小说
+得间小说 = type=http-response,pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
+
+#61 > 🟢Moji辞书-学习日语
+Moji辞书 = type=http-response,pattern=^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
+
+#62 > 🟢Batched-多量图片编辑器
+Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
+
+#63 > 🟢倒数纪念日
+dsjnr = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
+
+#64 > 🟢青柠设计-P图抠图海报
+青柠设计 = type=http-response,pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
+
+#65 > 🟢配音秀
+配音秀 = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
+
+#66 > 🟢蓝基因
+蓝基因 = type=http-response,pattern=^https:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
+
+#67 > 🟢小时尚
+小时尚 = type=http-response,pattern=^https?:\/\/kongque\.twan\.cn\/index.+\/admin\/appberrycustomer.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js
+
+#68 > 🟢计算器HD，万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具，(一共解锁七个App)
+七个App解锁 = type=http-response,pattern=^http[s]?:\/\/www\.40sishi\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
+
+#69 > 🟢薄荷健康
+薄荷健康 = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js
+
+#70 > 🟢菜谱大全，烘焙小屋，香哈菜谱
+菜谱大全系列 = type=http-response,pattern=^https:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+
+#71 > 🟢排班日历-倒班助手
+排班日历 = type=http-response,pattern=^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js
+
+#72 > 🟢Xmind-思维导图
+Xmind-思维导图 = type=http-response,pattern=^https?:\/\/www\.xmind\.cn\/.+\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
+
+#73 > 🟢靓机汇
+靓机汇 = type=http-response,pattern=^https^https?:\/\/guapi\.liangjihui\.com\/front\/(quote\/look.+|user\/memberInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js
+
+#74 > 🟢挖财记账
+挖财记账 = type=http-response,pattern=^https?:\/\/jz\.wacai\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js
+
+#75 > 🟢野果阅读
+野果阅读 = type=http-response,pattern=^https?:\/\/yeguo\.236api\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js
+
+#76 > 🟢夸克
+夸克 = type=http-response,pattern=^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js
+
+#77 > 🟢蜗牛睡眠
+蜗牛睡眠 = type=http-response,pattern=^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js
+
+#78 > 🟢网易蜗牛读书
+网易蜗牛读书 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js
+
+#79 > 🟢DailyArt(每日艺术)
+DailyArt(每日艺术) = type=http-response,pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js
+
+#80 > 🟢录屏，大神P图，乐秀，多功能视频剪辑
+解锁4个App = type=http-response,pattern=^https^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js
+
+
+
+
+
+
+
 
 
 
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,api.infzm.com
+hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,api.infzm.com,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,app.yiyan.art,api*.speedtest.cniosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,mb3admin.com,*.camscanner.com,*.intsig.net,pan.baidu.com,*.aliyundrive.com,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,api.duitang.com,accounts.agenda.com,*.radio.cn,cubox.pro,widget-box-api.codefuture.top,format-api.netpock.com,*.dicallapp.com,www.freshhome.top,service.ilovepdf.com,api2.vlognow.me,*.imendon.com,dashen-api.shuiyinyu.com,123.56.125.184,cn.czur.cc,www2.tigeroom.com,www.skyjos.cn,api.open.loveclip.site,iap.etm.tech,top-widgets-api.xiaozujian.com,explorer.tratao.com,mobile-api.adguard.org,ggs.manmeng168.com,app.yidiansz.com,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,server.*.com,xianbeikeji.com,asia.gikken.co,dj.palmestore.com,api.mojidict.com,api.adapty.io,day-api.xixitime.com,*.qingning6.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,kongque.twan.cn,www.40sishi.com,api.boohee.com,*.xiangha.com,schedule-api.julanling.com,www.xmind.cn,guapi.liangjihui.com, ljh.dianxiaoman.com,jz.wacai.com,yeguo.236api.com,drive*.quark.cn,snailsleep.net,p.du.163.com,api.getdailyart.com,*.videoshowiosglobalserver.com,*.enjoy-mobi.com
+
