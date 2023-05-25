@@ -20,40 +20,40 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 
 [Script]
 # 🟣Revenuecat🟣 > 解锁系列
-revenuecat1 = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
-revenuecat2 = type=http-request,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=0,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
-sjyz = type=http-response,pattern= ^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/sjyz.js,script-update-interval=0
+revenuecat1 = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
+revenuecat2 = type=http-request,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=0,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
+sjyz = type=http-response,pattern= ^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/sjyz.js,script-update-interval=0
 
 
 #>🟢🟢UserScript🟡🟡<#
 # 🟣iTunes🟣 > 解锁系列
-iTunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js,script-update-interval=0
+iTunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js,script-update-interval=0
 
 
 #🟣🟣🟢🟢🟡🟡#
 #01 > 🟢酷我音乐
-酷我音乐 = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js,script-update-interval=0
+酷我音乐 = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js,script-update-interval=0
 
 #02 > 🟢Nicegram
-Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ ,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, requires-body=1
+Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ ,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, requires-body=1
 
 #03 > 🟢ChatGPT 解锁 Plus 订阅
-ChatGPT = type=http-response,pattern=^https?:\/\/ios\.chat\.openai\.com\/backend-api\/(accounts\/check\/|models),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/ChatGPTPlusCrack.js,script-update-interval=0
+ChatGPT = type=http-response,pattern=^https?:\/\/ios\.chat\.openai\.com\/backend-api\/(accounts\/check\/|models),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/ChatGPTPlusCrack.js,script-update-interval=0
 
 #04 > 🟢Soul 破解部分超星特权
-Soul = type=http-response,pattern=^https?:\/\/.+(\/privilege\/supervip\/status|\/show\/superVIP\/detail|\/meet\/invisible\/saveByUserId|\/special\/concern\/setting|\/chat\/history\/setting|\/privilege\/bubble\/buy|\/soul-coin\/total|\/user\/queryInvisibleSetting|\/chat\/limitInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/SoulSuperVipCrack.js,script-update-interval=0
+Soul = type=http-response,pattern=^https?:\/\/.+(\/privilege\/supervip\/status|\/show\/superVIP\/detail|\/meet\/invisible\/saveByUserId|\/special\/concern\/setting|\/chat\/history\/setting|\/privilege\/bubble\/buy|\/soul-coin\/total|\/user\/queryInvisibleSetting|\/chat\/limitInfo),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/SoulSuperVipCrack.js,script-update-interval=0
 
 #05 > 🟢彩云天气
 彩云天气 = type=http-response,pattern=^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js,script-update-interval=0
 
 #06 > 🟢Spotify (不能超高音质)
-Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/.+\/bootstrap|user-customization-service\/.+\/customize)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
+Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/.+\/bootstrap|user-customization-service\/.+\/customize)$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
 
 #07 > 🟢Boom
-boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js,script-update-interval=0
+boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js,script-update-interval=0
 
 #08 > 🟢傲软抠图，傲软扫描，傲软PDF转换，傲软PDF编辑，傲软投屏，咖映，轻闪PDF，乃糖小组件，佐糖，佐糖照片修复
-傲软全家桶 = type=http-response,pattern= ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js,,script-update-interval=0
+傲软全家桶 = type=http-response,pattern= ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js,,script-update-interval=0
 
 #09 ✅ 七猫小说VIP      
 七猫小说VIP = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js,script-update-interval=0
