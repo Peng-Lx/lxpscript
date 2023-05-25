@@ -73,9 +73,11 @@ boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itun
 #14 ✅ 流利说·阅读 
 流利说·阅读 = type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js,script-update-interval=0
 
+#015 ✅  南方周末 >  解锁高级年费会员 + 年费会员课程 + 所有付费课程
+南方周末 = type=http-response,pattern=^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js,script-update-interval=0
 
 
 
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com
+hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,api.infzm.com
