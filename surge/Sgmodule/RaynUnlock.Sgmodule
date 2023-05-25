@@ -82,198 +82,198 @@ boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itun
 南方周末 = type=http-response,pattern=^https?:\/\/api\.infzm\.com\/mobile\/(user|contents\?|contents\/\d+\?|contents\/\d+\/isview\?|course_borrow|courses\/\d+\?|mall|course_items),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/NanFangZhouMo.js,script-update-interval=0
 
 #16  > 🟢绘影字幕
-绘影字幕 = type=http-response,pattern=^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js
+绘影字幕 = type=http-response,pattern=^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/.+\/user\/app-vip-info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/hyzm.js,script-update-interval=0
 
 #17  > 🟢搜图神器
-搜图神器 = type=http-response,pattern=^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
+搜图神器 = type=http-response,pattern=^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js,script-update-interval=0
 
 #18  > 🟢PS-图片编辑
-Ps = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js
+Ps = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js,script-update-interval=0
 
 #19  > 🟢一言
-一言 = type=http-response,pattern=^https:\/\/app\.yiyan\.art\/yiyan,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js
+一言 = type=http-response,pattern=^https:\/\/app\.yiyan\.art\/yiyan,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js,script-update-interval=0
 
 #20  > 🟢网速管家
-网速管家 = type=http-response,pattern=^https:\/\/api.*\.speedtest\.cn\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js
+网速管家 = type=http-response,pattern=^https:\/\/api.*\.speedtest\.cn\/user\/info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/wsgj.js,script-update-interval=0
 
 #21  > 🟢悟饭掌悦
-悟饭掌悦 = type=http-response,pattern=http:\/\/iosv2\.cjapi\.5fun\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js
+悟饭掌悦 = type=http-response,pattern=http:\/\/iosv2\.cjapi\.5fun\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/wfzy.js,script-update-interval=0
 
 #22  > 🟢Emby(解锁播放权限)
-Emby解锁播放权限 = type=http-request,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
+Emby解锁播放权限 = type=http-request,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=0,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js,script-update-interval=0
 
 #23  > 🟢扫描全能王
-扫描全能王 = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+扫描全能王 = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js,script-update-interval=0
 
 #24  > 🟢百度网盘_在线视频倍率/清晰度
-百度网盘 = type=http-response,pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
+百度网盘 = type=http-response,pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js,script-update-interval=0
 
 #25  > 🟢阿里云盘 净化/解锁SVIP
-阿里云盘 = type=http-response,pattern=^https?:\/\/(api|member)\.aliyundrive\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+阿里云盘 = type=http-response,pattern=^https?:\/\/(api|member)\.aliyundrive\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js,script-update-interval=0
 
 #26  > 🟢Picsart美易_图片视频编辑器
-Picsart美易 = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
+Picsart美易 = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js,script-update-interval=0
 
 #27  > 🟢起伏
-起伏 = type=http-response,pattern=https?:\/\/api\.risingfalling\.com\/api\/vip\/detail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js
+起伏 = type=http-response,pattern=https?:\/\/api\.risingfalling\.com\/api\/vip\/detail,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/qifu.js,script-update-interval=0
 
 #28  > 🟢布丁锁屏
-布丁锁屏 = type=http-request,pattern=^https?:\/\/screen-lock\.(sm-check|51wnl-cq)\.com\/userApi\/saveUser.+,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js
+布丁锁屏 = type=http-request,pattern=^https?:\/\/screen-lock\.(sm-check|51wnl-cq)\.com\/userApi\/saveUser.+,requires-body=0,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdsp.js,script-update-interval=0
 
 #29  > 🟢Wallcraft-动态壁纸
-Wallcraft壁纸 = type=http-response,pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js
+Wallcraft壁纸 = type=http-response,pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Wall.js,script-update-interval=0
 
 #30  > 🟢Symbolab(需要登录)
-Symbolab = type=http-response,pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js
+Symbolab = type=http-response,pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Syjsq.js,script-update-interval=0
 
 #31  > 🟢堆糖
-推糖 = type=http-response,pattern=^https:\/\/api\.duitang\.com\/napi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuitang.js
+推糖 = type=http-response,pattern=^https:\/\/api\.duitang\.com\/napi,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/tuitang.js,script-update-interval=0
 
 #32  > 🟢Agenda
-Agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js
+Agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ag.js,script-update-interval=0
 
 #33  > 🟢云听
-云听 = type=http-response,pattern=^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js
+云听 = type=http-response,pattern=^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js,script-update-interval=0
 
 #34  > 🟢Cubox-收藏阅读
-Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
+Cubox-收藏阅读 = type=http-response,pattern=^https:\/\/cubox\.pro\/c\/api\/userInfo,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js,script-update-interval=0
 
 #35 > 🟢小组件盒子
-小组件盒子 = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js
+小组件盒子 = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/xzjhz.js,script-update-interval=0
 
 #36  > 🟢格式转换 
-格式转换 = type=http-response,pattern=http:\/\/format-api\.netpock\.com\/api\/user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js
+格式转换 = type=http-response,pattern=http:\/\/format-api\.netpock\.com\/api\/user_info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js,script-update-interval=0
 
 #37  > 🟢手机扫描，图片编辑，九宫格切图，头像制作，早安打卡，配音
-zhfqjt = type=http-response,pattern=http:\/\/.*\.dicallapp\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+zhfqjt = type=http-response,pattern=http:\/\/.*\.dicallapp\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js,script-update-interval=0
 
 #38  > 🟢如期
-如期 = type=http-response,pattern=^https:\/\/www\.freshhome\.top,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js
+如期 = type=http-response,pattern=^https:\/\/www\.freshhome\.top,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/rq.js,script-update-interval=0
 
 #39  > 🟢iLove PDF
-iLove PDF = type=http-response,pattern=^https:\/\/service\.ilovepdf\.com\/.+\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js
+iLove PDF = type=http-response,pattern=^https:\/\/service\.ilovepdf\.com\/.+\/user,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ilove.js,script-update-interval=0
 
 #40  > 🟢VN-视频剪辑
-VN-视频剪辑 = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
+VN-视频剪辑 = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js,script-update-interval=0
 
 #41  > 🟢日杂相机，fomz相机
-两个相机解锁 = type=http-response,pattern=^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js
+两个相机解锁 = type=http-response,pattern=^https:\/\/.*\.imendon\.com\/.+\/purchase\/vip\/verification,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/lgxj.js,script-update-interval=0
 
 #42 > 🟢大神水印
-大神水印 = type=http-response,pattern=^https:\/\/dashen-api\.shuiyinyu\.com\/.+\/user\/get_user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js
+大神水印 = type=http-response,pattern=^https:\/\/dashen-api\.shuiyinyu\.com\/.+\/user\/get_user_info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/dssy.js,script-update-interval=0
 
 #43  > 🟢电视家
-电视家 = type=http-response,pattern=http:\/\/123\.56\.125\.184\/api\/v\d\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js
+电视家 = type=http-response,pattern=http:\/\/123\.56\.125\.184\/api\/v\d\/user\/info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsj.js,script-update-interval=0
 
 #44  > 🟢极简扫描
-极简扫描 = type=http-response,pattern=^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js
+极简扫描 = type=http-response,pattern=^https:\/\/cn\.czur\.cc\/api\/.+\/User\/info?(.*?),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjsm.js,script-update-interval=0
 
 #45 > 🟢PhotoSlip-照片清理大师
-PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
+PhotoSlip照片清理 = type=http-response,pattern=^https:\/\/www2\.tigeroom\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js,script-update-interval=0
 
 #46  > 🟢猫头鹰文件管理
-猫头鹰文件管理 = type=http-response,pattern=^https:\/\/www\.skyjos\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+猫头鹰文件管理 = type=http-response,pattern=^https:\/\/www\.skyjos\.cn,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js,script-update-interval=0
 
 #47  > 🟢爱剪辑
-爱剪辑 = type=http-response,pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js
+爱剪辑 = type=http-response,pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js,script-update-interval=0
 
 #48  > 🟢六个解锁合集（Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance）
-Collart = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+Collart = type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js,script-update-interval=0
 
 #49  > 🟢万能小组件
-万能小组件 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+万能小组件 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js,script-update-interval=0
 
 #50  > 🟢极简汇率
-极简汇率 = type=http-response,pattern=^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js
+极简汇率 = type=http-response,pattern=^https:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjhl.js,script-update-interval=0
 #51  > 🟢AdGuard
-AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js,script-update-interval=0
 
 #52 > 🟢番薯小说
-番薯小说 = type=http-response,pattern=^https:\/\/ggs\.manmeng168\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js
+番薯小说 = type=http-response,pattern=^https:\/\/ggs\.manmeng168\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/fanshuxiaoshuo.js,script-update-interval=0
 
 #53 > 🟢阅读记录
-阅读记录 = type=http-response,pattern=^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js
+阅读记录 = type=http-response,pattern=^https:\/\/app\.yidiansz\.com\/api\/.+\/app\/user\/info?(.*?)*$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ydjl.js,script-update-interval=0
 
 #54 > 🟢Wink，蛋啵，潮自拍，海报工厂，Chic
-美图系列 = type=http-response,pattern=^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+美图系列 = type=http-response,pattern=^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js,script-update-interval=0
 
 #55 > 🟢美颜相机
-美颜相机 = type=http-response,pattern=^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+美颜相机 = type=http-response,pattern=^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js,script-update-interval=0
 
 #56 > 🟢美图秀秀
-美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js,script-update-interval=0
 
 #57 > 🟢Fimo_复古胶片相机
-Fimo复古相机 = type=http-response,pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+Fimo复古相机 = type=http-response,pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js,script-update-interval=0
 
 #58 > 🟢小习惯-打卡App
-小习惯 = type=http-response,pattern=^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js
+小习惯 = type=http-response,pattern=^https:\/\/xianbeikeji\.com\/daily\/app\/user\/query,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/xxg.js,script-update-interval=0
 
 #59 > 🟢Mate-翻译神器
-Mate-翻译 = type=http-response,pattern=^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js
+Mate-翻译 = type=http-response,pattern=^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mate.js,script-update-interval=0
 
 #60 > 🟢得间小说
-得间小说 = type=http-response,pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
+得间小说 = type=http-response,pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js,script-update-interval=0
 
 #61 > 🟢Moji辞书-学习日语
-Moji辞书 = type=http-response,pattern=^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js
+Moji辞书 = type=http-response,pattern=^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojics.js,script-update-interval=0
 
 #62 > 🟢Batched-多量图片编辑器
-Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js
+Batched = type=http-response,pattern=^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/analytics\/profiles\/(.*?)\/,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js,script-update-interval=0
 
 #63 > 🟢倒数纪念日
-dsjnr = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js
+dsjnr = type=http-response,pattern=^https:\/\/day-api\.xixitime\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js,script-update-interval=0
 
 #64 > 🟢青柠设计-P图抠图海报
-青柠设计 = type=http-response,pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
+青柠设计 = type=http-response,pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js,script-update-interval=0
 
 #65 > 🟢配音秀
-配音秀 = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js
+配音秀 = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js,script-update-interval=0
 
 #66 > 🟢蓝基因
-蓝基因 = type=http-response,pattern=^https:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js
+蓝基因 = type=http-response,pattern=^https:\/\/(tk|course)\.lanjiyin\.com\.cn,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/lanjiyin.js,script-update-interval=0
 
 #67 > 🟢小时尚
-小时尚 = type=http-response,pattern=^https?:\/\/kongque\.twan\.cn\/index.+\/admin\/appberrycustomer.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js
+小时尚 = type=http-response,pattern=^https?:\/\/kongque\.twan\.cn\/index.+\/admin\/appberrycustomer.+,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/xiaoshishang.js,script-update-interval=0
 
 #68 > 🟢计算器HD，万能播放器，万能变声器，塔罗牌，Art Widget(小组件)，memo(标签小组件)，NFC标签读写器工具，(一共解锁七个App)
-七个App解锁 = type=http-response,pattern=^http[s]?:\/\/www\.40sishi\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
+七个App解锁 = type=http-response,pattern=^http[s]?:\/\/www\.40sishi\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js,script-update-interval=0
 
 #69 > 🟢薄荷健康
-薄荷健康 = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js
+薄荷健康 = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js,script-update-interval=0
 
 #70 > 🟢菜谱大全，烘焙小屋，香哈菜谱
-菜谱大全系列 = type=http-response,pattern=^https:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+菜谱大全系列 = type=http-response,pattern=^https:\/\/api.*\.xiangha\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js,script-update-interval=0
 
 #71 > 🟢排班日历-倒班助手
-排班日历 = type=http-response,pattern=^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js
+排班日历 = type=http-response,pattern=^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/paibanrili.js,script-update-interval=0
 
 #72 > 🟢Xmind-思维导图
-Xmind-思维导图 = type=http-response,pattern=^https?:\/\/www\.xmind\.cn\/.+\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
+Xmind-思维导图 = type=http-response,pattern=^https?:\/\/www\.xmind\.cn\/.+\/devices,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js,script-update-interval=0
 
 #73 > 🟢靓机汇
-靓机汇 = type=http-response,pattern=^https^https?:\/\/guapi\.liangjihui\.com\/front\/(quote\/look.+|user\/memberInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js
+靓机汇 = type=http-response,pattern=^https^https?:\/\/guapi\.liangjihui\.com\/front\/(quote\/look.+|user\/memberInfo),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/liangjihui.js,script-update-interval=0
 
 #74 > 🟢挖财记账
-挖财记账 = type=http-response,pattern=^https?:\/\/jz\.wacai\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js
+挖财记账 = type=http-response,pattern=^https?:\/\/jz\.wacai\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/wacaijizhang.js,script-update-interval=0
 
 #75 > 🟢野果阅读
-野果阅读 = type=http-response,pattern=^https?:\/\/yeguo\.236api\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js
+野果阅读 = type=http-response,pattern=^https?:\/\/yeguo\.236api\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/yeguoyuedu.js,script-update-interval=0
 
 #76 > 🟢夸克
-夸克 = type=http-response,pattern=^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js
+夸克 = type=http-response,pattern=^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js,script-update-interval=0
 
 #77 > 🟢蜗牛睡眠
-蜗牛睡眠 = type=http-response,pattern=^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js
+蜗牛睡眠 = type=http-response,pattern=^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/woniushuimian.js,script-update-interval=0
 
 #78 > 🟢网易蜗牛读书
-网易蜗牛读书 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js
+网易蜗牛读书 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js,script-update-interval=0
 
 #79 > 🟢DailyArt(每日艺术)
-DailyArt(每日艺术) = type=http-response,pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js
+DailyArt(每日艺术) = type=http-response,pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js,script-update-interval=0
 
 #80 > 🟢录屏，大神P图，乐秀，多功能视频剪辑
-解锁4个App = type=http-response,pattern=^https^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js
+解锁4个App = type=http-response,pattern=^https^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js,script-update-interval=0
 
 
 
