@@ -1,0 +1,25 @@
+#!name=🟢Ryan🟣APPUnlock
+#!desc=🟣✅❎
+#!author=@Thanks to the script authors
+
+#01 ✅ 解锁 Nebula vip
+^https:\/\/zh-api\.nebulahoroscope\.com\/api\/v7\/users url response-body "premium":.*?false response-body "premium":true
+^https:\/\/zh-api\.nebulahoroscope\.com\/api\/v7\/users url response-body "is_lifetime":.*?false response-body "is_lifetime":true
+
+#02 ✅ 解锁飒漫画vip，需要登陆
+https://m.samh.xndm.tech/userapi/info/v1/getuserinfo url response-body "isvip":.*?, response-body "isvip":1,
+https://m.samh.xndm.tech/api/v1/comics/purchase_chapters_diamonds_coin url response-body "msg":.*?, response-body "msg":,
+https://pangolin.snssdk.com/api/ad/union/sdk/get_ads/ url reject-200
+
+#03 ✅ Quizlet 解锁 Plus 家庭作业
+https://api.quizlet.com/3.8/users/* url response-body "type":.*?, response-body "type": 1,
+
+#04 ✅ 解锁iLovePDF高级账户 需要登陆
+https://service.ilovepdf.com/v1/user url response-body "premium":.*?false, response-body "premium":true,
+https://service.ilovepdf.com/v1/user url response-body "can_trial":.*?false, response-body "can_trial":true,
+https://service.ilovepdf.com/v1/user url response-body "sus_rbt":.*?false, response-body "sus_rbt":true,
+
+
+# 🟣🟣hostname🟣🟣
+
+hostname = service.ilovepdf.com,nebulahoroscope.com,m.samh.xndm.tech,api.quizlet.com
