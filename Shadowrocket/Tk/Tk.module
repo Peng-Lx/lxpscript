@@ -1,5 +1,5 @@
-#!name=💥TikTok For Us
-#!desc=💥Unlock
+#!name=💥TikTok Unlock For Us
+#!desc=💥Ryan-朋
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) US 307
