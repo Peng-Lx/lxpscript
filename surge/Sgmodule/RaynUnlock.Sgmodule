@@ -21,6 +21,8 @@ https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
 ^https:\/\/tk\.lanjiyin\.com\.cn\/img - reject
 # 靓机汇顶部滚屏
 ^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+# 墨迹天气横幅广告
+^http?:\/\/oss4bpc\.moji\.com\/.\d+\/.\d+\/.\d+\/.+\.jpg - reject
 
 
 [Script]
@@ -285,12 +287,16 @@ FacePlay = type=http-response,pattern=^https:\/\/aico-api.aiglobalniu.com\/users
 wps = type=http-response,pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js,script-update-interval=0
 
 #84 > 🟢网易有道词典 解锁VIP
-网易有道词典 = type=http-response,pattern=^https:\/\/dict\.youdao\.com\/vip\/user\/status,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js,,script-update-interval=0
+网易有道词典 = type=http-response,pattern=^https:\/\/dict\.youdao\.com\/vip\/user\/status,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/Wycd.js,script-update-interval=0
+
+#85 > 🟢墨迹天气
+墨迹天气 = type=http-response,pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js,script-update-interval=0
+
+#86 > 🟢冥想星球
+冥想星球 = type=http-response,pattern=^https?:\/\/kc\.xinli001\.com,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mingxiangxingqiu.js,script-update-interval=0
 
 
-
-
-
+#🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
 [MITM]
-hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,api.infzm.com,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,app.yiyan.art,api*.speedtest.cniosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,mb3admin.com,*.camscanner.com,*.intsig.net,pan.baidu.com,*.aliyundrive.com,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,api.duitang.com,accounts.agenda.com,*.radio.cn,cubox.pro,widget-box-api.codefuture.top,format-api.netpock.com,*.dicallapp.com,www.freshhome.top,service.ilovepdf.com,api2.vlognow.me,*.imendon.com,dashen-api.shuiyinyu.com,123.56.125.184,cn.czur.cc,www2.tigeroom.com,www.skyjos.cn,api.open.loveclip.site,iap.etm.tech,top-widgets-api.xiaozujian.com,explorer.tratao.com,mobile-api.adguard.org,ggs.manmeng168.com,app.yidiansz.com,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,server.*.com,xianbeikeji.com,asia.gikken.co,dj.palmestore.com,api.mojidict.com,api.adapty.io,day-api.xixitime.com,*.qingning6.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,kongque.twan.cn,www.40sishi.com,api.boohee.com,*.xiangha.com,schedule-api.julanling.com,www.xmind.cn,guapi.liangjihui.com, ljh.dianxiaoman.com,jz.wacai.com,yeguo.236api.com,drive*.quark.cn,snailsleep.net,p.du.163.com,api.getdailyart.com,*.videoshowiosglobalserver.com,dict.youdao.com,*.enjoy-mobi.com,bmall.camera360.com,vas.wps.cn,account.wps.cn
+hostname = %APPEND% api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com,buy.itunes.apple.com,*.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,restore-access.indream.app,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn,8.210.3.170,47.96.7.91,47.96.11.46,47.96.20.45,47.98.54.106,47.98.137.249,114.215.255.94,118.31.7.235,118.31.112.221,120.55.55.115,120.55.62.124,121.196.197.147,121.196.203.183,ios.chat.openai.com,*.cyapi.cn,*.caiyunapp.com,spclient.wg.spotify.com,apimboom2.globaldelight.net,*.aoscdn.com, *.apsapp.cn,*.wtzw.com,www.luqijianggushi.com,xluser-ssl.xunlei.com,mob2015.kekenet.com,dict.eudic.net,vira.llsapp.com,api.infzm.com,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,app.yiyan.art,api*.speedtest.cniosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,iosv2.cjapi.5fun.com,mb3admin.com,*.camscanner.com,*.intsig.net,pan.baidu.com,*.aliyundrive.com,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,api.duitang.com,accounts.agenda.com,*.radio.cn,cubox.pro,widget-box-api.codefuture.top,format-api.netpock.com,*.dicallapp.com,www.freshhome.top,service.ilovepdf.com,api2.vlognow.me,*.imendon.com,dashen-api.shuiyinyu.com,123.56.125.184,cn.czur.cc,www2.tigeroom.com,www.skyjos.cn,api.open.loveclip.site,iap.etm.tech,top-widgets-api.xiaozujian.com,explorer.tratao.com,mobile-api.adguard.org,ggs.manmeng168.com,app.yidiansz.com,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,server.*.com,xianbeikeji.com,asia.gikken.co,dj.palmestore.com,api.mojidict.com,api.adapty.io,day-api.xixitime.com,*.qingning6.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,kongque.twan.cn,www.40sishi.com,api.boohee.com,*.xiangha.com,schedule-api.julanling.com,www.xmind.cn,guapi.liangjihui.com, ljh.dianxiaoman.com,jz.wacai.com,yeguo.236api.com,drive*.quark.cn,snailsleep.net,p.du.163.com,api.getdailyart.com,*.videoshowiosglobalserver.com,dict.youdao.com,*.enjoy-mobi.com,bmall.camera360.com,vas.wps.cn,account.wps.cn,*.api.moji.com,kc.xinli001.com
 
