@@ -1,5 +1,6 @@
 #!name=💫TK阿联酋
 #!desc=🇦🇪
+#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok2.png
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) AE 307
