@@ -1,5 +1,6 @@
-#!name=TikTokUS
-#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok.png
+#!name=💫TK美国
+#!desc=🇺🇸
+#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok2.png
 
 [Rule]
 DOMAIN-SUFFIX,byteoversea.com
