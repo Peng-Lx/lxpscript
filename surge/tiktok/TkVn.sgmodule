@@ -1,6 +1,6 @@
 #!name=💫TK越南
 #!desc=🇻🇳
-#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok2.png
+#!icon= https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok2.png
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) VN 307
