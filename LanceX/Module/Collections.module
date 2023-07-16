@@ -25,6 +25,7 @@
 ^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
 
 [Script]
+#🔜By Chxm1023
 #01 酷我音乐 ✳️ *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me
 酷我音乐 = pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js
 
@@ -35,15 +36,23 @@ revenuecat2 = pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribe
 #03 iTunes解锁系列 ✳️ buy.itunes.apple.com
 iTunes = pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
 
+#04 WPS Office ✳️ *.wps.cn
+WPS = pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
 
+#05 墨迹天气 ✳️ *.api.moji.com
+墨迹天气 = pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+),enable=true,requires-body=true,type=https://ghproxy.com/http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
 
+#06 Pixelup AI照片增强器 ✳️ receipt-verifier.cdwapi.com
+照片增强器 = pattern=^https?:\/\/receipt-verifier\.cdwapi\.com\/receipt,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js
 
+#07 iScreen小组件-辅助解锁 ✳️ cs.kuso.xyz
+iScreen小组件 = pattern=^https?:\/\/cs\.kuso\.xyz\/configs.+,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
 
-
-
+#08 旅途随身听 ✳️  www.1314zhilv.com
+旅途随身听 = pattern=^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user.*\/getInfo|guideScenic),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
 
 
 
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com
+hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com
