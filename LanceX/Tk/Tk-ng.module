@@ -1,3 +1,8 @@
+#!name=🌍TikTok-越南
+#!desc=🇻🇳
+#!icon=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/Color/TikTok.pn
+
+
 [URL Rewrite]
 (?<=_region=)CN(?=&) NG 307
 (?<=&mcc_mnc=)4 2 307
