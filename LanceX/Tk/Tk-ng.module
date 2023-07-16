@@ -5,11 +5,9 @@
 [URL Rewrite]
 (?<=_region=)CN(?=&) NG 307
 (?<=&mcc_mnc=)4 2 307
-"^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
-[Script]
-TK去水印 = pattern=https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/favorite),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/tiktok/tiktok.js
 
 [MITM]
 hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
