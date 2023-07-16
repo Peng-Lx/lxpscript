@@ -3,6 +3,7 @@
 #!desc=thanks to the authors
 
 [URL Rewrite]
+# 墨迹天气横幅广告
 "^http?:\\\/\\\/oss4bpc\\.moji\\.com\\\/.\\d+\\\/.\\d+\\\/.\\d+\\\/.+\\.jpg" - reject
 # 酷我音乐_AdBlock
 "^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
