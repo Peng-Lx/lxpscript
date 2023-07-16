@@ -1,0 +1,36 @@
+
+#!url=
+#!name=APP-Collections
+#!desc=thanks to the authors
+
+[URL Rewrite]
+"^http?:\\\/\\\/oss4bpc\\.moji\\.com\\\/.\\d+\\\/.\\d+\\\/.\\d+\\\/.+\\.jpg" - reject
+# 酷我音乐_AdBlock
+"^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ - reject
+# 酷我音乐_AdBlock
+"^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
+# 酷我音乐_AdBlock
+"^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/Ad - reject
+# 酷我听书_Blockad
+"https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
+# 酷我听书_Blockad
+"https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
+# 酷我音乐_添加已购音乐
+"^https?:\/\/.*\.kuwo\.cn\/music\.pay\?uid\=\d+ http://musicpay.kuwo.cn/music.pay?uid=2 302
+# 蓝基因
+"^https?:\/\/tk\.lanjiyin\.com\.cn\/img - reject
+# 云听开屏广告/浮窗
+"^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
+# 靓机汇顶部滚屏
+^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+
+[Script]
+#01 酷我音乐
+# hostname = *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me
+酷我音乐 = pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kwyy.js
+
+
+
+
+[MITM]
+hostname = %APPEND% *.kuwo.cn, *.kwcdn.kuwo.cn, *.lrts.me
