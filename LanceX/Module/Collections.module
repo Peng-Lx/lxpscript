@@ -40,7 +40,7 @@ iTunes = pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,enable=true
 WPS = pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
 
 #05 墨迹天气 ✳️ *.api.moji.com
-墨迹天气 = pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+),enable=true,requires-body=true,type=https://ghproxy.com/http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
+墨迹天气 = pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
 
 #06 Pixelup AI照片增强器 ✳️ receipt-verifier.cdwapi.com
 照片增强器 = pattern=^https?:\/\/receipt-verifier\.cdwapi\.com\/receipt,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js
