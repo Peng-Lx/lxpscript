@@ -53,8 +53,51 @@ iScreen小组件 = pattern=^https?:\/\/cs\.kuso\.xyz\/configs.+,enable=true,requ
 #08 旅途随身听 ✳️  www.1314zhilv.com
 旅途随身听 = pattern=^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user.*\/getInfo|guideScenic),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ltsst.js
 
+#09 百度网盘_在线视频倍率/清晰度 ✳️ pan.baidu.com
+百度网盘 = pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
 
+#10 阿里云盘  ✳️ *.aliyundrive.com
+阿里云盘 = pattern=^https?:\/\/(api|member)\.aliyundrive\.com,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+
+11# 夸克 ✳️ drive*.quark.cn
+夸克 = pattern=^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js
+
+#12 云听 ✳️ *.radio.cn
+云听 = pattern=^http[s]?:\/\/(getway|ytapi|ytmsout)\.radio\.cn,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js
+
+#13 Boom ✳️ apimboom2.globaldelight.net
+Boom= pattern=^https?:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+
+#14 扫描全能王 ✳️  *.camscanner.com, *.intsig.net
+扫描全能王= pattern=^https?:\/\/.*\.(intsig\.net|camscanner\.com),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+
+#15 Emby(解锁播放权限) ✳️ mb3admin.com
+Emby = pattern=^https?:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/embycrack.js
+
+#16 彩云天气 ✳️ *.cyapi.cn, *.caiyunapp.com
+彩云天气 = pattern=^https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+
+#17 格式转换 ✳️ format-api.netpock.com
+格式转换 = pattern=http:\/\/format-api\.netpock\.com\/api\/user_info,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/gszh.js
+
+#18 手机扫描，图片编辑，九宫格切图，头像制作，早安打卡，配音 ✳️  *.dicallapp.com
+dicallapp = pattern=http:\/\/.*\.dicallapp\.com,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhfqjt.js
+
+#19 Collart，拼图趣，睡前故事大全，网速测速大师，测速管家，Pixelance ✳️  iap.etm.tech
+etmapp = pattern=^https?:\/\/iap\.etm\.tech\/receipts,enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Collart.js
+
+#20 Wink，蛋啵，潮自拍，海报工厂，Chic ✳️  api-*.meitu.com
+美图系列 = pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+
+#21 美颜相机 ✳️  *.meiyan.com
+美颜相机 = pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+
+#22 美图秀秀 ✳️ *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+美图秀秀 = pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+
+#23 爱剪辑 ✳️ api.open.loveclip.site
+爱剪辑 = pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail),enable=true,requires-body=true,type=http-response,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js
 
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com
+hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site
