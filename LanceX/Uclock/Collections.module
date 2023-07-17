@@ -26,6 +26,8 @@
 "^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject-200
 # 靓机汇顶部滚屏
 "^https?:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList - reject
+# 白描
+"^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) - reject-array
 
 [Script]
 #🟩🟩🟩🟪🟪🟪#
@@ -263,6 +265,25 @@ MIX滤镜大师 = pattern=https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery,
 蜻蜓FM2 = pattern=^http[s]?:\/\/app\.qtfm\.cn\/m-bff\/v1\/audiostreams,enable=true,requires-body=true,type=http-reques,script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiRen0/Scripts/main/QTTK.js
 
 
+#🟩🟩🟩🟪🟪🟪#
+#🔜By Hausd0rff
+#01 开拍永久vip  ✳️ api-sub.meitu.com
+开拍 = pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/(login_vip_check|vip_info|info_by_entrance).*json,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/ActionForeverVipCrack.js
+
+
+#02 白描vip ✳️  baimiao.uzero.cn
+白描 = pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/appLaunchWithUser,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/BaiMiaoGoldVipCrack.js
+
+#03 ChatGPT Plus  ✳️ ios.chat.openai.com
+ChatGPT = pattern=^https?:\/\/ios\.chat\.openai\.com\/backend-api\/(accounts\/check\/|models),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/ChatGPTPlusCrack.js
+
+#04 Mate 翻译解锁永久订阅 ✳️ asia.gikken.co
+Mate = pattern=^https?:\/\/asia\.gikken\.co\/matesync\/subscription$,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/MateTranslateProCrack.js
+
+#05 剪映vip 版本9.8.2  ✳️ api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com
+剪映 = pattern=^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/VideoFusionVipCrack.js
+
+
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com,api.hummingbird.businessreview.global,user.qtfm.cn,entry.qtfm.cn,app.qtfm.cn
+hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com,api.hummingbird.businessreview.global,user.qtfm.cn,entry.qtfm.cn,app.qtfm.cn,api-sub.meitu.com,ios.chat.openai.com,asia.gikken.co,api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi,commerce-api-lq.faceu.mobi,lv-api-lq.ulikecam.com,lv-api-hl.ulikecam.com             
