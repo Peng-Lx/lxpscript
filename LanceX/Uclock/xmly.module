@@ -3,6 +3,7 @@
 #!author=🔜By 🟦 @WeiRen0
 
 [URL Rewrite]
+#🟩🟩🟩广告URL🟪🟪🟪#
 "^http[s]?:\/\/openapi\.mysteel\.com/v5/getAdv.htm - reject
 "^http[s]?.+ulogs.umeng.com - reject
 "^http[s]?.+gslbali.ximalaya.com - reject
