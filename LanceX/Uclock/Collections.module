@@ -6,6 +6,9 @@
 
 [URL Rewrite]
 #🟩🟩🟩广告URL🟪🟪🟪#
+# 网易云音乐
+"^https?:\/\/.*\/api\/clientlog\/encrypt\/upload - reject-array
+"^https?:\/\/.*\/eapi\/ad\/.+ - reject-array
 # 墨迹天气横幅广告
 "^http?:\\\/\\\/oss4bpc\\.moji\\.com\\\/.\\d+\\\/.\\d+\\\/.\\d+\\\/.+\\.jpg" - reject
 # 酷我音乐_AdBlock
@@ -254,6 +257,7 @@ Nicegram = pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\
 #01 陆琪讲故事 ✳️ www.luqijianggushi.com
 陆琪讲故事 = pattern=^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
 
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
 #02 MIX滤镜大师  解锁特权 (需恢复购买) ✳️ cdn-bm.camera360.com
 MIX滤镜大师 = pattern=https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
 
@@ -270,20 +274,30 @@ MIX滤镜大师 = pattern=https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery,
 #01 开拍永久vip  ✳️ api-sub.meitu.com
 开拍 = pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/(login_vip_check|vip_info|info_by_entrance).*json,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/ActionForeverVipCrack.js
 
-
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
 #02 白描vip ✳️  baimiao.uzero.cn
 白描 = pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/appLaunchWithUser,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/BaiMiaoGoldVipCrack.js
 
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
 #03 ChatGPT Plus  ✳️ ios.chat.openai.com
 ChatGPT = pattern=^https?:\/\/ios\.chat\.openai\.com\/backend-api\/(accounts\/check\/|models),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/ChatGPTPlusCrack.js
 
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
 #04 Mate 翻译解锁永久订阅 ✳️ asia.gikken.co
 Mate = pattern=^https?:\/\/asia\.gikken\.co\/matesync\/subscription$,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/MateTranslateProCrack.js
 
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
 #05 剪映vip 版本9.8.2  ✳️ api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com
 剪映 = pattern=^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects),enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/VideoFusionVipCrack.js
 
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
+#06 趣拍vip ✳️ s.mcwifi.cn
+趣拍 = pattern=^https?:\/\/s\.mcwifi\.cn\/hw\/apple\/subscribe\/v1,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/FaceLikeVipCrack.js
+
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
+#07 网易云音乐解锁黑胶会员 版本8.10.01 ✳️  *music.163.com, 115.236.121.4, 115.236.118.34, 115.238.119.68, 183.136.182.19
+网易云音乐 = pattern=^https?:\/\/.*\/eapi\/(music|s(ong|ingle|earch)|album|link|zone|content|p(laylist|rivilege|laymode|urchased)|r(esni|nca)che|vip(auth|pro|(new)?center)|music-vip-membership).+,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/NeteaseMusicVipCrack.js
 
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com,api.hummingbird.businessreview.global,user.qtfm.cn,entry.qtfm.cn,app.qtfm.cn,api-sub.meitu.com,ios.chat.openai.com,asia.gikken.co,api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi,commerce-api-lq.faceu.mobi,lv-api-lq.ulikecam.com,lv-api-hl.ulikecam.com             
+hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com,api.hummingbird.businessreview.global,user.qtfm.cn,entry.qtfm.cn,app.qtfm.cn,api-sub.meitu.com,ios.chat.openai.com,asia.gikken.co,api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi,commerce-api-lq.faceu.mobi,lv-api-lq.ulikecam.com,lv-api-hl.ulikecam.com s.mcwifi.cn,*music.163.com, 115.236.121.4, 115.236.118.34, 115.238.119.68, 183.136.182.19 
