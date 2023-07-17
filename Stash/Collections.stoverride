@@ -1,0 +1,132 @@
+name: vip 模板合集
+desc: 模板合集
+http:
+  script:
+    # Pro
+    - match: ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$
+      name: revenuecat.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # Receipt
+    - match: https://buy.itunes.apple.com/verifyReceipt
+      name: test.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # Agenda
+    - match: ^https://accounts.agenda.com/users/./license
+      name: Agenda.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # dayone
+    - match: ^https:\/\/dayone\.app\/api\/(users|v2\/users\/(account-status|receipt))$
+      name: dayone.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # draft
+    - match: ^https://backend.getdrafts.com/api/v1/verification/verify_receipt
+      name: Drafts.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # kuwo 
+    - match: ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*
+      name: kw.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # sleepcycle
+    - match: https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$)
+      name: sleepcycle.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # flomo
+    - match: ^https://flomoapp.com/api/v1/user/me
+      name: flomo.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    # meiyan
+    - match: ^https://.*.mei(yan|tu).com\/.*
+      name: myCamera.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    #  mimo
+    - match: ^https://api.getmimo.com/v1/subscriptions
+      name: mimo.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+    #  alarmy 
+    - match: ^https://ars.alar.my/api/v2/user/sync
+      name: alarmy.js
+      type: response
+      require-body: true
+      timeout: 30
+      max-size: 0
+  mitm:
+    - "api.revenuecat.com"
+    - "buy.itunes.apple.com"
+    - "pushserv.airapps.co"
+    - "accounts.agenda.com"
+    - "dayone.app"
+    - "backend.getdrafts.com"
+    - "*.kuwo.cn"
+    - "*.lrts.me"
+    - "ch.sleepcycle.com"
+    - "callrecorder.icamscanner.com"
+    - "flomoapp.com"
+    - "*.meiyan.com"
+    - "*.meitu.com"
+    - "api.getmimo.com"
+    - "ars.alar.my"
+
+script-providers:
+  revenuecat.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/revenuecat.js
+    interval: 86400
+  test.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/test.js
+    interval: 86400
+  Agenda.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Agenda.js
+    interval: 86400
+  dayone.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/dayone.js
+    interval: 86400
+  Drafts.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Drafts.js
+    interval: 86400
+  kw.js:
+    url: https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
+    interval: 86400
+  sleepcycle.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/sleepcycle.js
+    interval: 86400
+  flomo.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flomo.js
+    interval: 86400
+  myCamera.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/myCamera.js
+    interval: 86400
+  mimo.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/mimo.js
+    interval: 86400
+  alarmy.js:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/alarmy.js
+    interval: 86400
