@@ -6,11 +6,11 @@
 #!storehouse=https://github.com/app2smile
 
 [URL Rewrite]
-"(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
-"^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
-"^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
-"^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
-"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
+"(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) - 302 $1$2$3
+"^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
+"^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+"^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 
 
 [Script]
