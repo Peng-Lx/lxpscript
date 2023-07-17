@@ -235,9 +235,9 @@ Ps = pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,enable=true,
 #51 得间小说 ✳️ dj.palmestore.com
 得间小说 = pattern=^https?:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/dejianxiaoshuo.js
 
-
-
-
+#🟣🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🟢#
+#52  经济学人·商论 ✳️ api.hummingbird.businessreview.global
+经济学人 = pattern=^https:\/\/api\.hummingbird\.businessreview\.global\/api\/subscriptions\/get_active,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js
 
 
 
@@ -257,4 +257,4 @@ MIX滤镜大师 = pattern=https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery,
 
 
 [MITM]
-hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com
+hostname = %APPEND% *.kuwo.cn,*.kwcdn.kuwo.cn,*.lrts.me,api.revenuecat.com,buy.itunes.apple.com,*.wps.cn,*.api.moji.com,receipt-verifier.cdwapi.com,cs.kuso.xyz,www.1314zhilv.com,pan.baidu.com,*.aliyundrive.com,drive*.quark.cn,*.radio.cn,apimboom2.globaldelight.net,*.camscanner.com,*.intsig.net,mb3admin.com,*.cyapi.cn,*.caiyunapp.com,format-api.netpock.com,*.dicallapp.com,iap.etm.tech,api-*.meitu.com,*.meiyan.com,*.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com,api.open.loveclip.site,share.dianshihome.com, api.gaoqingdianshi.com,api2.vlognow.me,dashen-api.shuiyinyu.com,iosapi.peiyinxiu.com,*.lanjiyin.com.cn,www.40sishi.com,*.xiangha.com,api.boohee.com,guapi.liangjihui.com, ljh.dianxiaoman.com,snailsleep.net,p.du.163.com,*.videoshowiosglobalserver.com, *.enjoy-mobi.com,ssl-api.itranslateapp.com,api.yonekura.cn,cn.czur.cc, www2.tigeroom.com,www.skyjos.cn,*.aoscdn.com, *.apsapp.cn,api.meiease.cn,api.risingfalling.com,screen-lock.*.com,*.wallpaperscraft.com,scibug.com,app.yiyan.art,api.bluepulse.cn,wallpaper.soutushenqi.com,lcs-mobile-cops.adobe.io,restore-access.indream.app,dj.palmestore.com,www.luqijianggushi.com,cdn-bm.camera360.com,api.hummingbird.businessreview.global
