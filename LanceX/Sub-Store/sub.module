@@ -10,4 +10,4 @@ Sub-Store-Simple = pattern=^https?:\/\/sub\.store,enable=true,requires-body=true
 Sub-Store-Sync = enable=true,cronexp=0 0 * * *,type=cron,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 [MITM]
-hostname=%APPEND% sub.store
+hostname = %APPEND% sub.store
