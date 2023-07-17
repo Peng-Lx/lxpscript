@@ -1,0 +1,13 @@
+#!name=🟪Sub-Store
+#!desc=🟥高级订阅管理工具 @Peng-YM
+
+
+[Script]
+Sub-Store Core = pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),enable=true,type=http-response,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120,ability=http-client-policy
+
+Sub-Store Simple = pattern=^https?:\/\/sub\.store,enable=true,requires-body=true,type=http-response,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js
+
+Sub-Store Sync = enable=true,cronexp=0 0 * * *,type=cron,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+
+[MITM]
+hostname=%APPEND% sub.store
