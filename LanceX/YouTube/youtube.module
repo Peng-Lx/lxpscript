@@ -1,0 +1,22 @@
+#!url=🟥https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/LanceX/Uclock/Spotify.module
+#!name=🟩Youtube Block AD
+#!author=🔜By 🟦 @DivineEngine, @app2smile, @Maasea, @VirgilClyne
+#!storehouse=https://github.com/DivineEngine
+#!storehouse=https://github.com/Maasea
+#!storehouse=https://github.com/app2smile
+
+[URL Rewrite]
+"(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+"^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
+"^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
+"^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
+"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
+
+
+[Script]
+youtube1 = pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,enable=true,requires-body=true,type=http-response,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
+youtube2 = pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?,enable=true,requires-body=true,type=http-reques,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
+
+
+[MITM]
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
