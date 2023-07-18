@@ -1,4 +1,4 @@
-# 本配置地址：https://raw.githubusercontent.com/chxm1023/Script_X/main/Stash.yaml
+# 引用地址：https://raw.githubusercontent.com/chxm1023/Script_X/main/Stash.yaml
 
 # 建议在「设置 -> 更多设置 -> Geoip」填写使用下面链接(二选一即可)
 # https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
@@ -104,9 +104,9 @@ proxy-providers:
   
   Subscribe: {<<: *p, url: "复制订阅地址到这里"}
 
-  临时节点: {<<: *p, url: "https://api.subcloud.xyz/sub?target=clash&url=https%3A%2F%2Fpastebin.com%2Fraw%2FGxR5pELe&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=true&fdn=true&sort=true&udp=true&new_name=true"}
+  Subscribe2: {<<: *p, url: "复制订阅地址到这里"}
 
-  网易云节点: {<<: *p, url: "https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/NeteaseMusic/AgentNode/Stash.yaml"}
+  Subscribe3: {<<: *p, url: "复制订阅地址到这里"}
 
 
 
