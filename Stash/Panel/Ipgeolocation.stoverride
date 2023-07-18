@@ -1,0 +1,16 @@
+name: 直连+代理IP地址信息
+desc: >-
+  同时查询直连和代理的IP信息显示在Tile，优先使用IPv6
+
+tiles:
+  - name: ip-geolocation 
+    interval: 1800
+    title: '𝐈𝐏 𝐆𝐄𝐎𝐋𝐎𝐂𝐀𝐓𝐈𝐎𝐍'
+    content: '刷新中...'
+    icon: 'globe.asia.australia.fill'
+    backgroundColor: '#0C9DFA'
+
+script-providers:
+  ip-geolocation:
+    url: https://raw.githubusercontent.com/RS0485/network-rules/main/scripts/ip-geolocation.js
+    interval: 86400
