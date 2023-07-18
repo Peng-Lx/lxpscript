@@ -1,0 +1,20 @@
+name: New Bing 聊天修复
+desc: >-
+  1. 修复 Bing App 无法打开 Chat 页面(VPS IP在Bing黑名单仍然无法访问)；
+  2. 拦截"资讯"内容，节省流量；
+  3. 屏蔽位置请求；
+  4. 支持在任意浏览器（排除Edge和Bing App）打开Bing Chat；
+  注意：使用此覆写前您的账号必须获得 New Bing 的使用资格，并将"国家或地区"设置为 New Bing 支持的地区
+
+http:
+  mitm:
+    - 'www.bing.com'
+    - 'assets.msn.com'
+    
+  url-rewrite:
+    - ^https:\/\/assets\.msn\.com\/service\/news\/ - reject-dict
+    - ^https:\/\/assets\.msn\.com\/service\/weather\/locations\/search - reject-dict
+    - ^https:\/\/www\.bing\.com\/api\/v\d+\/news\/ - reject-dict
+
+  header-rewrite:
+    - ^https:\/\/www\.bing\.com request-replace-regex User-Agent ^(?!.*(?:BingSapphire|Edg)).*$ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.100.0
