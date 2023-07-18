@@ -1,0 +1,11 @@
+name: 节假日 Tile 面板
+desc: 用于显示节假日的面板 (Stash 2.0)
+
+tiles:
+  - name: TimeCard-Tile
+    interval: 43200
+
+script-providers:
+  TimeCard-Tile:
+    url: https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/tiles/timecard.js
+    interval: 86400
