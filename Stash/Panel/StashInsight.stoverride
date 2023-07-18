@@ -1,0 +1,55 @@
+name: Stash Insight
+desc: >-
+  本模块提供全面的Stash流量分析及规则优化建议，包含一个面板组件+网页分析报告+json API。
+  启用此模块后访问 http://clash.insight/html 查看分析报告；访问 http://clash.insight/json 获取API数据
+
+external-controller: '127.0.0.1:9090'
+secret:
+
+rules:
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve,no-track
+
+http:
+  mitm:
+    - 'clash.insight'
+
+  force-http-engine:
+    - '*:80'
+
+  url-rewrite:
+     # Rewrite requests locally without establishing a real connection 
+     # to avoid DNS query leakage of domain name requests and improve page load speed.
+     #
+     - '^https?://clash\.insight\/ http://127.0.0.1:9090 transparent'
+
+  script:
+    - match: ^https?://clash\.insight\/(go|html)$
+      name: clash-insight
+      type: response 
+      require-body: false
+      timeout: 5
+      debug: false
+      argument: 'Stash Traffic,html,http://127.0.0.1:9090,,stash'
+
+    - match: ^https?://clash\.insight\/json$
+      name: clash-insight
+      type: response 
+      require-body: false
+      timeout: 5
+      debug: false
+      argument: 'Stash Traffic,json,http://127.0.0.1:9090,,stash'
+
+tiles:
+  - name: clash-insight 
+    interval: 30
+    title: 'Stash Insight'
+    content: '刷新中...'
+    icon: 'arrow.up.arrow.down.circle.fill'
+    backgroundColor: '#4CAF50'
+    argument: 'Stash Traffic,tile,http://127.0.0.1:9090,,stash'
+    url: 'https://clash.insight/html'
+
+script-providers:
+  clash-insight:
+    url: https://raw.githubusercontent.com/RS0485/network-rules/main/scripts/clash-insight.js
+    interval:  86400
