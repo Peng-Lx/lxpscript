@@ -1,0 +1,17 @@
+name: CSDN 免登陆复制代码
+desc: 免登陆复制、自动展开代码、自动去除复制信息 (Stash for Mac)
+
+http:
+  mitm:
+    - '*.csdn.net'
+  script:
+    - match: ^https?:\/\/(.+\.)?csdn.net\/.*\/(article)\/
+      name: csdngreener
+      type: response
+      require-body: true
+      timeout: 10
+
+script-providers:
+  csdngreener:
+    url: https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/tiles/csdngreener.js
+    interval: 86400
