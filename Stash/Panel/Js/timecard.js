@@ -1,3 +1,4 @@
+//https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/tiles/timecard.js
 var tlist = {
   1: ["清明", "2023-04-05"],
   2: ["劳动", "2023-05-01"],
