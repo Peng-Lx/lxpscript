@@ -1,3 +1,4 @@
+//https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/index.js
 const $ = new Env('network-info')
 
 $.isPanel = () => $.isSurge() && typeof $input != 'undefined' && $.lodash_get($input, 'purpose') === 'panel'
