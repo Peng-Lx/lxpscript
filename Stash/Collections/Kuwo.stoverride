@@ -19,8 +19,7 @@ http:
     - ^https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
     # 酷我听书_Blockad
     - ^https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
-    # 酷我音乐_添加已购音乐
-	
+    # 酷我音乐_添加已购音乐	
   script:
     #01 > 酷我音乐_搜索框处理
     - match: https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s
