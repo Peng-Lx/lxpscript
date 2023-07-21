@@ -1,6 +1,8 @@
+name: 酷我音乐
+desc: 解锁VIP
+# author: @ddgksf2013
 http:
   rewrite:
-    # > By ddgksf2013
     # > 酷我音乐_通用广告请求 
     -https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay url reject-200
     # > 酷我音乐_屏蔽热词
