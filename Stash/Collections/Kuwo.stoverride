@@ -20,82 +20,81 @@ http:
     # 酷我音乐_添加已购音乐
 	
   script:
-  #01 > 酷我音乐_搜索框处理
+    #01 > 酷我音乐_搜索框处理
     - match: https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s
-      name: Reheji
+      name: 搜索框处理
       type: response
       require-body: true
       timeout: 10	
 	#02 > 酷我音乐_去除首页轮播广告和tips
     - match: https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s
-      name: Reheji
+      name: 去除首页轮播广告和tips
       type: response
       require-body: true
       timeout: 10
-	#03 > 酷我音乐_去除会员页广告 # > 酷我音乐_搜索框处理
+	#03 > 酷我音乐_去除会员页广告
     - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells
-      name: Reheji
+      name: 去除会员页广告
       type: response
       require-body: true
       timeout: 10
 	#04 > 酷我音乐_去除会员页顶部广告tab
     - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting
-      name: Reheji
+      name: 去除会员页顶部广告tab
       type: response
       require-body: true
       timeout: 10
 	#05 > 酷我音乐_数字专辑
     - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver
-      name: Reheji
+      name: 数字专辑
       type: response
       require-body: true
       timeout: 10
 	#06 > 酷我音乐_听书权限接口1
     - match: ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/a\.p
-      name: Reheji
+      name: 听书权限接口1
       type: response
       require-body: true
       timeout: 10
 	#07 > 酷我音乐_听书权限接口2
     - match: ^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus
-      name: Reheji
+      name: 听书权限接口2
       type: response
       require-body: true
       timeout: 10
 	#08 > 酷我音乐_新版vip接口1
     - match: ^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui
-      name: Reheji
+      name: 新版vip接口1
       type: response
       require-body: true
       timeout: 10
 	#09 > 酷我音乐_新版vip接口2
     - match: ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get
-      name: Reheji
+      name: 新版vip接口2
       type: response
       require-body: true
       timeout: 10
 	#10 > 酷我音乐_旧版vip接口1
     - match: ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip($|\?op=ui)
-      name: Reheji
+      name: 旧版vip接口1
       type: response
       require-body: true
       timeout: 10
 	#11 > 酷我音乐_旧版vip接口2
     - match: ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme
-      name: Reheji
+      name: 旧版vip接口2
       type: response
       require-body: true
       timeout: 10
 	#12 > 酷我音乐_无损下载[限纯净版]
     - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui
-      name: Reheji
-      type: response
-      require-body: true
+      name: 无损下载[限纯净版]
+      type: request
       timeout: 10
   mitm:
   - '*.kuwo.cn'
   - '*.lrts.me'
-script-providers:
+  script-providers:
   酷我音乐_搜索框处理:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
     interval: 86400
