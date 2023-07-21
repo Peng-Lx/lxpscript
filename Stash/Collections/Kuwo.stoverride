@@ -1,8 +1,10 @@
+name: 酷我音乐
+desc: VIP
+# author: @ddgksf2013
 http:
-  rewrite:
-    # author: @ddgksf2013
+  rewrite: 
     # > 酷我音乐_通用广告请求 
-    -https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay - reject-200
+    - https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay - reject-200
     # > 酷我音乐_屏蔽热词
     - https?:\/\/hotword\.kuwo\.cn\/hotword\.s - reject-dict
     # > 酷我音乐_通用广告请求
@@ -93,8 +95,8 @@ http:
       type: request
       timeout: 10
   mitm:
-  - "*.kuwo.cn"
-  - "*.lrts.me"
+    - "*.kuwo.cn"
+    - "*.lrts.me"
 script-providers:
   酷我音乐_搜索框处理:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
