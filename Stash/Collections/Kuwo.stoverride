@@ -2,17 +2,17 @@ http:
   rewrite:
     # author: @ddgksf2013
     # > 酷我音乐_通用广告请求 
-    -https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay url reject-200
+    -https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay - reject-200
     # > 酷我音乐_屏蔽热词
-    - https?:\/\/hotword\.kuwo\.cn\/hotword\.s url reject-dict
+    - https?:\/\/hotword\.kuwo\.cn\/hotword\.s - reject-dict
     # > 酷我音乐_通用广告请求
-    - https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ url reject-dict
+    - https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ - reject-dict
     # > 酷我音乐_通用广告请求
-    - https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert url reject-200
+    - https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert - reject-200
     # > 酷我音乐_应用内弹窗及右下角
-    - ^https?:\/\/mobilead\.kuwo\.cn\/ url reject-200
+    - ^https?:\/\/mobilead\.kuwo\.cn\/ - reject-200
     # > 酷我音乐_开屏广告
-    - https?:\/\/rich\.kuwo\.cn\/AdService url reject-200
+    - https?:\/\/rich\.kuwo\.cn\/AdService - reject-200
     # > 酷我听书_Blockad
     - ^https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
     # 酷我听书_Blockad
