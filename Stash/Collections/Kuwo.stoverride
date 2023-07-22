@@ -68,6 +68,7 @@ http:
     - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui
       name: 无损下载
       type: request
+      request-header: true
       timeout: 10
   mitm:
     - '*.kuwo.cn'
