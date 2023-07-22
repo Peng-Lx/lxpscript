@@ -23,30 +23,6 @@ http:
 
 
   script:
-    #01 > 酷我音乐_搜索框处理
-    - match: https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s
-      name: 搜索框处理
-      type: response
-      require-body: true
-      timeout: 10	
-    #02 > 酷我音乐_去除首页轮播广告和tips
-    - match: https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s
-      name: 去除首页轮播广告和tips
-      type: response
-      require-body: true
-      timeout: 10
-    #03 > 酷我音乐_去除会员页广告
-    - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells
-      name: 去除会员页广告
-      type: response
-      require-body: true
-      timeout: 10
-    #04 > 酷我音乐_去除会员页顶部广告tab
-    - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting
-      name: 去除会员页顶部广告tab
-      type: response
-      require-body: true
-      timeout: 10
     #05 > 酷我音乐_数字专辑
     - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver
       name: 数字专辑
@@ -98,18 +74,6 @@ http:
     - "*.kuwo.cn"
     - "*.lrts.me"
 script-providers:
-  酷我音乐_搜索框处理:
-    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
-    interval: 86400
-  酷我音乐_去除首页轮播广告和tips:
-    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
-    interval: 86400
-  酷我音乐_去除会员页广告:
-    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
-    interval: 86400
-  酷我音乐_去除会员页顶部广告tab:
-    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
-    interval: 86400
   酷我音乐_数字专辑:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
     interval: 86400
