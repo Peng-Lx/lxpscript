@@ -67,7 +67,7 @@ http:
     #08 > 酷我音乐_无损下载[限纯净版]
     - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui
       name: 无损下载
-      type: request
+      type: response
       request-header: true
       timeout: 10
   mitm:
