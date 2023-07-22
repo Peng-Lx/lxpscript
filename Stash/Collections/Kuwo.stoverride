@@ -64,12 +64,6 @@ http:
       type: response
       require-body: true
       timeout: 10
-    #08 > 酷我音乐_无损下载[限纯净版]
-    - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui
-      name: 无损下载
-      type: response
-      request-header: true
-      timeout: 10
   mitm:
     - '*.kuwo.cn'
     - '*.lrts.me'
@@ -93,8 +87,5 @@ script-providers:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
     interval: 86400
   旧版vip接口2:
-    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
-    interval: 86400
-  限纯净版:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
     interval: 86400
