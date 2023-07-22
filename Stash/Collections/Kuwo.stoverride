@@ -65,8 +65,8 @@ http:
       require-body: true
       timeout: 10
   mitm:
-    - '*.kuwo.cn'
-    - '*.lrts.me'
+    - "*.kuwo.cn"
+    - "*.lrts.me"
 script-providers:
   数字专辑:
     url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
