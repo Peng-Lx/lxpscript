@@ -1,7 +1,10 @@
-#!name=🥶Peng🥶Panel
+#!name=🟢Peng🟢Panel
 #!desc=策略面板
 
 [Panel]
+#00 🟢 Surge Pro-显示Surge的启动时间
+SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
+
 #01 🟢 网路详情
 NetInfoPanelTest=title="",content="",style=info,script-name=net-info-panel-test-cn.js,update-interval=1
 
@@ -17,7 +20,7 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #05 🟢 IP流量
 ☁ WARP Panel = title="☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤", icon="lock.icloud.fill", script-name=☁ WARP Panel
 
-#06 🟢 时间卡 显示距离法定节假日还有几天，节日当天早上有提醒
+#06 🟢 节假日信息
 timecard = script-name=timecard,update-interval=3600
 
 #07 🟢 youtube premium_解锁检测
@@ -30,12 +33,15 @@ Group-Panel = script-name=Group-Panel,update-interval=1
 IP-Check = script-name=IP-Check, title="节点详情", content="请刷新", style=info, update-interval=1
 
 
+
 [Script]
+#00 🟢 Surge Pro-显示Surge的启动时间
+SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Surge-Pro/Moore/SurgePro.js ,argument=icon=paperplane.circle&color=#f6c970
+
 #01 🟢 网路详情
 net-info-panel-test-cn.js=script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/test/Panel/Network-Info/cn/networkCheck_CN.js,type=generic,timeout=30
 
 #02 🟢 刷新DNS
-
 flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
 
 #03 🟢 Netflix解锁检测
@@ -55,7 +61,7 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 ☁ WARP Teams Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
 ☁ WARP Teams Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.
 
-#07 🟢 时间卡
+#07 🟢 节假日信息
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 
 #08 🟢 youtube premium_解锁检测
@@ -66,6 +72,8 @@ Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.
 
 #10 🟢 查看节点IP信息
 IP-Check = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.js
+
+       
 
 [MITM]
 hostname = %APPEND% api.cloudflareclient.com,zero-trust-client.cloudflareclient.com
