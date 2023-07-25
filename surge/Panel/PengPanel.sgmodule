@@ -2,23 +2,20 @@
 #!desc=策略面板
 
 [Panel]
-#00 🟢 Surge Pro-显示Surge的启动时间
+#01🟢 Surge Pro-显示Surge的启动时间
 SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
 
-#01 🟢 网路详情
-NetInfoPanelTest=title="",content="",style=info,script-name=net-info-panel-test-cn.js,update-interval=1
+#02 🟢 网路详情
+NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
-#02 🟢 刷新DNS
+#03 🟢 刷新DNS
 flushDNS = script-name=flushDNS,update-interval=600
 
-#03 🟢 Netflix解锁检测
+#04 🟢 Netflix解锁检测
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
 
-#04 🟢 流量统计
-TrafficStatistics = script-name=TrafficStatistics,update-interval=1
-
-#05 🟢 IP流量
-☁ WARP Panel = title="☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤", icon="lock.icloud.fill", script-name=☁ WARP Panel
+#05 🟢 机场流量信息
+Sub_info = script-name=Sub_info,update-interval=3600
 
 #06 🟢 节假日信息
 timecard = script-name=timecard,update-interval=3600
@@ -35,42 +32,31 @@ IP-Check = script-name=IP-Check, title="节点详情", content="请刷新", styl
 
 
 [Script]
-#00 🟢 Surge Pro-显示Surge的启动时间
+#01 🟢 Surge Pro-显示Surge的启动时间
 SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Surge-Pro/Moore/SurgePro.js ,argument=icon=paperplane.circle&color=#f6c970
 
-#01 🟢 网路详情
-net-info-panel-test-cn.js=script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/test/Panel/Network-Info/cn/networkCheck_CN.js,type=generic,timeout=30
+#02 🟢 网路详情
+net-info-panel.js=script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Network-Info/Moore/Network-Info.js,type=generic,timeout=30
 
-#02 🟢 刷新DNS
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
+#03 🟢 刷新DNS
+FlushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Flush-DNS/Moore/Flush-DNS.js,argument=title=DNS FLush&icon=cube&color=#afe59a&server=false
 
-#03 🟢 Netflix解锁检测
+#04 🟢 Netflix解锁检测
 nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1632728073, timeout=30
 
-#04 🟢 流量统计
-#应当修改的字段：network : en0→WiFi pdp_ip0→卡1 pdp_ip1→卡2
-TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8&network=pdp_ip0
+#05 🟢 机场流量信息
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Sub-info/Moore/Sub-info.js,script-update-interval=0,argument=url=encode后的机场节点链接&reset_day=1&title=你机场名字&icon=externaldrive.fill.badge.icloud=#007aff
 
-#05 🟢 WARP Panel
-#!PROFILE-VERSION-REQUIRED 10 ☁ WARP Panel = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.panel.js
-
-#06 🟢 WARP Personal
-☁ WARP Personal Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
-☁ WARP Personal Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.response.js
-# 🟢 Cloudflare for Teams
-☁ WARP Teams Request = type=http-request,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.request.js
-☁ WARP Teams Response = type=http-response,pattern=^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/Cloudflare.1.1.1.1.
-
-#07 🟢 节假日信息
+#06 🟢 节假日信息
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 
-#08 🟢 youtube premium_解锁检测
+#07🟢 youtube premium_解锁检测
 youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解锁检测
 
-#09 🟢 快速切换节点
+#08 🟢 快速切换节点
 Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Group-Panel/Moore/Group-Panel.js,argument=icon=network&color=#86abee&group=✈️ 节点选择
 
-#10 🟢 查看节点IP信息
+#09 🟢 查看节点IP信息
 IP-Check = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.js
 
        
