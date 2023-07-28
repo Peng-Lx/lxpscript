@@ -1,0 +1,8 @@
+#!name=! Capture
+#!desc= 抓包
+
+[MITM]
+hostname =  -*.icloud.com.cn,-*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, -ap-*.spotify.com,  -<ip-address>,  -*apple.com, -*.apple.com,*
+
+[General]
+force-http-engine-hosts = %APPEND% *
