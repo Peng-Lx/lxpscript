@@ -23,10 +23,7 @@ timecard = script-name=timecard,update-interval=3600
 #07 🟢 youtube premium_解锁检测
 youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解锁检测", update-interval=1
 
-#08 🟢 快速切换节点
-Group-Panel = script-name=Group-Panel,update-interval=1
-
-#09 🟢 查看节点IP信息
+#08 🟢 查看节点IP信息
 IP-Check = script-name=IP-Check, title="节点详情", content="请刷新", style=info, update-interval=1
 
 
@@ -53,10 +50,7 @@ timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 #07🟢 youtube premium_解锁检测
 youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解锁检测
 
-#08 🟢 快速切换节点
-Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Group-Panel/Moore/Group-Panel.js,argument=icon=network&color=#86abee&group= 节点选择
-
-#09 🟢 查看节点IP信息
+#08 🟢 查看节点IP信息
 IP-Check = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.js
 
        
