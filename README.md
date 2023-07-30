@@ -6,18 +6,15 @@
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
 ##  非常感谢***@
-+ >>@DivineEngine *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
+* @DivineEngine *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
-+ @NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
+* @NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
-+ @Peng-YM * @VirgilClyne * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
+* @Peng-YM * @VirgilClyne * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
 
-+ @blackmatrix7 * @lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
+* @blackmatrix7 * @lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
 
-+ @Fei * @MuTu * @Brian * @Coldvvater * @Rabbit * @dhnshall * @Repcz * @GetSomeCats * @ClashMeta * @maicoo * @id77
+* @Fei * @MuTu * @Brian * @Coldvvater * @Rabbit * @dhnshall * @Repcz * @GetSomeCats * @ClashMeta * @maicoo * @id77
 
-+ @temppw * @yu-steven * @Koolson *@Orz-3
+* @temppw * @yu-steven * @Koolson *@Orz-3
 
-* 1. 项目1  
-* 2. 项目2  
-* 3. 项目3  
