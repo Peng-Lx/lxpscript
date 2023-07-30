@@ -12,7 +12,7 @@
 
 * @Peng-YM * @VirgilClyne * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
 
-*  * @lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
+* @lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
 
 * @Fei * @MuTu * @Brian * @Coldvvater * @Rabbit * @dhnshall * @Repcz * @GetSomeCats * @ClashMeta * @maicoo * @id77
 
