@@ -8,7 +8,7 @@
 ##  非常感谢***@
 * [ @DivineEngine](https://github.com/DivineEngine/Profiles/tree/master) *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
-* [@blackmatrix7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite)@NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
+* [@blackmatrix7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite)*@NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
 * @Peng-YM * @VirgilClyne * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
 
