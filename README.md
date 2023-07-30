@@ -1,5 +1,4 @@
 # lxpscript说明:
-=
 ┇只测自脚本┇资源于网络┇
 ┇无其他用途┇感谢各大佬┇
 ┇转载自用备份┇搬运不维护┇
@@ -7,7 +6,7 @@
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
 ##  非常感谢***@
-+ @DivineEngine * @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
++ [替换文本]@DivineEngine * @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
 + @NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
