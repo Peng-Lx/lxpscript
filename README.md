@@ -6,7 +6,7 @@
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
 ##  非常感谢***@
-+ [替换文本]@DivineEngine * @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
++ @DivineEngine *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
 + @NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
