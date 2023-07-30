@@ -5,7 +5,7 @@
 ┇请别Fork!  请别Fork!┇ 
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
-> Text that is a quote DivineEngine * Tartarus2014 * nzw9314 * Cuttlefish *I Am R·E * Hausd0rff(yqc007) * Semporia * fishingworld
++ DivineEngine * Tartarus2014 * nzw9314 * Cuttlefish *I Am R·E * Hausd0rff(yqc007) * Semporia * fishingworld
 
 ### NobyDa * Yichahucha * chavyleung/gitee * mieqq * Sunert * app2smile * zZPiglet
 
