@@ -6,7 +6,7 @@
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
 ##  非常感谢***@
-* @DivineEngine *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
+* [ @DivineEngine](https://github.com/DivineEngine/Profiles/tree/master) *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
 * @NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
@@ -18,5 +18,5 @@
 
 * @temppw * @yu-steven * @Koolson *@Orz-3
 
-* [@Orz-3](https://www.baidu.com/)  
+
 
