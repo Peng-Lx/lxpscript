@@ -6,17 +6,17 @@
 # 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
 
 ##  非常感谢***@
-* [ @DivineEngine](https://github.com/DivineEngine/Profiles/tree/master) *  @Tartarus2014 * @nzw9314 * @Cuttlefish *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
+* [ @DivineEngine](https://github.com/DivineEngine/Profiles/tree/master) *  @Tartarus2014 * @nzw9314 *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
 
 * [@blackmatrix7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite)*@NobyDa * @Yichahucha * @chavyleung/gitee *@ mieqq *@Sunert * @app2smile * @zZPiglet
 
-* @Peng-YM * @VirgilClyne * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
+* [@Cuttlefish](https://github.com/ddgksf2013) * @KOP-XIAO *@Neurogram-R * @Nebulosa-Cat
 
-* @lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
+* [@VirgilClyne](https://github.com/VirgilClyne/VirgilClyne)@lhie1 * @28413761 *@Hackl0us * @Honye * @anker1209 * @lowking * @dompling-2Y
 
-* @Fei * @MuTu * @Brian * @Coldvvater * @Rabbit * @dhnshall * @Repcz * @GetSomeCats * @ClashMeta * @maicoo * @id77
+* [@Orz-3](https://github.com/Orz-3) * @MuTu * @Brian * @Coldvvater * @Rabbit * @dhnshall * @Repcz * @GetSomeCats * @ClashMeta * @maicoo * @id77
 
-* @temppw * @yu-steven * @Koolson *@Orz-3
+* [Peng-YM](https://github.com/Peng-YM)@temppw * @yu-steven * @Koolson 
 
 
 
