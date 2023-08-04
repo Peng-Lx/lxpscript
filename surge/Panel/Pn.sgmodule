@@ -14,8 +14,7 @@ flushDNS = script-name=flushDNS,update-interval=600
 #04 🟢 Netflix解锁检测
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
 
-#05 🟢 机场流量信息
-Sub_info = script-name=Sub_info,update-interval=3600
+#05 
 
 #06 🟢 节假日信息
 timecard = script-name=timecard,update-interval=3600
@@ -41,8 +40,7 @@ FlushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 #04 🟢 Netflix解锁检测
 nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1632728073, timeout=30
 
-#05 🟢 机场流量信息
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Sub-info/Moore/Sub-info.js,script-update-interval=0,argument=url=encodehttps://rsslinghun1.xyz/api/v1/client/subscribe?token=494125e66d2504560f97b917c8598f28&reset_day=1&title=灵魂云&icon=externaldrive.fill.badge.icloud=#007aff
+#05 🟢
 
 #06 🟢 节假日信息
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
