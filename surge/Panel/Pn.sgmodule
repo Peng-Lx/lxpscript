@@ -43,7 +43,7 @@ nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b0
 #05 🟢
 
 #06 🟢 节假日信息
-timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
+timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Panel/Script/timecard.js
 
 #07🟢 youtube premium_解锁检测
 youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解锁检测
