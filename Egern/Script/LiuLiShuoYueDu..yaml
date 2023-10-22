@@ -1,0 +1,14 @@
+#!name=流利说·阅读
+#!desc=解锁流利说·阅读会员
+
+scriptings:
+  - http_response:
+      name: 流利说·阅读
+      script_url: >-
+        https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
+      match: >-
+        ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
+      body_required: true
+mitm:
+  hostnames:
+    - 'vira.llsapp.com'
