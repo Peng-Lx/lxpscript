@@ -1,0 +1,13 @@
+#!name=绿色产业链通杀
+#!desc=男人必备脚本
+#!system=ios
+
+[MITM]
+hostname = %APPEND% *50a*,*bmafdxt*,*psovzwr*,*yxlauhm*,*yiqiapi*,*jiujiao*,*myb*api*,*hichatapi*,*tbrapi*,*wmqapi*,*gvlan*,*91av*,*xtt*,*dyweb*,*argaxqn*,*eoeicmg*
+
+[Script]
+50度灰/汤头条/他趣 = type=http-response, pattern=^http[s]?:\/\/.*((50(aa|ab|apia)pi|xtt.*)\.com|tbrapi\.org)\/pwa\.php\/api\/(user\/userinfo|MvDetail\/(detail|xiao_detail)|home\/(getOpenAdsAndVersion|appcenter)|system\/getad)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp/code.js, timeout=60, script-update-interval=0
+91短视频/微密圈 = type=http-response, pattern=^http[s]?:\/\/.*(yiqiapi|jiujiao|myb[0-9]+api|wmqapi|psovzwr|bmafdxt|yxlauhm).*\/pwa\.php$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp/code.js, timeout=60, script-update-interval=0
+撸先生 = type=http-response, pattern=^http[s]?:\/\/.*hichatapi.+\/api\.php$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp/code.js, timeout=60, script-update-interval=0
+小蓝视频/快手 = type=http-response, pattern=^http[s]?:\/\/.*(gvlan|ksapi).*pwa\.php.*(home\/getConfig|user(s)?\/getBaseInfo|(mv|manhua|story)\/detail|mv\/(pwa_main|listOfFeature|getFeature)|ChargeVideo\/(upIndex|vipIndex|recommend))$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp/code.js, timeout=60, script-update-interval=0
+抖阴Porn = type=http-response, pattern=^http[s]?:\/\/.*(dyweb|argaxqn|eoeicmg).+\/pwa\.php$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp/code.js, timeout=60, script-update-interval=0
