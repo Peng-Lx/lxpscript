@@ -1,0 +1,9 @@
+#!name=UserScript
+#!desc=Unlock 
+
+[URL Rewrite]
+APP1 = type=http-response,pattern=^https?:\/\/moyin-gateway\.moyin\.com\/moyin-account\/v\d\/vip\/status,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mygf.js
+
+APP2 = type=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/zyjh.js
+[MITM]
+hostname = %APPEND% moyin-gateway.moyin.com,buy.itunes.apple.com
