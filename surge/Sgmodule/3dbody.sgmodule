@@ -1,0 +1,11 @@
+#!name=3Dbody
+#!desc=3Dbody
+
+[Map Local]
+^https?://app.3dbody.cn/api/u/user/info data-type=file data="https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.txt"
+
+[Script]
+3Dbody = type=http-request, pattern=^https?://app.3dbody.cn/api/(system/register/switch|course/detail/|content/|common/|resource/|resource/category/list|body/category/list|system/video/watermark|body/home/body|content/screen), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.js, timeout=60
+
+[MITM]
+hostname = %APPEND% app.3dbody.cn
