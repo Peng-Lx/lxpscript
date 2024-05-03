@@ -1,0 +1,12 @@
+#!name=qqMusic
+#!desc=qqMusic
+
+[Script]
+qqMusic = type=http-request, pattern=https://c6.y.qq.com/shop/fcgi-bin/fcg_get_order?, script-path=https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/qqMusic.js, timeout=60
+
+qqMusic = type=http-request, pattern=https://u6.y.qq.com/cgi-bin/musics.fcg?, script-path=https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/qqMusic.js, timeout=60
+
+QQ音乐 = type=cron, cronexp="25 7-12/1 * * *", script-path=https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/qqMusic.js, timeout=60, wake-system=1
+
+[MITM]
+hostname = %APPEND% *.y.qq.com
