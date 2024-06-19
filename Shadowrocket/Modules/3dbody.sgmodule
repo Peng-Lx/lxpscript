@@ -2,9 +2,11 @@
 #!desc=3dbody
 
 [Script]
-3Dbody = type=http-request, pattern=^https?://app.3dbody.cn/api/u/user/info, script-path=http://script.hub/convert/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.txt/_end_/3Dbody.txt?type=mock&amp;target-app=shadowrocket-module, timeout=60
+3Dbody = type=http-request, pattern=^https?://app.3dbody.cn/api/u/user/info, script-path=http://script.hub/convert/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.txt/_end_/3Dbody.txt?type=mock&amp;target-app=shadowrocket-module,timeout=60
 
-3Dbody = type=http-request, pattern=^https?://app.3dbody.cn/api/(system/register/switch|course/detail/|content/|common/|resource/|resource/category/list|body/category/list|system/video/watermark|body/home/body|content/screen), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.js, timeout=60
+3Dbody = type=http-request, pattern=^https?://app.3dbody.cn/api/(system/register/switch|course/detail/|content/|common/|resource/|resource/category/list|body/category/list|system/video/watermark|body/home/body|content/screen), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/3Dbody.js,timeout=60
+
+青柠设计 = type=http-request, pattern=^https:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js,timeout=60
 
 [MITM]
-hostname = %APPEND% app.3dbody.cn
+hostname = %APPEND% app.3dbody.cn,*.qingning6.com
