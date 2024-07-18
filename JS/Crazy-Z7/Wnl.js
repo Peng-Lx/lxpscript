@@ -7,7 +7,7 @@
  **********************
  QX
  [rewrite_local]
- ^https?:\/\/v2-client\.suishenyun\.cn\/api\/auth\/sign\/userinfo url script-response-body url script-response-body
+ ^https?:\/\/v2-client\.suishenyun\.cn\/api\/auth\/sign\/userinfo url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Wnl.js
  
  **********************
  hostname = v2-client.suishenyun.cn
