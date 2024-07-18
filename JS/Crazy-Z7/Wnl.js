@@ -5,13 +5,11 @@
  使用声明：⚠️仅供学习交流，🈲️商业用途
  脚本致谢：感谢作者的无私付出-Thanks👍
  **********************
- QX
- [rewrite_local]
  ^https?:\/\/v2-client\.suishenyun\.cn\/api\/auth\/sign\/userinfo url script-response-body url script-response-body https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Crazy-Z7/Wnl.js
  
- **********************
+ ***
  hostname = v2-client.suishenyun.cn
- **********************
+ ***
 
  
  ***/
