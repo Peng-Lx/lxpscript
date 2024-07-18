@@ -12,10 +12,7 @@
  **********************
  hostname = v2-client.suishenyun.cn
  **********************
- 
- Surge&loon
- [Scrip]
- http-response ^https?:\/\/v2-client\.suishenyun\.cn\/api\/auth\/sign\/userinfo requires-body=1,max-size=0,script-path=
+
  
  ***/
 
