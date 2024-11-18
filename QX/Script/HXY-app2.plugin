@@ -1,0 +1,301 @@
+#!name=Hxy-app2 script
+#!desc=自用APP-VIP合集
+#!author=@Thanks to the script authors
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1074.png
+
+[Rewrite]
+^https://api\.wotingfm\.com/wt-api/ad/list-by-ad-type - reject
+^https:\/\/ad\.caiyunapp\.com\/ - reject
+# > 开屏广告
+^https://.*miguvideo\.com/request/sdk - reject-200
+^https://common-sc\.miguvideo\.com/task/v7/task-list/cmvideo/visitor - reject-200
+
+[Script]
+# hostname = api.meiease.cn
+http-response ^https?:\/\/api\.meiease\.cn\/shop\/subscription\/(validate|apple\/purchases) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js, requires-body=true, timeout=60, tag=picsart
+
+# hostname = *.meiyan.com
+http-response ^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js, requires-body=true, timeout=60, tag=myxj
+
+# hostname =  *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, timeout=60, tag=mtxx
+
+# hostname = api.300624.com
+http-response ^https?:\/\/api\.300624\.com\/v3\/plan\/feature-code\/auth script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Yu91917/wanxingmiaoying.js, requires-body=true, timeout=60, tag=wanxingmiaoying
+
+# hostname = api-*.meitu.com
+http-response ^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js, requires-body=true, timeout=60, tag=mtxl
+
+# hostname = api.adapty.io
+http-response ^https:\/\/api\.adapty\.io\/api\/.+\/sdk\/(analytics\/profiles\/(.*?)\/|in-apps\/(apple\/receipt\/validate\/|purchase-containers\/.+)|events) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Batched.js, requires-body=true, timeout=60, tag=Batched
+
+# hostname = *.qingning6.com
+http-response ^https?:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js, requires-body=true, timeout=60, tag=qnsj
+
+# hostname = iosapi.peiyinxiu.com
+http-response ^https?:\/\/iosapi\.peiyinxiu\.com script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/peiyinxiu.js, requires-body=true, timeout=60, tag=peiyinxiu
+
+# hostname = *.videoshowiosglobalserver.com, *.enjoy-mobi.com
+http-response ^https?:\/\/.*\.(videoshowiosglobalserver|enjoy-mobi)\.com\/zone\/.+\/(iosPayClient\/(payVerify|imeiVerify)|startPageAd\/getAds) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/VideoShow.js, requires-body=true, timeout=60, tag=VideoShow
+
+# hostname = receipt-verifier.cdwapi.com
+http-response ^https?:\/\/receipt-verifier\.cdwapi\.com\/receipt script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js, requires-body=true, timeout=60, tag=Pixelup
+
+# hostname = api.polaxiong.com
+http-response ^https?:\/\/api\.polaxiong\.com\/.+\/payments\/(profiles\/.+\/subscription|appleiap\/receipts\/confirmation) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/pola.js, requires-body=true, timeout=60, tag=pola
+
+# hostname = *.camera360.com
+http-response ^https?:\/\/.*\.camera360\.com\/(api\/(order\/purchase|iap\/check-receipt)|v\d\/operational-positions) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/360xj.js, requires-body=true, timeout=60, tag=360xj
+
+# hostname = creaceed.com
+http-response ^https?:\/\/creaceed\.com\/apis\/appstore\/verifyreceipt script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hydra.js, requires-body=true, timeout=60, tag=Hydra
+
+# hostname = purchase-*-api.*.com, user-kaji-api.b612kaji.com
+http-response ^https?:\/\/(purchase-.*-api|user-kaji-api)\.(yiruikecorp|b612kaji|tianyancam)\.com\/v\d\/purchase\/subscription\/subscriber\/status script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/4gexj.js, requires-body=true, timeout=60, tag=4gexj
+
+# hostname = cdn-bm.camera360.com
+http-response ^https?:\/\/cdn-bm\.camera360\.com\/api\/(mix\/(getinfo|purchase|recovery)|iap\/check-receipt) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mix.js, requires-body=true, timeout=60, tag=mix
+
+# hostname = *.aoscdn.com, *.apsapp.cn
+http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/arqjt.js, requires-body=true, timeout=60, tag=arqjt
+
+# hostname = api2.vlognow.me
+http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/.+\/public\/iap\/receipt\/status?(.*?)*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js, requires-body=true, timeout=60, tag=vn
+
+# hostname = api.open.loveclip.site
+http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/ajj.js, requires-body=true, timeout=60, tag=ajj
+
+# hostname = api-chn.rthdo.com
+http-response ^https?:\/\/api-chn.rthdo.com\/api\/rest\/u\/vipVerifyReceipt.*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/xiaoying.js, requires-body=true, timeout=60, tag=xiaoying
+
+# hostname = api.kmovie.gifshow.com,id.kwaiying.com,mi.gdt.qq.com
+http-response ^https?:\/\/(id\.kwaiying|api\.kmovie\.gifshow)\.com.*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/kuaiy.js, requires-body=true, timeout=60, tag=kuaiy
+
+# hostname = ad.rhinox.cn,appss.rhinoxlab.com,appss.rhinox.cn
+http-response ^https?:\/\/appss.rhinox.cn\/app\/account\/getAccountInfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/dspjj.js, requires-body=true, timeout=60, tag=dspjj
+
+# hostname = lcs-mobile-cops.adobe.io
+http-response https://lcs-mobile-cops.adobe.io/mobile_profile/nul/v2 script-path=https://ghproxy.com/https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobe.js, requires-body=true, timeout=60, tag=adobe
+
+# hostname = createpdf.acrobat.com
+http-response https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions script-path=https://ghproxy.com/https://raw.githubusercontent.com/Marol62926/MarScrpt/main/adobeScanPdf.js, requires-body=true, timeout=60, tag=adobeScanPdf
+
+#23 ✅ 每日水印相机-时间地点打卡、工程记录、团队打卡（永久会员）
+http-response ^https?:\/\/appss.rhinoxlab.com\/\/app\/account\/getAccountInfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/mrsyxj.js, requires-body=true, timeout=60, tag=mrsyxj
+
+# hostname = moyin-gateway.moyin.com
+http-response ^https?:\/\/moyin-gateway\.moyin\.com\/moyin-account\/v\d\/vip\/status script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mygf.js, requires-body=true, timeout=60, tag=mygf
+
+# hostname = yueh.app168.cc
+http-response ^http:\/\/yueh\.app168\.cc\/(first|panda|jiaopian|emoji|manghe)\/iap\/check\.php$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/yueh.js, requires-body=true, timeout=60, tag=yueh
+
+# hostname = *.wps.cn
+http-response ^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, timeout=60, tag=WPS
+
+# hostname = *.api.moji.com
+http-response ^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js, requires-body=true, timeout=60, tag=mojitianqi
+
+# hostname = notability.com
+http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js, requires-body=true, timeout=60, tag=notability
+
+# hostname = water*.yunxiaoguo.cn
+http-response ^https?:\/\/water.*\.yunxiaoguo\.cn\/user\/info script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/shuiyin.js, requires-body=true, timeout=60, tag=shuiyin
+
+# 资料
+http-response ^https?:\/\/app\.yinxiang\.com\/third\/profile\/public\/restful\/public-user-profile script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/saomiaobao.js, requires-body=true, timeout=60, tag=saomiaobao
+
+# 会员
+http-response ^https?:\/\/app\.yinxiang\.com\/third\/scanner\/scanner\/app\/userInfo\/get script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/saomiaobao2.js, requires-body=true, timeout=60, tag=saomiaobao2
+
+# hostname = *-slidebox-ios-prod.cloudfunctions.net
+http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/slidebox.js, requires-body=true, timeout=60, tag=slidebox
+
+# hostname = paperwork.szshht.cn
+http-response ^https:\/\/paperwork\.szshht\.cn\/api\/User\/getVipInfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/afengye/QX/main/spzwz.js, requires-body=true, timeout=60, tag=spzwz
+
+# hostname = subscription.aresframework.com
+http-response ^https:\/\/subscription\.aresframework\.com\/api\/purchase script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/Triplens.js, requires-body=true, timeout=60, tag=Triplens
+
+# hostname = saas.hpplay.cn
+http-response ^https?:\/\/saas\.hpplay\.cn\/api\/lebo-member\/app\/member\/relation\/rights? script-path=https://ghproxy.com/https://raw.githubusercontent.com/Rnik666/YJTJS/main/LBTP.js, requires-body=true, timeout=60, tag=LBTP
+
+# hostname = xremit.xcurrency.com, explorer.tratao.com
+http-response ^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true, timeout=60, tag=jijianhuilv
+
+# hostname = interpreter.cyapi.cn
+http-response ^https:\/\/interpreter\.cyapi\.cn\/ script-path=https://ghproxy.com/https://raw.githubusercontent.com/afengye/QX/main/xiaoyi.js, requires-body=true, timeout=60, tag=xiaoyi
+
+# hostname = *.camscanner.com,*.intsig.net
+http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=60, tag=CamScanner
+
+# hostname = pan.baidu.com
+http-response ^https?:\/\/pan.baidu.com.+(rest\/.+\/membership\/user|api\/user\/getinfo|act\/v2\/welfare\/list|api\/taskscore\/tasklist)\? script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/panda.js, requires-body=true, timeout=60, tag=panda
+
+# hostname = leancloud.emotionwp.com
+http-response ^https?:\/\/leancloud.emotionwp.com\/.*\/classes\/wpf_account script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/bizhi.js, requires-body=true, timeout=60, tag=bizhi
+
+# hostname = kkyun.com
+http-response ^https?:\/\/kkyun.com\/api\/(accounts\/user|apps/start_task).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/ddqsy.js, requires-body=true, timeout=60, tag=ddqsy
+
+http-response ^https?:\/\/api-poster.ycase.cn\/(web\/display\?subject|api\/user\/info|api\/User\/home) script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wshb.js, requires-body=true, timeout=60, tag=wshb
+
+# hostname = api.assistantwriter.top
+http-response ^http[s]?:\/\/api.assistantwriter.top\/user\/login script-path=https://ghproxy.com/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/assistantwriter.js, requires-body=true, timeout=60, tag=assistantwriter
+
+# hostname =cn.invit.vip,www.lovewith.me,poster.leminet.cn
+http-response ^https?:\/\/(cn.invit.vip|www.lovewith.me|poster.leminet.cn)\/(users\/info|golove\/v05\/profile|v01\/profile) script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/dzqj.js, requires-body=true, timeout=60, tag=dzqj
+
+# hostname = tcb-api.tencentcloudapi.com
+http-response ^https?:\/\/tcb-api\.tencentcloudapi\.com\/web script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/miaojiexi.js, requires-body=true, timeout=60, tag=miaojiexi
+
+#22 ✅ 录屏-屏幕录制神器（永久会员）
+http-response ^https?:\/\/sc.szsszykj.com\/api\/GetIosVip.php script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/luping.js, requires-body=true, timeout=60, tag=luping
+
+# hostname = apps-api.lingege.cn
+http-response ^https?:\/\/apps-api.lingege.cn\/user\/getUserInfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/gdscds.js, requires-body=true, timeout=60, tag=gdscds
+
+# hostname = api.hummingbird.businessreview.global
+http-response ^https:\/\/api\.hummingbird\.businessreview\.global\/api\/subscriptions\/get_active script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/jjxrsl.js, requires-body=true, timeout=60, tag=jjxrsl
+
+# hostname = www.pozhu.com
+http-response ^https?:\/\/www\.pozhu\.com\/(v1|v2)\/(package\/playinfo\?|notes\/index|notes\/notes|notes\/audio|notes\/video|package\/subart|package\/artlist2|video\/show|college\/chapter2|member\/userinfo|home\/startimg|deep\/course|notes\/secret_lives).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/pozhu.js, requires-body=true, timeout=60, tag=pozhu
+
+# hostname = *hundun.cn
+http-response ^https?:\/\/((course)|(user)|(capi)).hundun.cn\/.*(course_detail|user_info|member_home_page).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/hundun.js, requires-body=true, timeout=60, tag=hundun
+
+#  hostname = napi.yunpub.cn
+http-response ^https?:\/\/napi.yunpub.cn\/api\/(product/getBookContent|user/login\/getUserInfo|cms\/index\/getMyPage).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/zxsy.js, requires-body=true, timeout=60, tag=zxsy
+
+# hostname = napi.yunpub.cn
+http-response ^https?:\/\/api.wotingfm.com\/wt-api\/(wtRichVoiceIntro|wtRichPdf|wtRichAudio\/getAudio|users\/homePage|wtRichAudioItem).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/woting.js, requires-body=true, timeout=60, tag=woting
+
+# hostname = app.xinxuejy.com
+http-response https:\/\/api\.xinxuejy\.com\/api\/(course\/detail|package\/liveDetail|know\/index|paper\/index|search\/getList|search\/getLibraryById|index\/banner\/type\/app_mall|user\/myInfo) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/xswx.js, requires-body=true, timeout=60, tag=xswx
+
+#  hostname = api.zhangdefenspace.com
+http-response ^https?:\/\/api\.zhangdefenspace\.com\/api\/(course\/getCoursePeriodList|course\/getCourseDetails|user\/getIndexUser|v2\/live\/getLiveDetails).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/Fkj.js, requires-body=true, timeout=60, tag=Fkj
+
+# hostname = duoting.tatatimes.com
+http-response ^https?:\/\/duoting.tatatimes.com\/tataeraapi\/api.s\?h=QueryVipUser script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/yyds.js, requires-body=true, timeout=60, tag=yyds
+
+# hostname = nicegram.cloud
+http-response ^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://ghproxy.com/https://github.com/ddgksf2013/MoYu/raw/master/NicegramProCrack.js, requires-body=true, timeout=60, tag=NicegramProCrack
+
+# hostname = vira.llsapp.com
+http-response ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js, requires-body=true, timeout=60, tag=LiuLiShuo-YueDu
+
+# hostname = chat.zyhd02.cn
+http-response ^http[s]?:\/\/chat.zyhd02.cn script-path=https://ghproxy.com/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lalthsk.js, requires-body=true, timeout=60, tag=lalthsk
+
+# hostname = dict.youdao.com
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/wyydcd.js, requires-body=true, timeout=60, tag=wyydcd
+
+# hostname = pc7dong.com
+http-response ^http[s]?:\/\/pc7dong.com script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/Pyy/7d.js, requires-body=true, timeout=60, tag=7d
+
+# hostname = user.linglan.com
+http-response https://user.linglan.com/api/personCenter/getMyUser script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/Llzy.js, requires-body=true, timeout=60, tag=Llzy
+
+# hostname = mob2015.kekenet.com
+http-response ^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/JS/kkyy.js, requires-body=true, timeout=60, tag=kkyy
+
+# hostname = p.du.163.com
+http-response https?:\/\/p\.du\.163\.com\/gain\/readtime\/info script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/wywnds.js, requires-body=true, timeout=60, tag=wywnds
+
+# hostname = medicine-family.meappstore.top
+http-response https:\/\/medicine-family\.meappstore\.top\/medicineModule\/api\/(users\/iosUserLogin|family\/) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/nihaixiazydq.js, requires-body=true, timeout=60, tag=nihaixiazydq
+
+# hostname = app.kcguoyi.com, shop.kcguoyi.com
+http-response ^https:\/\/(app|shop)\.kcguoyi\.com\/api\/(service\/app\/user\/userInfo|jdldzy\/regionRedeemRecord\/h5\/index|knowledge\/questionBank\/app\/details|service\/app\/myCourse\/getMyCourseDetail|auth\/auth\/continue) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/Kcys.js, requires-body=true, timeout=60, tag=Kcys
+
+# hostname = wxapi.zhongyuedu.com
+http-response https://wxapi.zhongyuedu.com/zy/video_list.php script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/Bianquezy.js, requires-body=true, timeout=60, tag=Bianquezy
+
+# hostname = 3api.zyyzx.com.cn
+http-response ^https:\/\/3api\.zyyzx\.com\.cn\/(education\/api\/coursetenant\/getCourseChapterAndLessonByCourseId|admin\/api\/user\/selectUserInfo) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/Zyyzx.js, requires-body=true, timeout=60, tag=Zyyzx
+
+# hostname = medicine-books.meappstore.top
+http-response https://medicine-books.meappstore.top/medicineModule/api/users/iosUserLogin script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/3DBoby/zyfj.js, requires-body=true, timeout=60, tag=zyfj
+
+#21 ✅ 光华商学 付费及会员专享课程 
+http-response ^https:\/\/api2019\.jiheapp\.com\/v1\/(user\/info\/get|user\/course\/(check_material|section_list|detail)) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/ghsx.js, requires-body=true, timeout=60, tag=ghsx
+
+# hostname = app.unitefactory.com
+http-response https://app.unitefactory.com/api/v2/column/columnInfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/Zlyxs.js, requires-body=true, timeout=60, tag=Zlyxs
+
+# hostname = app.zhongyi108.com/
+http-response https://app.zhongyi108.com/api/(user/getUcenterData|course/getDetail|user/getUserInfoNew) script-path=https://ghproxy.com/https://raw.githubusercontent.com/Peng-Lx/lxpscript/refs/heads/master/JS/Yu91917/zhongtui.js, requires-body=true, timeout=60, tag=zhongtui
+
+# hostname = spclient.wg.spotify.com
+http-response ^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=60, tag=spotify-proto
+
+http-request ^https?:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://ghproxy.com/https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60, tag=spotify-json
+
+# 播放器会员皮肤
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode\/ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+# 搜索结果会员歌曲
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get) script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+# 播放器会员歌曲
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get) script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+# 侧边栏会员等级
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+# 首页歌单会员歌曲
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+# 会员认证
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, timeout=60, tag=wangyiyun
+
+#  hostname = app.pd.nf.migu.cn,c.musicapp.migu.cn,u.musicapp.migu.cn,app.c.nf.migu.cn,app.c.nf.migu.cn,h5.nf.migu.cn
+http-response ^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserInfo.do|member\/center))|column\/(startup-pic-with-ad|marketing\/advertising)|resource\/skin\/list\/.*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/miguyinyue.js, requires-body=true, timeout=60, tag=miguyinyue
+
+http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/migu.js, timeout=60, tag=migu
+
+# hostname = apimboom2.globaldelight.net
+http-response ^https?:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js, requires-body=true, timeout=60, tag=boom
+
+# hostname = *.radio.cn, 60.205.171.165
+http-response (^https?:\/\/(ytmsout|ytapi)\.radio\.cn|60\.205\.171\.165)\/(contentBiz|publish|rights|user\/appUser\/getUserInfo|ytsrv\/srv\/appUser\/getUserInfoH5) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/yunting.js, requires-body=true, timeout=60, tag=yunting
+
+# hostname = api.tidal.com
+http-response ^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ script-path=https://ghproxy.com/https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js, requires-body=true, timeout=60, tag=TIDALHiFiPlusCrack
+
+http-request ^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfo script-path=https://ghproxy.com/https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js, requires-body=true, timeout=60, tag=tidal
+
+# hostname = iosv2.cjapi.5fun.com
+http-response ^https?:\/\/iosv2.cjapi.5fun.com\/user\/ios_store_pay_edition\/members_login\/get_member_info script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wfcy.js, requires-body=true, timeout=60, tag=wfcy
+
+# hostname = www.luqijianggushi.com
+http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get script-path=https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js, requires-body=true, timeout=60, tag=luqi
+
+# VIP信息
+http-response ^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners)|p\/v\d\/(vip_info|user_info)) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, timeout=60, tag=caiyuntianqi
+
+# SVIP地图-48小时预报(方法来源:苍井灰灰)
+http-request ^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images) script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, timeout=60, tag=caiyuntianqi
+
+# hostname = api.boohee.com
+http-response ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info script-path=https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Rewrite/main/bohejiankang.js, requires-body=true, timeout=60, tag=bohejiankang
+
+# hostname = iosv2.cjapi.5fun.com
+http-response ^https?:\/\/iosv2.cjapi.*\/user\/ios_store_pay_edition\/members_login\/get_member_info script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/wfcy.js, requires-body=true, timeout=60, tag=wfcy
+
+# hostname = *.miguvideo.com
+http-response ^https?:\/\/(play|dis).*miguvideo.com\/(play|dis)(url|play)\/.*$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/mgsp.js, requires-body=true, timeout=60, tag=mgsp
+
+http-request ^https?:\/\/play.miguvideo.com\/playurl\/v1\/play\/playurl\?2Kvivid=true?.*=true$ script-path=https://ghproxy.com/https://raw.githubusercontent.com/WeiGiegie/666/main/mgspck.js, timeout=60, tag=mgspck
+
+# hostname = app-ios.y2002.com
+http-response ^https?:\/\/app-ios\.y2002\.com\/api\/v2\/User\/Info? script-path=https://ghproxy.com/https://raw.githubusercontent.com/Rnik666/666/main/Y1.js, requires-body=true, timeout=60, tag=Y1
+
+http-response ^https?:\/\/app-ios\.y2002\.com\/API\/V2\/Processer\.ashx? script-path=https://ghproxy.com/https://raw.githubusercontent.com/Rnik666/666/main/Y2.js, requires-body=true, timeout=60, tag=Y2
+
+[MITM]
+hostname = api-poster.ycase.cn, app.xinxuejy.com, dict.youdao.com, yueh.app168.cc, paperwork.szshht.cn, interpreter.cyapi.cn, apps-api.lingege.cn, app.zhongyi108.com, cn.invit.vip, www.lovewith.me, poster.leminet.cn, app-ios.y2002.com, saas.hpplay.cn, moyin-gateway.moyin.com, app.unitefactory.com, api2019.jiheapp.com, appss.rhinoxlab.com, *.miguvideo.com, sc.szsszykj.com, iosv2.cjapi.5fun.com, iosv2.cjapi.wufan88.com, medicine-books.meappstore.top, *account.wps.cn, *account.wps.com, lcs-mobile-cops.adobe.io, createpdf.acrobat.com, tcb-api.tencentcloudapi.com, 3api.zyyzx.com.cn, wxapi.zhongyuedu.com, app.kcguoyi.com, shop.kcguoyi.com, medicine-family.meappstore.top, api.boohee.com, ad.rhinox.cn, appss.rhinox.cn, api.assistantwriter.top, leancloud.emotionwp.com, p.du.163.com, *.cyapi.cn, *.caiyunapp.com, *.aoscdn.com, *.apsapp.cn, mob2015.kekenet.com, user.linglan.com, pc7dong.com, chat.zyhd02.cn, vira.llsapp.com, www.luqijianggushi.com, pan.baidu.com, .*xiaozujian.com, nicegram.cloud, *.camscanner.com, *.intsig.net, duoting.tatatimes.com, api-sub.meitu.com, api.meiease.cn, *.meiyan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, api.300624.com, api.adapty.io, *.qingning6.com, iosapi.peiyinxiu.com, *.videoshowiosglobalserver.com, *.enjoy-mobi.com, receipt-verifier.cdwapi.com, api.polaxiong.com, *.camera360.com, creaceed.com, purchase-*-api.*.com, user-kaji-api.b612kaji.com, cdn-bm.camera360.com, api2.vlognow.me, api.open.loveclip.site, api-chn.rthdo.com, api.kmovie.gifshow.com, id.kwaiying.com, mi.gdt.qq.com, *.wps.cn, *.api.moji.com, water*.yunxiaoguo.cn, app.yinxiang.com, *-slidebox-ios-prod.cloudfunctions.net, subscription.aresframework.com, xremit.xcurrency.com, explorer.tratao.com, api.hummingbird.businessreview.global, www.pozhu.com, *hundun.cn, napi.yunpub.cn, spclient.wg.spotify.com, *music.163.com, app.pd.nf.migu.cn, c.musicapp.migu.cn, u.musicapp.migu.cn, app.c.nf.migu.cn, h5.nf.migu.cn, apimboom2.globaldelight.net, *.radio.cn, 60.205.171.165, api.tidal.com, api.zhangdefenspace.com
