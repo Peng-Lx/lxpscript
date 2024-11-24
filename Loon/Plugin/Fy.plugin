@@ -1,0 +1,11 @@
+#!name=枫叶解锁合集
+#!desc=枫叶频道:https://t.me/afengye
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1050.png
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/afengye/QX/main/crack.js, requires-body=true, timeout=60, tag=枫叶解锁合集
+
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/afengye/QX/main/crack.js, timeout=60, tag=枫叶解锁合集
+
+[MITM]
+hostname = api.revenuecat.com
