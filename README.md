@@ -4,6 +4,7 @@
 ┇转载自用备份┇搬运不维护┇
 ┇请别Fork!  请别Fork!┇ 
 ### 禁止商业用途┇┇ ┇  否则后果自负┇ ┇ ┇
+## 解锁是暂时的/购买也不是永久的/订阅/跑路/
 
 ##  非常感谢***@
 * [ @DivineEngine](https://github.com/DivineEngine/Profiles/tree/master) *  @Tartarus2014 * @nzw9314 *@I Am R·E * @Hausd0rff(yqc007) * @Semporia * @fishingworld
