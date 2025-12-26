@@ -1,0 +1,329 @@
+# ^^ https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/KuGou.sgmodule
+name: |-
+  酷狗音乐会员解锁
+desc: |-
+  解锁酷狗音乐会员功能，包括VIP歌曲、无损音质、去广告等
+author: |-
+  bb
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1047.png
+category: |-
+  KuGouMusic
+version: |-
+  1.2.2.5
+homepage: |-
+  https://github.com/Yu9191/Rewrite
+
+rules:
+# > (广告域名)
+  - DOMAIN,webvoobssdl.kugou.com,REJECT
+  - DOMAIN,ad.tencentmusic.com,REJECT
+  - DOMAIN,ads.service.kugou.com,REJECT
+  - DOMAIN,adsfile.kugou.com,REJECT
+  - DOMAIN,mdpfilebssdlbig.kugou.com,REJECT
+  - DOMAIN,adserviceretry.kugou.com,REJECT
+# > (开屏广告)
+  - IP-CIDR,157.255.11.247/32,REJECT,no-resolve
+  - IP-CIDR,111.206.99.202/32,REJECT,no-resolve
+
+http:
+
+  mitm:
+    - "*.kugou.com"
+
+  url-rewrite:
+# > (广告/弹窗)
+    - >-
+      ^https:\/\/vipssr\.kugou\.com\/static\/js\/async\/flexPayPopup - reject
+    - >-
+      ^https:\/\/.*\.kugou\.com\/vipssr\/prepay_ios\.html - reject
+    - >-
+      ^https:\/\/staticssl\.kugou\.com\/common\/js-lib\/vip\/dlg_ctrler_v2\.js$ - reject
+    - >-
+      ^https:\/\/h5\.kugou\.com\/apps\/vipcenter\/_next\/static\/css - reject
+    - >-
+      ^https:\/\/vipssr\.kugou\.com\/static\/js\/vip\/newUi\/vipPageUnionIosContent- - reject
+    - >-
+      ^https:\/\/fx\.service\.kugou\.com\/fx\/activity\/register\/center\/sidebar\/configV2$ - reject
+    - >-
+      ^https:\/\/service1\.fanxing\.kugou\.com\/video\/mo\/live\/pull\/mutiline\/cfg - reject
+    - >-
+      ^http:\/\/log\.web\.kugou\.com\/postEvent\.php$ - reject
+
+  script:
+# > SSR首页装饰中心
+    - match: ^https:\/\/m\.kugou\.com\/ssr\/decocenter\/home
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 登录相关接口
+    - match: ^https:\/\/.*\.kugou\.com\/v5\/login_by_token
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https?:\/\/(nacsing\.kugou\.com|acsing\.service\.kugou\.com|vipos\.kugou\.com|gateway\.kugou\.com|gamecenter\.kugou\.com|acsing\.tx\.kugou\.com)\/(sing7\/json\/v2\/user\/login|ccktv\/v1\/ktv_room\/room\/room_config|fxsing\/vip\/member\/info|sing7\/homepage\/json\/v3\/vip\/tip|v4\/price\/get_tips|vipenergy\/v2\/entrance\/vip_center_user_info|fxsing\/vip\/user\/info|sing7\/homepage\/json\/v3\/cdn\/kroom_tab_enter|v1\/home\/member_game|sing7\/homepage\/json\/v3\/cdn\/kroom_tab\/banners)
+      name: "酷狗K歌_31"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https?:\/\/gateway\.kugou\.com\/tracker\/v5\/url
+      name: "酷狗播放v5_32"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v1\/login_by_quick_token
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v2\/get_login_extend_info
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > VIP信息相关
+    - match: ^https:\/\/.*\.kugou\.com\/mobile\/vipinfoV2
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v2\/get_vip_config
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/promotionvip\/v3\/vip_level\/detail
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/vipos\.kugou\.com\/v4\/price\/get_tips
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/vip\/v1\/fusion\/userinfo
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v2\/super\/welfarelist
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 卡片相关接口
+    - match: ^https:\/\/.*\.kugou\.com\/card\/v1\/pxy\/top
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/card\/v1\/pxy\/listen
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/card\/v1\/pxy\/recommend_stream$
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/card\/v1\/pxy\/recommend_stream_v2
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 广告相关接口 (使用通配符匹配所有子域名)
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v2\/sidebar_link
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v2\/sidebar_top_card
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v2\/home_card
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v2\/mobile_link
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v2\/task_center_entrance
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v5\/task_video\/qualification
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/ads\.gateway\/v4\/search_banner
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 移动端启动画面
+    - match: ^https:\/\/.*\.kugou\.com\/v4\/mobile_splash$
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v4\/mobile_splash_sort
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > AB测试相关
+    - match: ^https:\/\/.*\.kugou\.com\/els\.abt\/v1\/tmeab
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 代理组合相关
+    - match: ^https:\/\/.*\.kugou\.com\/pxy\/v1\/combo\/startup
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/playerpxy\/v1\/combo\/play_page_index
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 系统相关
+    - match: ^https:\/\/.*\.kugou\.com\/mstc\/musicsymbol\/v1\/system\/profile
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/pendant\/v2\/get_user_pendant
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v1\/blindbox_cabinet\/client_cabinet
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/flow\/user_config\/get_level_config_ios
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v1\/starlight\/get_campaign_infos
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/searchnofocus\/v1\/search_no_focus_word
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/updateservice\/v1\/get_dev_user
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 资源权限相关
+    - match: ^https:\/\/.*\.kugou\.com\/v1\/get_res_privilege\/lite
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/v1\/union\/audio_info
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 主题相关
+    - match: ^https:\/\/.*\.kugou\.com\/ocean\/v6\/theme\/category
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+    - match: ^https:\/\/.*\.kugou\.com\/tools\.mobile\/v2\/theme\/info
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 广告播放页面组合
+    - match: ^https:\/\/.*\.kugou\.com\/adp\/ad\/v1\/playpage_combine
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > VIP中心
+    - match: ^https:\/\/.*\.kugou\.com\/v3\/vip_center
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+# > 我的顶部横幅
+    - match: ^https:\/\/.*\.kugou\.com\/mine_top_banner
+      name: "酷狗SSR首页_28"
+      type: response
+      require-body: true
+      max-size: 0
+
+script-providers:
+  "酷狗SSR首页_28":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/kugou.js
+    interval: 86400
+  "酷狗K歌_31":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/kugouksong.js
+    interval: 86400
+  "酷狗播放v5_32":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/kugouv5.js
+    interval: 86400
